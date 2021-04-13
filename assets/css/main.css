@@ -1,0 +1,309 @@
+body {
+  min-height: 75rem;
+  padding-top: 6rem;
+}
+
+.social-logo{
+    width: 120px;
+    height: auto;
+}
+
+@media only screen and (min-width: 767px) {
+  .mobile-bar {
+    display: none;
+  }
+}
+
+.social-page .profile-header {
+    box-shadow: 0 0 10px 0 rgba(183, 192, 206, 0.2);
+    border: 1px solid #f2f4f9;
+}
+
+.social-page .profile-header .cover {
+    position: relative;
+    border-radius: .25rem .25rem 0 0;
+}
+
+
+.social-page .profile-header .cover figure {
+    margin-bottom: 0;
+}
+
+@media (max-width: 767px) {
+    .social-page .profile-header .cover figure {
+        height: 110px;
+        overflow: hidden;
+    }
+}
+
+@media (min-width: 2400px) {
+    .social-page .profile-header .cover figure {
+        height: 280px;
+        overflow: hidden;
+    }
+}
+
+.social-page .profile-header .cover figure img {
+    border-radius: .25rem .25rem 0 0;
+    width: 100%;
+}
+
+@media (max-width: 767px) {
+    .social-page .profile-header .cover figure img {
+        -webkit-transform: scale(2);
+        transform: scale(2);
+        margin-top: 15px;
+    }
+}
+
+@media (min-width: 2400px) {
+    .social-page .profile-header .cover figure img {
+        margin-top: -55px;
+    }
+}
+
+.social-page .profile-header .cover .gray-shade {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background: linear-gradient(rgba(255, 255, 255, 0.1), #fff 99%);
+}
+
+.social-page .profile-header .cover .cover-body {
+    position: absolute;
+    bottom: -20px;
+    left: 0;
+    z-index: 2;
+    width: 100%;
+    padding: 0 20px;
+}
+
+.social-page .profile-header .cover .cover-body .profile-pic {
+    border-radius: 50%;
+    width: 100px;
+}
+
+@media (max-width: 767px) {
+    .social-page .profile-header .cover .cover-body .profile-pic {
+        width: 70px;
+    }
+}
+
+.social-page .profile-header .cover .cover-body .profile-name {
+    font-size: 20px;
+    font-weight: 600;
+    margin-left: 17px;
+}
+
+.social-page .profile-header .header-links {
+    padding: 15px;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: center;
+    justify-content: center;
+    background: #fff;
+    border-radius: 0 0 .25rem .25rem;
+}
+
+.social-page .profile-header .header-links ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.social-page .profile-header .header-links ul li a {
+    color: #000;
+    -webkit-transition: all .2s ease;
+    transition: all .2s ease;
+}
+
+.social-page .profile-header .header-links ul li:hover,
+.social-page .profile-header .header-links ul li.active {
+    color: #727cf5;
+}
+
+.social-page .profile-header .header-links ul li:hover a,
+.social-page .profile-header .header-links ul li.active a {
+    color: #727cf5;
+}
+
+.social-page .profile-body .left-wrapper .social-links a {
+    width: 30px;
+    height: 30px;
+}
+
+.social-page .profile-body .right-wrapper .latest-photos > .row {
+    margin-right: 0;
+    margin-left: 0;
+}
+
+.social-page .profile-body .right-wrapper .latest-photos > .row > div {
+    padding-left: 3px;
+    padding-right: 3px;
+}
+
+.social-page .profile-body .right-wrapper .latest-photos > .row > div figure {
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+    margin-bottom: 6px;
+}
+
+.social-page .profile-body .right-wrapper .latest-photos > .row > div figure:hover {
+    -webkit-transform: scale(1.06);
+    transform: scale(1.06);
+}
+
+.social-page .profile-body .right-wrapper .latest-photos > .row > div figure img {
+    border-radius: .25rem;
+}
+
+.rtl .social-page .profile-header .cover .cover-body .profile-name {
+    margin-left: 0;
+    margin-right: 17px;
+}
+.img-xs {
+    width: 37px;
+    height: 37px;
+}
+.rounded-circle {
+    border-radius: 50% !important;
+}
+img {
+    vertical-align: middle;
+    border-style: none;
+}
+
+.card-header:first-child {
+    border-radius: 0 0 0 0;
+}
+.card-header {
+    padding: 0.875rem 1.5rem;
+    margin-bottom: 0;
+    background-color: rgba(0, 0, 0, 0);
+    border-bottom: 1px solid #f2f4f9;
+}
+
+.card-footer:last-child {
+    border-radius: 0 0 0 0;
+}
+.card-footer {
+    padding: 0.875rem 1.5rem;
+    background-color: rgba(0, 0, 0, 0);
+    border-top: 1px solid #f2f4f9;
+}
+
+.grid-margin {
+    margin-bottom: 1rem;
+}
+
+.card {
+    box-shadow: 0 0 10px 0 rgba(183, 192, 206, 0.2);
+    -webkit-box-shadow: 0 0 10px 0 rgba(183, 192, 206, 0.2);
+    -moz-box-shadow: 0 0 10px 0 rgba(183, 192, 206, 0.2);
+    -ms-box-shadow: 0 0 10px 0 rgba(183, 192, 206, 0.2);
+}
+.rounded {
+    border-radius: 0.25rem !important;
+}
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid #f2f4f9;
+    border-radius: 0.25rem;
+}
+
+.ml-2{
+    line-height: 5px;
+    margin-top: 18px;
+}
+
+.propic{
+    margin-right: 7px;
+}
+
+.groups-title{
+    background-color: rgba(13, 110, 253, 0.8);
+    border-radius: 10px;
+    color: white;
+    padding: 10px;
+    width: 100%
+}
+
+.groups-list{
+    display: inline-block;
+}
+
+.groups-item{
+    display: block;
+    margin-top:10px;
+    margin-right:10px;
+    margin-bottom:10px;
+}
+
+.container-amici {
+    width: 300px;
+    position: fixed;
+}
+
+.body-amici {
+    height: 758px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.dashboard {
+    position: fixed;
+    width:250px
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #eee;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #ddd;
+}
+
+.share-comments{
+  margin-right: 5px;
+}
+
+.hr1{
+  margin-bottom: 5px;
+  margin-top: 10px;
+}
+
+.show {display: block;}
+
+.heart{
+    color:rgba(255, 0, 0, 0.6);
+    fill:rgba(255, 0, 0, 0.7);
+}
+
+.overflow {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    width: 150px;
+    height: 25px;
+    display: block;
+    overflow: hidden;
+}
