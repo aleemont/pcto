@@ -34,6 +34,11 @@ body {
         height: 110px;
         overflow: hidden;
     }
+    .share {
+        position: absolute;
+        margin-bottom: -5;
+        
+    }
 }
 
 @media (min-width: 2400px) {
@@ -265,7 +270,7 @@ img {
 }
 
 ::-webkit-scrollbar {
-  width: 10px;
+  width: 6px;
 }
 
 /* Track */
@@ -306,4 +311,21 @@ img {
     height: 25px;
     display: block;
     overflow: hidden;
+}
+
+.newpost{
+  color: #0d6dfd;
+  fill: #0d6dfd;
+  stroke: #0d6dfd;
+}
+
+textarea {
+  resize: none;
+}
+
+.share {
+    position: absolute;
+    right:20;
+    bottom:5;
+    height: 19%;
 }
