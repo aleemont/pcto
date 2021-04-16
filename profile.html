@@ -28,17 +28,23 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <ul class="navbar-nav mr-auto">
-                    <li class="nav-item">
-                        <a href="index.html" class="nav-link material-icons" style="display: inline-block;">home</a>
-                        <a href="#" class="nav-collapse" style="position: relative; bottom:4px">Home</a>
+                    <li class="nav-item active">
+                        <button class="btn p-0" onclick="location.href = 'index.html';">
+                            <span class="nav-link material-icons" style="display: inline-block;">home</span>
+                            <span class="nav-collapse" style="position: relative; bottom:4px">Home</span>
+                        </button>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link material-icons" style="display: inline-block;">question_answer</a>
-                        <a href="#" class="active nav-collapse" style="position: relative; bottom:4px">Chat</a>
+                        <button class="btn p-0">
+                            <span class="nav-link material-icons" style="display: inline-block;">question_answer</span>
+                            <span class="active nav-collapse" style="position: relative; bottom:4px">Chat</span>
+                        </button>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link material-icons" style="display: inline-block;">notifications</a>
-                        <a href="#" class="active nav-collapse" style="position: relative; bottom:4px">Notifiche</a>
+                        <button class="btn p-0">
+                            <span class="nav-link material-icons" style="display: inline-block;">notifications</span>
+                            <span class="active nav-collapse" style="position: relative; bottom:4px">Notifiche</span>
+                        </button>
                     </li>
                 </ul>
                 <li class="navbar-nav nav-item dropdown mt-2 mt-md-0">
@@ -118,7 +124,7 @@
             </div>
         </div>
         <!--HEADER CONTENT end-->
-        <div class="container">
+        <div class="container social-page">
         <div class="row">
             <div class="col-lg-8 col-md-12 middle-wrapper">
                 <div class="row">
@@ -142,31 +148,33 @@
                                   </div>
                               </div>
                           </div>
-                          <div class="card-body mb-0">
-                              <textarea class="form-control" placeholder="Scrivi il tuo post..." rows=3></textarea>
-            
-                          </div>
-            
-                          <div class="card-footer mt-0 pt-2 pb-2" >
-                              <div class="d-flex post-actions mt-0 mb-0">
-                                  <a href="javascript:;" class="d-flex align-items-center text-muted mr-4">
-                                      <i role="img" style="background-image: url(&quot;https://static.xx.fbcdn.net/rsrc.php/v3/yU/r/vuxzbjiVZ68.png&quot;); background-position: 0px -100px; background-size: auto; width: 24px; height: 24px; background-repeat: no-repeat; display: inline-block;"></i>
-                                      <p class="d-none d-md-block ml-2">Foto/Video</p>
-                                  </a>
-                                  <a href="javascript:;" class="d-flex align-items-center text-muted mr-4">
-                                      <i style="height: 24px; width: 24px; background-image: url(&quot;https://static.xx.fbcdn.net/rsrc.php/v3/yU/r/vuxzbjiVZ68.png&quot;); background-position: 0px -50px; background-size: auto; background-repeat: no-repeat; display: inline-block;"></i>
-                                      <p class="d-none d-md-block ml-2">Tagga</p>
-                                  </a>
-            
-                                <button class="btn btn-outline-info d-flex align-items-center share small-button">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="13" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-share icon-md">
-                                        <path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8"></path>
-                                        <polyline points="16 6 12 2 8 6"></polyline>
-                                        <line x1="12" y1="2" x2="12" y2="15"></line>
-                                    </svg>
-                                    <p class="d-none d-md-block ml-2">Pubblica</p>
-                                </button>
-                              </div>
+                          <form class="m-0">
+                            <div class="card-body mb-0">
+                                <textarea class="form-control" placeholder="Scrivi il tuo post..." rows=3></textarea>
+                
+                            </div>
+                
+                            <div class="card-footer mt-0 pt-2 pb-2" >
+                                <div class="d-flex post-actions mt-0 mb-0">
+                                    <a href="javascript:;" class="d-flex align-items-center text-muted mr-4">
+                                        <i role="img" style="background-image: url(&quot;https://static.xx.fbcdn.net/rsrc.php/v3/yU/r/vuxzbjiVZ68.png&quot;); background-position: 0px -100px; background-size: auto; width: 24px; height: 24px; background-repeat: no-repeat; display: inline-block;"></i>
+                                        <p class="d-none d-md-block ml-2">Foto/Video</p>
+                                    </a>
+                                    <a href="javascript:;" class="d-flex align-items-center text-muted mr-4">
+                                        <i style="height: 24px; width: 24px; background-image: url(&quot;https://static.xx.fbcdn.net/rsrc.php/v3/yU/r/vuxzbjiVZ68.png&quot;); background-position: 0px -50px; background-size: auto; background-repeat: no-repeat; display: inline-block;"></i>
+                                        <p class="d-none d-md-block ml-2">Tagga</p>
+                                    </a>
+                
+                                    <button class="btn btn-outline-info d-flex align-items-center share small-button" type="reset">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="13" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-share icon-md">
+                                            <path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8"></path>
+                                            <polyline points="16 6 12 2 8 6"></polyline>
+                                            <line x1="12" y1="2" x2="12" y2="15"></line>
+                                        </svg>
+                                        <p class="d-none d-md-block ml-2">Pubblica</p>
+                                    </button>
+                                </div>
+                            </form>
                           </div>
                       </div>
                   </div>
@@ -208,28 +216,28 @@
 
                                 </a>
                                 <hr class="hr1">
-                                <div class="d-flex post-actions">
+                                <div class="d-flex post-actions mt-2">
             
-                                    <button class="d-flex align-items-center text-muted mr-4 btn" id="like-click">
+                                    <button class="d-flex align-items-center p-0 text-muted mr-4 btn" id="like-click">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-heart icon-md" id="like">
                                             <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
                                         </svg>
                                         <p class="d-none d-md-block ml-2">Like</p>
                                     </button>
-                                    <a href="javascript:;" class="d-flex align-items-center text-muted mr-4">
+                                    <button class="d-flex align-items-center p-0 text-muted mr-4 btn">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-message-square icon-md">
                                             <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
                                         </svg>
-                                        <p class="d-none d-md-block ml-2">Commenti</p>
-                                    </a>
-                                    <a href="javascript:;" class="d-flex align-items-center text-muted">
+                                        <p class="d-none d-md-block ml-2">Commenta</p>
+                                    </button>
+                                    <button class="d-flex align-items-center p-0 text-muted btn">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-share icon-md">
                                             <path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8"></path>
                                             <polyline points="16 6 12 2 8 6"></polyline>
                                             <line x1="12" y1="2" x2="12" y2="15"></line>
                                         </svg>
                                         <p class="d-none d-md-block ml-2">Condividi</p>
-                                    </a>
+                                    </button>
                                 </div>
                             </div>
                         </div>
@@ -284,27 +292,28 @@
             
                                 </a>
                                 <hr class="hr1">
-                                <div class="d-flex post-actions">
-                                    <a href="javascript:;" class="d-flex align-items-center text-muted mr-4">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-heart icon-md">
+                                <div class="d-flex post-actions mt-2">
+            
+                                    <button class="d-flex align-items-center p-0 text-muted mr-4 btn" id="like-click2">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-heart icon-md" id="like2">
                                             <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
                                         </svg>
                                         <p class="d-none d-md-block ml-2">Like</p>
-                                    </a>
-                                    <a href="javascript:;" class="d-flex align-items-center text-muted mr-4">
+                                    </button>
+                                    <button class="d-flex align-items-center p-0 text-muted mr-4 btn">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-message-square icon-md">
                                             <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
                                         </svg>
-                                        <p class="d-none d-md-block ml-2">Commenti</p>
-                                    </a>
-                                    <a href="javascript:;" class="d-flex align-items-center text-muted">
+                                        <p class="d-none d-md-block ml-2">Commenta</p>
+                                    </button>
+                                    <button class="d-flex align-items-center p-0 text-muted btn">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-share icon-md">
                                             <path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8"></path>
                                             <polyline points="16 6 12 2 8 6"></polyline>
                                             <line x1="12" y1="2" x2="12" y2="15"></line>
                                         </svg>
                                         <p class="d-none d-md-block ml-2">Condividi</p>
-                                    </a>
+                                    </button>
                                 </div>
                             </div>
                         </div>
@@ -785,20 +794,36 @@
             </div>
             <!-- right wrapper end -->
             </div>
+            </div>
+            <div class="mobile-bar btn-group fixed-bottom" style="width: 100%; height: 7%;">
+                <button href="#" class="col-sm-6 btn btn-light">Dashboard</button>
+                <button href="#" class="col-sm-6 btn btn-light" id="chat">Chat</button>
             </div> 
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
         <script>
             document.getElementById("like-click").onclick = function(){
-            if(document.getElementById("like").style.fill != 'rgba(255, 0, 0, 0.7)')
-            {
-	            document.getElementById("like").style.fill = 'rgba(255, 0, 0, 0.7)';
-                document.getElementById("like").style.stroke = 'rgba(255, 0, 0, 0.6)';
+                if(document.getElementById("like").style.fill != 'rgba(255, 0, 0, 0.7)')
+                {
+                    document.getElementById("like").style.fill = 'rgba(255, 0, 0, 0.7)';
+                    document.getElementById("like").style.stroke = 'rgba(255, 0, 0, 0.6)';
+                }
+                else {
+                    document.getElementById("like").style.fill = 'rgb(255, 255, 255)';
+                    document.getElementById("like").style.stroke = 'rgb(0, 0, 0, 0.6)';
+                }
             }
-            else {
-                document.getElementById("like").style.fill = 'rgb(255, 255, 255)';
-                document.getElementById("like").style.stroke = 'rgb(0, 0, 0, 0.6)';
-            }
+            
+            document.getElementById("like-click2").onclick = function(){
+                if(document.getElementById("like2").style.fill != 'rgba(255, 0, 0, 0.7)')
+                {
+                    document.getElementById("like2").style.fill = 'rgba(255, 0, 0, 0.7)';
+                    document.getElementById("like2").style.stroke = 'rgba(255, 0, 0, 0.6)';
+                }
+                else {
+                    document.getElementById("like2").style.fill = 'rgb(255, 255, 255)';
+                    document.getElementById("like2").style.stroke = 'rgb(0, 0, 0, 0.6)';
+                }
             }
         </script>
     </body>

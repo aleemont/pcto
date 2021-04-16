@@ -30,6 +30,9 @@
         bottom:5;
         height: 19%;
     }
+    .mobile-bar {
+        display: none;
+      }
 }
 
 .overflow-profile {
@@ -49,6 +52,9 @@
         height: 25px;
         display: block;
         overflow: hidden;
+    }
+    .social-page {
+        margin-bottom: 65px;
     }
 }
 
