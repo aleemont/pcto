@@ -18,14 +18,13 @@ TODO:
     <ul>
       <li>La dashboard laterale sx collassa con la colonna centrale</li>
     </ul>
-  <li>Sistemare icone in profile.html</li>
-    <ul>
-      <li>Le icone svg per accettare o rifiutare le richieste di amicizia <br> sono troppo distanti quando il display è xl</li>
-    </ul>
    <li>Migliorare ridimensionamento pulsante "Pubblica"</li>
     <ul>
       <li>L'altezza del pulsante supera il footer della card su schermi piccoli</li>
     </li>
+    <ul>
+       <li>Aggiungere tasto per modificare la copertina in profile.hmtl</li
+   </ul>
 </ol>
 
 Changelog: <br><br>
@@ -43,4 +42,9 @@ Changelog: <br><br>
   <li>Creato assets/css/profile.css</li>
   <li>Aggiunto assets/img/basic-tick-svgrepo-com.svg</li>
   <li>Aggiunto assets/img/x-symbol-svgrepo-com.svg</li>
+</ul>
+16 Aprile 2021: Aggiunta sezione 'Potresti conoscere' (b5c38dc6d64d85cb7a7618e839fd6e5324245d8f)<br><br>
+<ul>
+  <li>Aggiunta sezione 'Potresti conoscere'</li>
+  <li>Sistemate icone per accettare/rifiutare le richieste di amicizia</li>
 </ul>
