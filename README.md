@@ -13,18 +13,9 @@ Si vuole realizzare il _front-end_ di un social-network utilizzando HTML, CSS (c
 </ul>
 
 TODO:
+
 <ol>
-  <li>Migliorare responsività della homepage</li>
-    <ul>
-      <li>La dashboard laterale sx collassa con la colonna centrale</li>
-    </ul>
-   <li>Migliorare ridimensionamento pulsante "Pubblica"</li>
-    <ul>
-      <li>L'altezza del pulsante supera il footer della card su schermi piccoli</li>
-    </li>
-    <ul>
-       <li>Aggiungere tasto per modificare la copertina in profile.hmtl</li
-   </ul>
+  <li>Aggiungere funzionalità pulsanti "Dashboard" e "Chat"</li>
 </ol>
 
 Changelog: <br><br>
