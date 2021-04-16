@@ -29,14 +29,16 @@
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item active">
-                        <a href="#" class="nav-link active material-icons">home</a>
-                        <!-- <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a> -->
+                        <a href="#" class="nav-link material-icons" style="display: inline-block;">home</a>
+                        <a href="#" class="nav-collapse" style="position: relative; bottom:4px">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link material-icons">question_answer</a>
+                        <a href="#" class="nav-link material-icons" style="display: inline-block;">question_answer</a>
+                        <a href="#" class="active nav-collapse" style="position: relative; bottom:4px">Chat</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link material-icons">notifications</a>
+                        <a href="#" class="nav-link material-icons" style="display: inline-block;">notifications</a>
+                        <a href="#" class="active nav-collapse" style="position: relative; bottom:4px">Notifiche</a>
                     </li>
                 </ul>
                 <li class="navbar-nav nav-item dropdown mt-2 mt-md-0">
@@ -305,58 +307,253 @@
                                 <div class="d-flex align-items-center hover-pointer">
                                     <img class="img-xs rounded-circle" src="https://image.flaticon.com/icons/png/512/147/147144.png" alt="">
                                         <div class="ml-2">
-                                            <span class="overflow pt-2">Nome Cognome okok ciao okokok</span>
+                                            <span class="overflow-profile pt-2">Nome Cognome okok ciao okokok</span>
                                             <p class="tx-11 text-muted mt-0 ">Qualcosa</p>
                                         </div>
                                 </div>
-                                <button class="btn btn-icon p-0 align-self-center" style="height: 18px; width: 18px; fill:green">
-                                    <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                                        width="16px" height="16px" viewBox="0 0 469.184 469.185" style="enable-background:new 0 0 469.184 469.185;"
+                                <div class="d-flex align-items-center">
+                                    <button class="btn btn-icon p-0 mr-2 align-self-center" style="height: 18px; width: 18px; fill:green">
+                                        <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                            width="16px" height="16px" viewBox="0 0 469.184 469.185" style="enable-background:new 0 0 469.184 469.185;"
+                                            xml:space="preserve">
+                                            <path d="M462.5,96.193l-21.726-21.726c-8.951-8.95-23.562-8.95-32.59,0L180.368,302.361l-119.34-119.34
+                                            c-8.95-8.951-23.562-8.951-32.589,0L6.712,204.747c-8.95,8.951-8.95,23.562,0,32.589L163.997,394.62
+                                            c4.514,4.514,10.327,6.809,16.218,6.809s11.781-2.295,16.219-6.809L462.27,128.783C471.45,119.68,471.45,105.145,462.5,96.193z">
+                                        </path>
+                                        </svg>
+                                    </button>
+                                    <button class="btn btn-icon p-0 align-self-center" style="height: 18px; width: 18px; fill:red">
+                                        <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                        width="14px" height="14px" viewBox="0 0 469.184 469.185" style="enable-background:new 0 0 469.184 469.185;"
                                         xml:space="preserve">
-                                        <path d="M462.5,96.193l-21.726-21.726c-8.951-8.95-23.562-8.95-32.59,0L180.368,302.361l-119.34-119.34
-                                        c-8.95-8.951-23.562-8.951-32.589,0L6.712,204.747c-8.95,8.951-8.95,23.562,0,32.589L163.997,394.62
-                                        c4.514,4.514,10.327,6.809,16.218,6.809s11.781-2.295,16.219-6.809L462.27,128.783C471.45,119.68,471.45,105.145,462.5,96.193z">
-                                    </path>
-                                    </svg>
-                                </button>
-                                <button class="btn btn-icon p-0 align-self-center" style="height: 18px; width: 18px; fill:red">
-                                    <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	                                width="14px" height="14px" viewBox="0 0 469.184 469.185" style="enable-background:new 0 0 469.184 469.185;"
-                                    xml:space="preserve">
-                                        <path d="M285.08,230.397L456.218,59.27c6.076-6.077,6.076-15.911,0-21.986L423.511,4.565c-2.913-2.911-6.866-4.55-10.992-4.55
-                                            c-4.127,0-8.08,1.639-10.993,4.55l-171.138,171.14L59.25,4.565c-2.913-2.911-6.866-4.55-10.993-4.55
-                                            c-4.126,0-8.08,1.639-10.992,4.55L4.558,37.284c-6.077,6.075-6.077,15.909,0,21.986l171.138,171.128L4.575,401.505
-                                            c-6.074,6.077-6.074,15.911,0,21.986l32.709,32.719c2.911,2.911,6.865,4.55,10.992,4.55c4.127,0,8.08-1.639,10.994-4.55
-                                            l171.117-171.12l171.118,171.12c2.913,2.911,6.866,4.55,10.993,4.55c4.128,0,8.081-1.639,10.992-4.55l32.709-32.719
-                                            c6.074-6.075,6.074-15.909,0-21.986L285.08,230.397z"></path>
-                                    </svg>
-                                </button>
-                            </div>
-                            <div class="d-flex justify-content-between mb-2 pb-2 border-bottom">
-                                <div class="d-flex align-items-center hover-pointer">
-                                    <img class="img-xs rounded-circle" src="https://image.flaticon.com/icons/png/512/147/147144.png" alt="">
-                                        <div class="ml-2">
-                                            <span class="overflow pt-2">Nome Cognome okok ciao okokok</span>
-                                            <p class="tx-11 text-muted mt-0 ">Qualcosa</p>
-                                        </div>
+                                            <path d="M285.08,230.397L456.218,59.27c6.076-6.077,6.076-15.911,0-21.986L423.511,4.565c-2.913-2.911-6.866-4.55-10.992-4.55
+                                                c-4.127,0-8.08,1.639-10.993,4.55l-171.138,171.14L59.25,4.565c-2.913-2.911-6.866-4.55-10.993-4.55
+                                                c-4.126,0-8.08,1.639-10.992,4.55L4.558,37.284c-6.077,6.075-6.077,15.909,0,21.986l171.138,171.128L4.575,401.505
+                                                c-6.074,6.077-6.074,15.911,0,21.986l32.709,32.719c2.911,2.911,6.865,4.55,10.992,4.55c4.127,0,8.08-1.639,10.994-4.55
+                                                l171.117-171.12l171.118,171.12c2.913,2.911,6.866,4.55,10.993,4.55c4.128,0,8.081-1.639,10.992-4.55l32.709-32.719
+                                                c6.074-6.075,6.074-15.909,0-21.986L285.08,230.397z"></path>
+                                        </svg>
+                                    </button>
                                 </div>
                             </div>
                             <div class="d-flex justify-content-between mb-2 pb-2 border-bottom">
                                 <div class="d-flex align-items-center hover-pointer">
                                     <img class="img-xs rounded-circle" src="https://image.flaticon.com/icons/png/512/147/147144.png" alt="">
                                         <div class="ml-2">
-                                            <span class="overflow pt-2">Nome Cognome okok ciao okokok</span>
+                                            <span class="overflow-profile pt-2">Nome Cognome okok ciao okokok</span>
                                             <p class="tx-11 text-muted mt-0 ">Qualcosa</p>
                                         </div>
+                                </div>
+                                <div class="d-flex align-items-center">
+                                    <button class="btn btn-icon p-0 mr-2 align-self-center" style="height: 18px; width: 18px; fill:green">
+                                        <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                            width="16px" height="16px" viewBox="0 0 469.184 469.185" style="enable-background:new 0 0 469.184 469.185;"
+                                            xml:space="preserve">
+                                            <path d="M462.5,96.193l-21.726-21.726c-8.951-8.95-23.562-8.95-32.59,0L180.368,302.361l-119.34-119.34
+                                            c-8.95-8.951-23.562-8.951-32.589,0L6.712,204.747c-8.95,8.951-8.95,23.562,0,32.589L163.997,394.62
+                                            c4.514,4.514,10.327,6.809,16.218,6.809s11.781-2.295,16.219-6.809L462.27,128.783C471.45,119.68,471.45,105.145,462.5,96.193z">
+                                        </path>
+                                        </svg>
+                                    </button>
+                                    <button class="btn btn-icon p-0 align-self-center" style="height: 18px; width: 18px; fill:red">
+                                        <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                        width="14px" height="14px" viewBox="0 0 469.184 469.185" style="enable-background:new 0 0 469.184 469.185;"
+                                        xml:space="preserve">
+                                            <path d="M285.08,230.397L456.218,59.27c6.076-6.077,6.076-15.911,0-21.986L423.511,4.565c-2.913-2.911-6.866-4.55-10.992-4.55
+                                                c-4.127,0-8.08,1.639-10.993,4.55l-171.138,171.14L59.25,4.565c-2.913-2.911-6.866-4.55-10.993-4.55
+                                                c-4.126,0-8.08,1.639-10.992,4.55L4.558,37.284c-6.077,6.075-6.077,15.909,0,21.986l171.138,171.128L4.575,401.505
+                                                c-6.074,6.077-6.074,15.911,0,21.986l32.709,32.719c2.911,2.911,6.865,4.55,10.992,4.55c4.127,0,8.08-1.639,10.994-4.55
+                                                l171.117-171.12l171.118,171.12c2.913,2.911,6.866,4.55,10.993,4.55c4.128,0,8.081-1.639,10.992-4.55l32.709-32.719
+                                                c6.074-6.075,6.074-15.909,0-21.986L285.08,230.397z"></path>
+                                        </svg>
+                                    </button>
                                 </div>
                             </div>
                             <div class="d-flex justify-content-between mb-2 pb-2 border-bottom">
                                 <div class="d-flex align-items-center hover-pointer">
                                     <img class="img-xs rounded-circle" src="https://image.flaticon.com/icons/png/512/147/147144.png" alt="">
                                         <div class="ml-2">
-                                            <span class="overflow pt-2">Nome Cognome okok ciao okokok</span>
+                                            <span class="overflow-profile pt-2">Nome Cognome okok ciao okokok</span>
                                             <p class="tx-11 text-muted mt-0 ">Qualcosa</p>
                                         </div>
+                                </div>
+                                <div class="d-flex align-items-center">
+                                    <button class="btn btn-icon p-0 mr-2 align-self-center" style="height: 18px; width: 18px; fill:green">
+                                        <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                            width="16px" height="16px" viewBox="0 0 469.184 469.185" style="enable-background:new 0 0 469.184 469.185;"
+                                            xml:space="preserve">
+                                            <path d="M462.5,96.193l-21.726-21.726c-8.951-8.95-23.562-8.95-32.59,0L180.368,302.361l-119.34-119.34
+                                            c-8.95-8.951-23.562-8.951-32.589,0L6.712,204.747c-8.95,8.951-8.95,23.562,0,32.589L163.997,394.62
+                                            c4.514,4.514,10.327,6.809,16.218,6.809s11.781-2.295,16.219-6.809L462.27,128.783C471.45,119.68,471.45,105.145,462.5,96.193z">
+                                        </path>
+                                        </svg>
+                                    </button>
+                                    <button class="btn btn-icon p-0 align-self-center" style="height: 18px; width: 18px; fill:red">
+                                        <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                        width="14px" height="14px" viewBox="0 0 469.184 469.185" style="enable-background:new 0 0 469.184 469.185;"
+                                        xml:space="preserve">
+                                            <path d="M285.08,230.397L456.218,59.27c6.076-6.077,6.076-15.911,0-21.986L423.511,4.565c-2.913-2.911-6.866-4.55-10.992-4.55
+                                                c-4.127,0-8.08,1.639-10.993,4.55l-171.138,171.14L59.25,4.565c-2.913-2.911-6.866-4.55-10.993-4.55
+                                                c-4.126,0-8.08,1.639-10.992,4.55L4.558,37.284c-6.077,6.075-6.077,15.909,0,21.986l171.138,171.128L4.575,401.505
+                                                c-6.074,6.077-6.074,15.911,0,21.986l32.709,32.719c2.911,2.911,6.865,4.55,10.992,4.55c4.127,0,8.08-1.639,10.994-4.55
+                                                l171.117-171.12l171.118,171.12c2.913,2.911,6.866,4.55,10.993,4.55c4.128,0,8.081-1.639,10.992-4.55l32.709-32.719
+                                                c6.074-6.075,6.074-15.909,0-21.986L285.08,230.397z"></path>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-between mb-2 pb-2 border-bottom">
+                                <div class="d-flex align-items-center hover-pointer">
+                                    <img class="img-xs rounded-circle" src="https://image.flaticon.com/icons/png/512/147/147144.png" alt="">
+                                        <div class="ml-2">
+                                            <span class="overflow-profile pt-2">Nome Cognome okok ciao okokok</span>
+                                            <p class="tx-11 text-muted mt-0 ">Qualcosa</p>
+                                        </div>
+                                </div>
+                                <div class="d-flex align-items-center">
+                                    <button class="btn btn-icon p-0 mr-2 align-self-center" style="height: 18px; width: 18px; fill:green">
+                                        <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                            width="16px" height="16px" viewBox="0 0 469.184 469.185" style="enable-background:new 0 0 469.184 469.185;"
+                                            xml:space="preserve">
+                                            <path d="M462.5,96.193l-21.726-21.726c-8.951-8.95-23.562-8.95-32.59,0L180.368,302.361l-119.34-119.34
+                                            c-8.95-8.951-23.562-8.951-32.589,0L6.712,204.747c-8.95,8.951-8.95,23.562,0,32.589L163.997,394.62
+                                            c4.514,4.514,10.327,6.809,16.218,6.809s11.781-2.295,16.219-6.809L462.27,128.783C471.45,119.68,471.45,105.145,462.5,96.193z">
+                                        </path>
+                                        </svg>
+                                    </button>
+                                    <button class="btn btn-icon p-0 align-self-center" style="height: 18px; width: 18px; fill:red">
+                                        <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                        width="14px" height="14px" viewBox="0 0 469.184 469.185" style="enable-background:new 0 0 469.184 469.185;"
+                                        xml:space="preserve">
+                                            <path d="M285.08,230.397L456.218,59.27c6.076-6.077,6.076-15.911,0-21.986L423.511,4.565c-2.913-2.911-6.866-4.55-10.992-4.55
+                                                c-4.127,0-8.08,1.639-10.993,4.55l-171.138,171.14L59.25,4.565c-2.913-2.911-6.866-4.55-10.993-4.55
+                                                c-4.126,0-8.08,1.639-10.992,4.55L4.558,37.284c-6.077,6.075-6.077,15.909,0,21.986l171.138,171.128L4.575,401.505
+                                                c-6.074,6.077-6.074,15.911,0,21.986l32.709,32.719c2.911,2.911,6.865,4.55,10.992,4.55c4.127,0,8.08-1.639,10.994-4.55
+                                                l171.117-171.12l171.118,171.12c2.913,2.911,6.866,4.55,10.993,4.55c4.128,0,8.081-1.639,10.992-4.55l32.709-32.719
+                                                c6.074-6.075,6.074-15.909,0-21.986L285.08,230.397z"></path>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                            
+                            </div>
+                        </div>
+                    </div>
+                    <!--Potresti conoscere-->
+                    <div class="col-md-12 grid-margin">
+                        <div class="card rounded container-richieste">
+                            <div class="card-body body-amici">
+                            <h6 class="card-title">Potresti conoscere</h6>
+                            <div class="d-flex justify-content-between mb-2 pb-2 border-bottom">
+                                <div class="d-flex align-items-center hover-pointer">
+                                    <img class="img-xs rounded-circle" src="https://image.flaticon.com/icons/png/512/147/147144.png" alt="">
+                                        <div class="ml-2">
+                                            <span class="overflow-profile pt-2">Nome Cognome okok ciao okokok</span>
+                                            <p class="tx-11 text-muted mt-0 ">Qualcosa</p>
+                                        </div>
+                                </div>
+                                <div class="d-flex align-items-center">
+                                    <button class="btn btn-icon p-0 mr-2 align-self-center" style="height: 18px; width: 25px; fill:#0d6efd">
+                                        <svg x="0px" y="0px"width="20px" height="16px" viewBox="0 0 469.184 469.185" style="enable-background:new 0 0 469.184 469.185;" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="m400.601562 241.5c-61.425781 0-111.398437 49.972656-111.398437 111.398438 0 61.425781 49.972656 
+                                            111.402343 111.398437 111.402343 61.425782 0 111.398438-49.972656 111.398438-111.402343 
+                                            0-61.425782-49.976562-111.398438-111.398438-111.398438zm32.132813 126.398438h-17.132813v17.132812c0 
+                                            8.285156-6.714843 15-15 15-8.285156 0-15-6.714844-15-15v-17.132812h-17.132812c-8.285156 0-15-6.714844-15-15 0-8.28125 
+                                            6.714844-15 15-15h17.132812v-17.132813c0-8.28125 6.714844-15 15-15 8.285157 0 15 6.71875 15 15v17.132813h17.132813c8.285156 
+                                            0 15 6.71875 15 15 0 8.285156-6.714844 15-15 15zm0 0"></path>
+                                            <path d="m159.601562 223.300781c61.425782 0 111.398438-49.976562 111.398438-111.402343 
+                                            0-61.425782-49.976562-111.398438-111.398438-111.398438-61.425781 0-111.402343 49.972656-111.402343 
+                                            111.398438 0 61.429687 49.976562 111.402343 111.402343 111.402343zm0 0"></path>
+                                            <path d="m291.453125 263.101562c-11.269531-16.496093-25.546875-30.792968-42.042969-42.066406-24.4375 20.148438-55.734375 
+                                            32.265625-89.808594 32.265625-34.074218 0-65.371093-12.117187-89.8125-32.265625-42.097656 28.765625-69.789062 77.140625-69.789062 
+                                            131.863282v56.234374c0 30.421876 24.746094 55.167969 55.164062 55.167969h208.867188c13.421875 0 25.734375-4.820312 
+                                            35.308594-12.816406-24.820313-25.492187-40.140625-60.28125-40.140625-98.585937 0-34.066407 12.113281-65.359376 32.253906-89.796876zm0 0"></path>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-between mb-2 pb-2 border-bottom">
+                                <div class="d-flex align-items-center hover-pointer">
+                                    <img class="img-xs rounded-circle" src="https://image.flaticon.com/icons/png/512/147/147144.png" alt="">
+                                        <div class="ml-2">
+                                            <span class="overflow-profile pt-2">Nome Cognome okok ciao okokok</span>
+                                            <p class="tx-11 text-muted mt-0 ">Qualcosa</p>
+                                        </div>
+                                </div>
+                                <div class="d-flex align-items-center">
+                                    <button class="btn btn-icon p-0 mr-2 align-self-center" style="height: 18px; width: 25px; fill:#0d6efd">
+                                        <svg x="0px" y="0px"width="20px" height="16px" viewBox="0 0 469.184 469.185" style="enable-background:new 0 0 469.184 469.185;" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="m400.601562 241.5c-61.425781 0-111.398437 49.972656-111.398437 111.398438 0 61.425781 49.972656 
+                                            111.402343 111.398437 111.402343 61.425782 0 111.398438-49.972656 111.398438-111.402343 
+                                            0-61.425782-49.976562-111.398438-111.398438-111.398438zm32.132813 126.398438h-17.132813v17.132812c0 
+                                            8.285156-6.714843 15-15 15-8.285156 0-15-6.714844-15-15v-17.132812h-17.132812c-8.285156 0-15-6.714844-15-15 0-8.28125 
+                                            6.714844-15 15-15h17.132812v-17.132813c0-8.28125 6.714844-15 15-15 8.285157 0 15 6.71875 15 15v17.132813h17.132813c8.285156 
+                                            0 15 6.71875 15 15 0 8.285156-6.714844 15-15 15zm0 0"></path>
+                                            <path d="m159.601562 223.300781c61.425782 0 111.398438-49.976562 111.398438-111.402343 
+                                            0-61.425782-49.976562-111.398438-111.398438-111.398438-61.425781 0-111.402343 49.972656-111.402343 
+                                            111.398438 0 61.429687 49.976562 111.402343 111.402343 111.402343zm0 0"></path>
+                                            <path d="m291.453125 263.101562c-11.269531-16.496093-25.546875-30.792968-42.042969-42.066406-24.4375 20.148438-55.734375 
+                                            32.265625-89.808594 32.265625-34.074218 0-65.371093-12.117187-89.8125-32.265625-42.097656 28.765625-69.789062 77.140625-69.789062 
+                                            131.863282v56.234374c0 30.421876 24.746094 55.167969 55.164062 55.167969h208.867188c13.421875 0 25.734375-4.820312 
+                                            35.308594-12.816406-24.820313-25.492187-40.140625-60.28125-40.140625-98.585937 0-34.066407 12.113281-65.359376 32.253906-89.796876zm0 0"></path>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-between mb-2 pb-2 border-bottom">
+                                <div class="d-flex align-items-center hover-pointer">
+                                    <img class="img-xs rounded-circle" src="https://image.flaticon.com/icons/png/512/147/147144.png" alt="">
+                                        <div class="ml-2">
+                                            <span class="overflow-profile pt-2">Nome Cognome okok ciao okokok</span>
+                                            <p class="tx-11 text-muted mt-0 ">Qualcosa</p>
+                                        </div>
+                                </div>
+                                <div class="d-flex align-items-center">
+                                    <button class="btn btn-icon p-0 mr-2 align-self-center" style="height: 18px; width: 25px; fill:#0d6efd">
+                                        <svg x="0px" y="0px"width="20px" height="16px" viewBox="0 0 469.184 469.185" style="enable-background:new 0 0 469.184 469.185;" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="m400.601562 241.5c-61.425781 0-111.398437 49.972656-111.398437 111.398438 0 61.425781 49.972656 
+                                            111.402343 111.398437 111.402343 61.425782 0 111.398438-49.972656 111.398438-111.402343 
+                                            0-61.425782-49.976562-111.398438-111.398438-111.398438zm32.132813 126.398438h-17.132813v17.132812c0 
+                                            8.285156-6.714843 15-15 15-8.285156 0-15-6.714844-15-15v-17.132812h-17.132812c-8.285156 0-15-6.714844-15-15 0-8.28125 
+                                            6.714844-15 15-15h17.132812v-17.132813c0-8.28125 6.714844-15 15-15 8.285157 0 15 6.71875 15 15v17.132813h17.132813c8.285156 
+                                            0 15 6.71875 15 15 0 8.285156-6.714844 15-15 15zm0 0"></path>
+                                            <path d="m159.601562 223.300781c61.425782 0 111.398438-49.976562 111.398438-111.402343 
+                                            0-61.425782-49.976562-111.398438-111.398438-111.398438-61.425781 0-111.402343 49.972656-111.402343 
+                                            111.398438 0 61.429687 49.976562 111.402343 111.402343 111.402343zm0 0"></path>
+                                            <path d="m291.453125 263.101562c-11.269531-16.496093-25.546875-30.792968-42.042969-42.066406-24.4375 20.148438-55.734375 
+                                            32.265625-89.808594 32.265625-34.074218 0-65.371093-12.117187-89.8125-32.265625-42.097656 28.765625-69.789062 77.140625-69.789062 
+                                            131.863282v56.234374c0 30.421876 24.746094 55.167969 55.164062 55.167969h208.867188c13.421875 0 25.734375-4.820312 
+                                            35.308594-12.816406-24.820313-25.492187-40.140625-60.28125-40.140625-98.585937 0-34.066407 12.113281-65.359376 32.253906-89.796876zm0 0"></path>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-between mb-2 pb-2 border-bottom">
+                                <div class="d-flex align-items-center hover-pointer">
+                                    <img class="img-xs rounded-circle" src="https://image.flaticon.com/icons/png/512/147/147144.png" alt="">
+                                        <div class="ml-2">
+                                            <span class="overflow-profile pt-2">Nome Cognome okok ciao okokok</span>
+                                            <p class="tx-11 text-muted mt-0 ">Qualcosa</p>
+                                        </div>
+                                </div>
+                                <div class="d-flex align-items-center">
+                                    <button class="btn btn-icon p-0 mr-2 align-self-center" style="height: 18px; width: 25px; fill:#0d6efd">
+                                        <svg x="0px" y="0px"width="20px" height="16px" viewBox="0 0 469.184 469.185" style="enable-background:new 0 0 469.184 469.185;" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="m400.601562 241.5c-61.425781 0-111.398437 49.972656-111.398437 111.398438 0 61.425781 49.972656 
+                                            111.402343 111.398437 111.402343 61.425782 0 111.398438-49.972656 111.398438-111.402343 
+                                            0-61.425782-49.976562-111.398438-111.398438-111.398438zm32.132813 126.398438h-17.132813v17.132812c0 
+                                            8.285156-6.714843 15-15 15-8.285156 0-15-6.714844-15-15v-17.132812h-17.132812c-8.285156 0-15-6.714844-15-15 0-8.28125 
+                                            6.714844-15 15-15h17.132812v-17.132813c0-8.28125 6.714844-15 15-15 8.285157 0 15 6.71875 15 15v17.132813h17.132813c8.285156 
+                                            0 15 6.71875 15 15 0 8.285156-6.714844 15-15 15zm0 0"></path>
+                                            <path d="m159.601562 223.300781c61.425782 0 111.398438-49.976562 111.398438-111.402343 
+                                            0-61.425782-49.976562-111.398438-111.398438-111.398438-61.425781 0-111.402343 49.972656-111.402343 
+                                            111.398438 0 61.429687 49.976562 111.402343 111.402343 111.402343zm0 0"></path>
+                                            <path d="m291.453125 263.101562c-11.269531-16.496093-25.546875-30.792968-42.042969-42.066406-24.4375 20.148438-55.734375 
+                                            32.265625-89.808594 32.265625-34.074218 0-65.371093-12.117187-89.8125-32.265625-42.097656 28.765625-69.789062 77.140625-69.789062 
+                                            131.863282v56.234374c0 30.421876 24.746094 55.167969 55.164062 55.167969h208.867188c13.421875 0 25.734375-4.820312 
+                                            35.308594-12.816406-24.820313-25.492187-40.140625-60.28125-40.140625-98.585937 0-34.066407 12.113281-65.359376 32.253906-89.796876zm0 0"></path>
+                                        </svg>
+                                    </button>
                                 </div>
                             </div>
                             </div>
@@ -368,13 +565,13 @@
                                 <h6 class="card-title">I tuoi amici</h6>
                                 <div class="d-flex justify-content-between mb-2 pb-2 border-bottom">
                                     <div class="d-flex align-items-center hover-pointer">
-            
+
                                         <img class="img-xs rounded-circle" src="https://image.flaticon.com/icons/png/512/147/147144.png" alt="">
                                         <div class="ml-2">
-                                            <span class="overflow pt-2">Nome Cognome okok ciao okokok</span>
+                                            <span class="overflow-profile pt-2">Nome Cognome okok ciao okokok</span>
                                             <p class="tx-11 text-muted mt-0 ">Qualcosa</p>
                                         </div>
-            
+
                                     </div>
                                     <button class="btn btn-icon">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-message-square icon-md">
@@ -386,7 +583,7 @@
                                     <div class="d-flex align-items-center hover-pointer">
                                         <img class="img-xs rounded-circle" src="https://image.flaticon.com/icons/png/512/147/147144.png" alt="">
                                         <div class="ml-2 mt-2">
-                                            <span class="overflow pt-2">Nome Cognome okok ciao okokok</span>
+                                            <span class="overflow-profile pt-2">Nome Cognome okok ciao okokok</span>
                                             <p class="tx-11 text-muted mt-0 ">Qualcosa</p>
                                         </div>
                                     </div>
@@ -401,7 +598,7 @@
                                     <div class="d-flex align-items-center hover-pointer">
                                         <img class="img-xs rounded-circle" src="https://image.flaticon.com/icons/png/512/147/147144.png" alt="">
                                         <div class="ml-2 mt-2">
-                                            <span class="overflow pt-2">Nome Cognome okok ciao okokok</span>
+                                            <span class="overflow-profile pt-2">Nome Cognome okok ciao okokok</span>
                                             <p class="tx-11 text-muted mt-0 ">Qualcosa</p>
                                         </div>
                                     </div>
@@ -416,7 +613,7 @@
                                     <div class="d-flex align-items-center hover-pointer">
                                         <img class="img-xs rounded-circle" src="https://image.flaticon.com/icons/png/512/147/147144.png" alt="">
                                         <div class="ml-2 mt-2">
-                                            <span class="overflow pt-2">Nome Cognome okok ciao okokok</span>
+                                            <span class="overflow-profile pt-2">Nome Cognome okok ciao okokok</span>
                                             <p class="tx-11 text-muted mt-0 ">Qualcosa</p>
                                         </div>
                                     </div>
@@ -431,7 +628,7 @@
                                     <div class="d-flex align-items-center hover-pointer">
                                         <img class="img-xs rounded-circle" src="https://image.flaticon.com/icons/png/512/147/147144.png" alt="">
                                         <div class="ml-2 mt-2">
-                                            <span class="overflow pt-2">Nome Cognome okok ciao okokok</span>
+                                            <span class="overflow-profile pt-2">Nome Cognome okok ciao okokok</span>
                                             <p class="tx-11 text-muted mt-0 ">Qualcosa</p>
                                         </div>
                                     </div>
@@ -446,7 +643,7 @@
                                     <div class="d-flex align-items-center hover-pointer">
                                         <img class="img-xs rounded-circle" src="https://image.flaticon.com/icons/png/512/147/147144.png" alt="">
                                         <div class="ml-2 mt-2">
-                                            <span class="overflow pt-2">Nome Cognome okok ciao okokok</span>
+                                            <span class="overflow-profile pt-2">Nome Cognome okok ciao okokok</span>
                                             <p class="tx-11 text-muted mt-0 ">Qualcosa</p>
                                         </div>
                                     </div>
@@ -461,7 +658,7 @@
                                     <div class="d-flex align-items-center hover-pointer">
                                         <img class="img-xs rounded-circle" src="https://image.flaticon.com/icons/png/512/147/147144.png" alt="">
                                         <div class="ml-2 mt-2">
-                                            <span class="overflow pt-2">Nome Cognome okok ciao okokok</span>
+                                            <span class="overflow-profile pt-2">Nome Cognome okok ciao okokok</span>
                                             <p class="tx-11 text-muted mt-0 ">Qualcosa</p>
                                         </div>
                                     </div>
@@ -476,7 +673,7 @@
                                     <div class="d-flex align-items-center hover-pointer">
                                         <img class="img-xs rounded-circle" src="https://image.flaticon.com/icons/png/512/147/147144.png" alt="">
                                         <div class="ml-2 mt-2">
-                                            <span class="overflow pt-2">Nome Cognome okok ciao okokok</span>
+                                            <span class="overflow-profile pt-2">Nome Cognome okok ciao okokok</span>
                                             <p class="tx-11 text-muted mt-0 ">Qualcosa</p>
                                         </div>
                                     </div>
@@ -491,7 +688,7 @@
                                     <div class="d-flex align-items-center hover-pointer">
                                         <img class="img-xs rounded-circle" src="https://image.flaticon.com/icons/png/512/147/147144.png" alt="">
                                         <div class="ml-2 mt-2">
-                                            <span class="overflow pt-2">Nome Cognome okok ciao okokok</span>
+                                            <span class="overflow-profile pt-2">Nome Cognome okok ciao okokok</span>
                                             <p class="tx-11 text-muted mt-0 ">Qualcosa</p>
                                         </div>
                                     </div>
@@ -506,7 +703,7 @@
                                     <div class="d-flex align-items-center hover-pointer">
                                         <img class="img-xs rounded-circle" src="https://image.flaticon.com/icons/png/512/147/147144.png" alt="">
                                         <div class="ml-2 mt-2">
-                                            <span class="overflow pt-2">Nome Cognome okok ciao okokok</span>
+                                            <span class="overflow-profile pt-2">Nome Cognome okok ciao okokok</span>
                                             <p class="tx-11 text-muted mt-0 ">Qualcosa</p>
                                         </div>
                                     </div>
@@ -521,7 +718,7 @@
                                     <div class="d-flex align-items-center hover-pointer">
                                         <img class="img-xs rounded-circle" src="https://image.flaticon.com/icons/png/512/147/147144.png" alt="">
                                         <div class="ml-2 mt-2">
-                                            <span class="overflow pt-2">Nome Cognome okok ciao okokok</span>
+                                            <span class="overflow-profile pt-2">Nome Cognome okok ciao okokok</span>
                                             <p class="tx-11 text-muted mt-0 ">Qualcosa</p>
                                         </div>
                                     </div>
@@ -536,7 +733,7 @@
                                     <div class="d-flex align-items-center hover-pointer">
                                         <img class="img-xs rounded-circle" src="https://image.flaticon.com/icons/png/512/147/147144.png" alt="">
                                         <div class="ml-2 mt-2">
-                                            <span class="overflow pt-2">Nome Cognome okok ciao okokok</span>
+                                            <span class="overflow-profile pt-2">Nome Cognome okok ciao okokok</span>
                                             <p class="tx-11 text-muted mt-0 ">Qualcosa</p>
                                         </div>
                                     </div>
@@ -553,7 +750,7 @@
                                     <div class="d-flex align-items-center hover-pointer">
                                         <img class="img-xs rounded-circle" src="https://image.flaticon.com/icons/png/512/147/147144.png" alt="">
                                         <div class="ml-2 mt-2">
-                                            <span class="overflow pt-2">Nome Cognome okok ciao okokok</span>
+                                            <span class="overflow-profile pt-2">Nome Cognome okok ciao okokok</span>
                                             <p class="tx-11 text-muted mt-0 ">Qualcosa</p>
                                         </div>
                                     </div>

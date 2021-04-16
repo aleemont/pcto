@@ -12,6 +12,9 @@ body {
   .mobile-bar {
     display: none;
   }
+  .nav-collapse {
+      display: none;
+  }
 }
 
 .social-page .profile-header {
@@ -329,3 +332,13 @@ textarea {
     bottom:5;
     height: 19%;
 }
+
+.nav-collapse {
+    color:#fff;
+}
+
+.nav-collapse:hover{
+    text-decoration: none;
+    color:#fff;
+}
+

@@ -15,6 +15,29 @@
     .disappear {
         display: none;
     }
+    .nav-collapse {
+        display: none;
+    }
+}
+
+.overflow-profile {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    width: 150px;
+    height: 25px;
+    display: block;
+    overflow: hidden;
+}
+
+@media screen and (min-width: 1320px) {
+    .overflow-profile {
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        width: 190px;
+        height: 25px;
+        display: block;
+        overflow: hidden;
+    }
 }
 
 .db-social .jumbotron {
@@ -188,4 +211,13 @@
 
 .container-richieste{
     height: 300px;
+}
+
+.nav-collapse {
+    color:#fff;
+}
+
+.nav-collapse:hover{
+    text-decoration: none;
+    color:#fff;
 }
