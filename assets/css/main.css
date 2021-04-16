@@ -15,6 +15,12 @@ body {
   .nav-collapse {
       display: none;
   }
+  .share {
+    position: absolute;
+    right:20;
+    bottom:5;
+    height: 19%;
+}
 }
 
 .social-page .profile-header {
@@ -37,10 +43,16 @@ body {
         height: 110px;
         overflow: hidden;
     }
-    .share {
-        position: absolute;
-        margin-bottom: -5;
-        
+    .social-page {
+        margin-bottom: 65px;
+    }
+
+    .small-button {
+        height:35px;
+        margin-bottom:-3px;
+        position:absolute;
+        right: 20;
+        bottom:5;
     }
 }
 
@@ -67,6 +79,12 @@ body {
 @media (min-width: 2400px) {
     .social-page .profile-header .cover figure img {
         margin-top: -55px;
+    }
+}
+
+@media (max-width: 991px) {
+    .dashboard {
+        left: 3%;
     }
 }
 
@@ -324,13 +342,6 @@ img {
 
 textarea {
   resize: none;
-}
-
-.share {
-    position: absolute;
-    right:20;
-    bottom:5;
-    height: 19%;
 }
 
 .nav-collapse {
