@@ -15,7 +15,11 @@ Si vuole realizzare il _front-end_ di un social-network utilizzando HTML, CSS (c
 TODO:
 
 <ol>
-  <li>Aggiungere funzionalità pulsanti "Dashboard" e "Chat"</li>
+  <li>Aggiungere funzionalità pulsanti "Dashboard" e "Chat"
+    <ul>
+      <li>Al click di uno dei due tasti la sezione corrispondente deve essere mostrata a schermo intero per agevolarne la visione su dispositivi mobile</li>
+    </ul>
+  </li>
 </ol>
 
 Changelog: <br><br>
@@ -38,4 +42,20 @@ Changelog: <br><br>
 <ul>
   <li>Aggiunta sezione 'Potresti conoscere'</li>
   <li>Sistemate icone per accettare/rifiutare le richieste di amicizia</li>
+</ul>
+
+17 Aprile 2021: Migliorata responsività e aggiunte funzionalità (017fa0d84f8b020144e596a55788d0cebac08434)<br><br>
+<ul>
+  <li>Fixato problema con la sidebar sinistra (collassava con la colonna principale</li>
+  <li>Fixati problemi col tasto pubblica</li>
+  <li>La sezione "Nuovo post" è un form, il tasto "Pubblica" è di type="reset"
+     <ul>
+       <li>La text area viena resettata quando viene premuto. Aggiunta funzionalità dei tasti like</li>
+    </ul>
+  </li>
+  <li>Aggiunta funzionalità dei tasti like
+    <ul>
+        <li>Quando si preme sul like il cuore si colore di rosso o di bianco, in base allo stato dell'icona</li>
+    </ul>
+  </li>
 </ul>
