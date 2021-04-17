@@ -15,11 +15,12 @@ Si vuole realizzare il _front-end_ di un social-network utilizzando HTML, CSS (c
 TODO:
 
 <ol>
-  <li>Aggiungere funzionalità pulsanti "Dashboard" e "Chat"
+  <li>Aggiungere funzionalità pulsante "Search"
     <ul>
-      <li>Al click di uno dei due tasti la sezione corrispondente deve essere mostrata a schermo intero per agevolarne la visione su dispositivi mobile</li>
+      <li>Al click del tasto la searchbar deve essere mostrata nella navbar per agevolarne la visione su dispositivi mobile</li>
     </ul>
   </li>
+  <li>Aggiungere funzionalità pulsanti mobile nella sezione profile.html</li>
 </ol>
 
 Changelog: <br><br>
@@ -58,4 +59,21 @@ Changelog: <br><br>
         <li>Quando si preme sul like il cuore si colore di rosso o di bianco, in base allo stato dell'icona</li>
     </ul>
   </li>
+</ul>
+17 Aprile 2021: Modifiche grafiche e funzionali (69dc0bc39a80de5ecce1457489d6244d3736d76a)<br><br>
+<ul>
+  <li>Aggiunta searchbar</li>
+  <li>aggiunto button search per dispositivi mobile</li>
+  <li>Migliorata responsività</li>
+  <ul>
+    <li>Aggiunto un separatore tra il dropdown e il nome utente nella navbar collassata</li>
+    <li>Aggiunto text-overflow per le scritte che venivano visualizzate in maniera non corretta</li>
+  </ul>
+  <li>Sostituito testo dei button mobile con icone</li>
+    
+</ul>
+
+17 aprile 2021: Aggiunta funzionalità pulsanti mobile (7a6e0cfa637c1cca1547168b8632e60b94553194)<br><br>
+<ul>
+  <li>Quando si premono i pulsanti "dashboard" o "chat" viene mostrata la colonna corrispondente a schermo intero</li>
 </ul>
