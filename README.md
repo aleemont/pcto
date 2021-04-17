@@ -15,11 +15,13 @@ Si vuole realizzare il _front-end_ di un social-network utilizzando HTML, CSS (c
 TODO:
 
 <ol>
-  <li>Aggiungere funzionalità pulsante "Search"
+  <li>Fixare visualizzazione su Safari e Mi Browser
     <ul>
-      <li>Al click del tasto la searchbar deve essere mostrata al posto della navbar per agevolarne la visione su dispositivi mobile</li>
+      <li>La sezione "Piace a ... persone" viene visualizzata in maniera errata in Safari e in Mi Browser</li>
     </ul>
   </li>
+  <li>Aggiungere funzionalità pulsanti mobile nella sezione profile.html</li>
+  <li>Fixare visualizzazione notifiche</li>
 </ol>
 
 Changelog: <br><br>
@@ -58,4 +60,21 @@ Changelog: <br><br>
         <li>Quando si preme sul like il cuore si colore di rosso o di bianco, in base allo stato dell'icona</li>
     </ul>
   </li>
+</ul>
+17 Aprile 2021: Modifiche grafiche e funzionali (69dc0bc39a80de5ecce1457489d6244d3736d76a)<br><br>
+<ul>
+  <li>Aggiunta searchbar</li>
+  <li>aggiunto button search per dispositivi mobile</li>
+  <li>Migliorata responsività</li>
+  <ul>
+    <li>Aggiunto un separatore tra il dropdown e il nome utente nella navbar collassata</li>
+    <li>Aggiunto text-overflow per le scritte che venivano visualizzate in maniera non corretta</li>
+  </ul>
+  <li>Sostituito testo dei button mobile con icone</li>
+    
+</ul>
+
+17 aprile 2021: Aggiunta funzionalità pulsanti mobile (7a6e0cfa637c1cca1547168b8632e60b94553194)<br><br>
+<ul>
+  <li>Quando si premono i pulsanti "dashboard" o "chat" viene mostrata la colonna corrispondente a schermo intero</li>
 </ul>
