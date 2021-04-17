@@ -15,6 +15,7 @@
 
         <!-- Page CSS -->
         <link rel="stylesheet" href="./assets/css/main.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
     </head>
     <body>
         <!-- NAVBAR START -->
@@ -23,6 +24,7 @@
                 <img class="social-logo" src="./assets/img/favicon.png" />
             </a>
             
+
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -48,7 +50,17 @@
                         </button>
                     </li>
                 </ul>
-                
+                <!--search bar-->
+                <div class="d-flex justify-content-end container h-100">
+                    <div class="d-flex justify-content-center h-100">
+                    <div class="searchbar">
+                        <input class="search_input" type="text" name="" placeholder="Search...">
+                        <a href="#" class="search_icon"><i class="fas fa-search"></i></a>
+                    </div>
+                    </div>
+                </div>
+                <!--end search bar-->
+                <hr class="separator hr1 bg-light">
                 <li class="navbar-nav nav-item dropdown mt-2 mt-md-0">
                     <a class="nav-link dropdown-toggle" href="#" id="impostazioniUtente" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                       <img class="img-xs propic rounded-circle" src="https://image.flaticon.com/icons/png/512/147/147144.png" alt=""> Luca Rellu
@@ -177,12 +189,12 @@
 
                                     <div class="card-footer mt-0">
                                         <a href="javascript:;" class="d-flex align-items-center text-muted mr-4">
-                                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-heart icon-md">
-                                              <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" class="heart"></path>
-                                          </svg>
-                                          <p class="d-none d-md-block ml-2 mt-1 mb-1">A <span style="font-weight: bold;">100 persone</span> piace questa foto</p>
-
-                                        </a>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-heart icon-md">
+                                                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" class="heart"></path>
+                                            </svg>
+                                            <p class="d-block overflow-like">A <span style="font-weight: bold;">100 persone</span> piace questa foto</p>
+          
+                                          </a>
                                         <hr class="hr1">
                                         <div class="d-flex post-actions mt-2">
             
@@ -253,12 +265,12 @@
                                     </div>
                                     <div class="card-footer">
                                         <a href="javascript:;" class="d-flex align-items-center text-muted mr-4">
-                                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-heart icon-md">
-                                              <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" class="heart"></path>
-                                          </svg>
-                                          <p class="d-none d-md-block ml-2 mt-1 mb-1">A <span style="font-weight: bold;">65 persone</span> piace questo post</p>
-
-                                        </a>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-heart icon-md">
+                                                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" class="heart"></path>
+                                            </svg>
+                                            <p class="d-block overflow-like">A <span style="font-weight: bold;">65 persone</span> piace questo post</p>
+                      
+                                          </a>
                                         <hr class="hr1">
                                         <div class="d-flex post-actions mt-2">
             
@@ -506,8 +518,9 @@
             </div>
         </div>
         <div class="mobile-bar btn-group fixed-bottom" style="width: 100%; height: 7%;">
-            <button href="#" class="col-sm-6 btn btn-light">Dashboard</button>
-            <button href="#" class="col-sm-6 btn btn-light">Chat</button>
+            <button href="#" class="col-md-5 btn btn-light"><span class="material-icons">reorder</span></button>
+            <button href="#" class="col-md-2 btn btn-light"><i class="fas fa-search"></i></button>
+            <button href="#" class="col-md-5 btn btn-light" id="chat"><span class="material-icons">question_answer</span></button>
         </div>
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>

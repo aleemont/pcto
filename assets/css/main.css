@@ -20,7 +20,10 @@ body {
     right:20;
     bottom:5;
     height: 19%;
-}
+    }
+    .separator {
+        display: none;
+    }
 }
 
 .social-page .profile-header {
@@ -46,13 +49,29 @@ body {
     .social-page {
         margin-bottom: 65px;
     }
-
     .small-button {
         height:35px;
         margin-bottom:-3px;
         position:absolute;
         right: 20;
         bottom:5;
+    }
+    .social-page .profile-header .cover figure img {
+        -webkit-transform: scale(2);
+        transform: scale(2);
+        margin-top: 15px;
+    }
+    .social-page .profile-header .cover .cover-body .profile-pic {
+        width: 70px;
+    }
+    .searchbar{
+        display: none;
+    }
+    div.dropdown-menu {
+        background-color: #383c44;
+    }
+    .dropdown-item {
+        color: white;
     }
 }
 
@@ -66,14 +85,6 @@ body {
 .social-page .profile-header .cover figure img {
     border-radius: .25rem .25rem 0 0;
     width: 100%;
-}
-
-@media (max-width: 767px) {
-    .social-page .profile-header .cover figure img {
-        -webkit-transform: scale(2);
-        transform: scale(2);
-        margin-top: 15px;
-    }
 }
 
 @media (min-width: 2400px) {
@@ -110,12 +121,6 @@ body {
 .social-page .profile-header .cover .cover-body .profile-pic {
     border-radius: 50%;
     width: 100px;
-}
-
-@media (max-width: 767px) {
-    .social-page .profile-header .cover .cover-body .profile-pic {
-        width: 70px;
-    }
 }
 
 .social-page .profile-header .cover .cover-body .profile-name {
@@ -353,3 +358,60 @@ textarea {
     color:#fff;
 }
 
+.overflow-like {
+    white-space: nowrap;
+    text-overflow:ellipsis;
+    width: 100%;
+    height: 100%;
+    display: block;
+    overflow: hidden;
+    margin-top:5px;
+    margin-bottom: 5px;
+    margin-left: 7px;
+}
+
+.searchbar{
+    margin-bottom: auto;
+    margin-top: auto;
+    height: 40px;
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 5px;
+    }
+
+    .search_input{
+    color: black;
+    border: 0;
+    outline: 0;
+    background: none;
+    width: 0;
+    caret-color:transparent;
+    line-height: 30px;
+    transition: width 0.4s linear;
+    }
+
+    .searchbar:hover > .search_input{
+    padding: 0 5px;
+    width: 450px;
+    caret-color:#0d6dfd;
+    transition: width 0.4s linear;
+    }
+
+    .searchbar:hover > .search_icon{
+    background: #383c44;
+    color: white;
+    text-decoration: none;
+    }
+
+    .search_icon{
+    height: 30px;
+    width: 30px;
+    float: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color:#383c44;
+    text-decoration:none;
+    margin-left:-4;
+    }
