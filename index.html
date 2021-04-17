@@ -20,12 +20,12 @@
     <body>
         <!-- NAVBAR START -->
         <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-            <a class="navbar-brand" href="./">
+            <a class="navbar-brand" id="logo" href="./">
                 <img class="social-logo" src="./assets/img/favicon.png" />
             </a>
             
 
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <button id="navbar-button" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             
@@ -53,7 +53,7 @@
                 <!--search bar-->
                 <div class="d-flex justify-content-end container h-100">
                     <div class="d-flex justify-content-center h-100">
-                    <div class="searchbar">
+                    <div class="searchbar" id="searchbar-collapse">
                         <input class="search_input" type="text" name="" placeholder="Search...">
                         <a href="#" class="search_icon"><i class="fas fa-search"></i></a>
                     </div>
@@ -74,6 +74,16 @@
                     </div>
                   </li>
             </div>
+            <!--search bar mobile
+            <div class="d-flex justify-content-end container h-100 d-none">
+                <div class="d-flex justify-content-center h-100">
+                <div class="searchbar" id="searchbar">
+                    <input class="search_input" id="search-input" type="text" name="" placeholder="Search...">
+                    <button href="#" class="search_icon btn"><i class="fas fa-search"></i></button>
+                </div>
+                </div>
+            </div>
+            -->
         </nav>
         <!-- MAIN CONTENT START -->
         <div class="container mb-4">
@@ -81,8 +91,8 @@
 
                 <div class="row profile-body">
                     <!-- left wrapper start -->
-                    <div class="d-none d-md-block col-md-4 col-xl-3 left-wrapper">
-                        <div class="card rounded dashboard">
+                    <div class="d-none d-md-block col-md-4 col-xl-3 left-wrapper" id="left-col">
+                        <div class="card rounded dashboard" id="dash-col">
                             <div class="card-body">
                               <div class="d-flex justify-content-between mb-2 pb-2 border-bottom">
                                   <div class="d-flex align-items-center hover-pointer">
@@ -91,7 +101,9 @@
                                           <span class="overflow pt-2">Luca Rellu</span>
                                           <p class="tx-11 mt-0 text-success">Online</p>
                                       </div>
+                                      
                                   </div>
+                                  <button class="btn" id="dash-close"><i class="align-self-start material-icons">close</i></button>
                               </div>
 
                                 <div class="groups-list">
@@ -106,9 +118,9 @@
                     </div>
                     <!-- left wrapper end -->
                     <!-- middle wrapper start -->
-                    <div class="col-md-8 col-xl-6 middle-wrapper">
+                    <div class="col-md-8 col-xl-6 middle-wrapper" id="mid-col">
                         <div class="row">
-                            <div class="col-md-12 grid-margin">
+                            <div class="col-md-12 grid-margin" id="col-dash">
                                 <div class="card rounded">
                                     <div class="card-header pt-0 pb-0">
                                         <div class="d-flex align-items-center justify-content-between">
@@ -302,13 +314,15 @@
                     </div>
                     <!-- middle wrapper end -->
                     <!-- right wrapper start -->
-                    <div class="d-none d-xl-block col-xl-3 right-wrapper">
+                    <div class="d-none d-xl-block col-xl-3 right-wrapper" id="right-col">
                         <div class="row">
                             <div class="col-md-12 grid-margin">
-                                <div class="card rounded container-amici">
+                                <div class="card rounded container-amici" id="chat-col">
                                     <div class="card-body body-amici">
-                                        <h6 class="card-title">I tuoi amici</h6>
-
+                                        <div class="card-title d-flex" style="width: 100%;">
+                                            <h6 class="mt-2"> I tuoi amici</h6>
+                                            <button class="btn pt-1 pb-3" id="chat-close" style="position:sticky ;left: 200%;"><i class="align-self-start material-icons">close</i></button>
+                                        </div>
                                         <div class="d-flex justify-content-between mb-2 pb-2 border-bottom">
                                             <div class="d-flex align-items-center hover-pointer">
 
@@ -518,9 +532,9 @@
             </div>
         </div>
         <div class="mobile-bar btn-group fixed-bottom" style="width: 100%; height: 7%;">
-            <button href="#" class="col-md-5 btn btn-light"><span class="material-icons">reorder</span></button>
-            <button href="#" class="col-md-2 btn btn-light"><i class="fas fa-search"></i></button>
-            <button href="#" class="col-md-5 btn btn-light" id="chat"><span class="material-icons">question_answer</span></button>
+            <button class="col-md-5 btn btn-light" id="dash"><span class="material-icons">reorder</span></button>
+            <button class="col-md-2 btn btn-light" id="search"><i class="fas fa-search"></i></button>
+            <button class="col-md-5 btn btn-light" id="chat"><span class="material-icons">question_answer</span></button>
         </div>
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
@@ -548,6 +562,110 @@
                     document.getElementById("like2").style.stroke = 'rgb(0, 0, 0, 0.6)';
                 }
             }
+            document.getElementById("dash").onclick = function(){
+                if(document.getElementById("right-col").classList.contains("d-sm-block,col-sm-12")){
+                    document.getElementById("mid-col").classList.remove("d-none");
+                    document.getElementById("right-col").classList.remove("d-sm-block,col-sm-12");
+                    document.getElementById("right-col").classList.add("d-none");
+                    document.getElementById("chat-col").style.removeProperty("width");
+                    document.getElementById("chat-col").style.removeProperty("height");
+                }
+
+                if(document.getElementById("left-col").classList.contains("d-sm-block,col-sm-12")){
+                    document.getElementById("mid-col").classList.remove("d-none");
+                    document.getElementById("left-col").classList.remove("d-sm-block,col-sm-12");
+                    document.getElementById("left-col").classList.add("d-none");
+                    document.getElementById("dash-col").style.removeProperty("width");
+                    document.getElementById("dash-col").style.removeProperty("height");
+                }
+
+                else {
+                    document.getElementById("mid-col").classList.add("d-none");
+                    document.getElementById("left-col").classList.add("d-sm-block,col-sm-12");
+                    document.getElementById("left-col").classList.remove("d-none");
+                    document.getElementById("dash-col").style.width = "91%";
+                    document.getElementById("dash-col").style.height = "80%";
+                    document.getElementById("chat-col").style.position = "fixed";
+                    document.getElementById("dash-col").style.left = "16";
+                }
+            }
+
+            document.getElementById("dash-close").onclick = function(){
+                document.getElementById("mid-col").classList.remove("d-none");
+                document.getElementById("left-col").classList.remove("d-sm-block,col-sm-12");
+                document.getElementById("left-col").classList.add("d-none");
+                document.getElementById("dash-col").style.removeProperty("width");
+                document.getElementById("dash-col").style.removeProperty("height");
+            }
+
+            document.getElementById("chat").onclick = function(){
+                if(document.getElementById("left-col").classList.contains("d-sm-block,col-sm-12")){
+                    document.getElementById("mid-col").classList.remove("d-none");
+                    document.getElementById("left-col").classList.remove("d-sm-block,col-sm-12");
+                    document.getElementById("left-col").classList.add("d-none");
+                    document.getElementById("dash-col").style.removeProperty("width");
+                    document.getElementById("dash-col").style.removeProperty("height");
+                }
+                if(document.getElementById("right-col").classList.contains("d-sm-block,col-sm-12")){
+                    document.getElementById("mid-col").classList.remove("d-none");
+                    document.getElementById("right-col").classList.remove("d-sm-block,col-sm-12");
+                    document.getElementById("right-col").classList.add("d-none");
+                    document.getElementById("chat-col").style.removeProperty("width");
+                    document.getElementById("chat-col").style.removeProperty("height");
+
+                }
+
+                else {
+                    document.getElementById("mid-col").classList.add("d-none");
+                    document.getElementById("right-col").classList.add("d-sm-block,col-sm-12");
+                    document.getElementById("right-col").classList.remove("d-none");
+                    document.getElementById("chat-col").style.width = "93%";
+                    document.getElementById("chat-col").style.height = "80%";
+                    document.getElementById("chat-col").style.position = "fixed";
+                    document.getElementById("chat-col").style.left = "15";
+                }
+            }
+
+            document.getElementById("chat-close").onclick = function(){
+                document.getElementById("mid-col").classList.remove("d-none");
+                document.getElementById("right-col").classList.remove("d-sm-block,col-sm-12");
+                document.getElementById("right-col").classList.add("d-none");
+                document.getElementById("chat-col").style.removeProperty("width");
+                document.getElementById("chat-col").style.removeProperty("height");
+            }
+
+/*            document.getElementById("search").onclick = function(){
+                document.getElementById("navbar-button").classList.add("d-none");
+                document.getElementById("logo").classList.add("d-none");
+                if(document.getElementById("left-col").classList.contains("d-sm-block,col-sm-12")){
+                    document.getElementById("mid-col").classList.remove("d-none");
+                    document.getElementById("left-col").classList.remove("d-sm-block,col-sm-12");
+                    document.getElementById("left-col").classList.add("d-none");
+                    document.getElementById("dash-col").style.removeProperty("width");
+                    document.getElementById("dash-col").style.removeProperty("height");
+                }
+                else if(document.getElementById("right-col").classList.contains("d-sm-block,col-sm-12")){
+                    document.getElementById("mid-col").classList.remove("d-none");
+                    document.getElementById("right-col").classList.remove("d-sm-block,col-sm-12");
+                    document.getElementById("right-col").classList.add("d-none");
+                    document.getElementById("chat-col").style.removeProperty("width");
+                    document.getElementById("chat-col").style.removeProperty("height");
+                }
+                
+                if(document.getElementById("searchbar").classList.contains("d-none"))
+                {
+                    document.getElementById("searchbar").classList.remove("d-none");
+                    document.getElementById("searchbar").classList.add("d-block");
+                }
+
+                else {
+                    document.getElementById("searchbar").classList.remove("d-block");
+                    document.getElementById("searchbar").classList.add("d-none");
+                    document.getElementById("navbar-button").classList.remove("d-none");
+                    document.getElementById("logo").classList.remove("d-none");
+                }
+
+            }*/
         </script>
     </body>
 </html>
