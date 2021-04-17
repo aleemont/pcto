@@ -15,9 +15,9 @@ Si vuole realizzare il _front-end_ di un social-network utilizzando HTML, CSS (c
 TODO:
 
 <ol>
-  <li>Aggiungere funzionalità pulsanti "Dashboard" e "Chat"
+  <li>Aggiungere funzionalità pulsante "Search"
     <ul>
-      <li>Al click di uno dei due tasti la sezione corrispondente deve essere mostrata a schermo intero per agevolarne la visione su dispositivi mobile</li>
+      <li>Al click del tasto la searchbar deve essere mostrata al posto della navbar per agevolarne la visione su dispositivi mobile</li>
     </ul>
   </li>
 </ol>
