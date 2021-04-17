@@ -17,7 +17,7 @@ TODO:
 <ol>
   <li>Aggiungere funzionalità pulsante "Search"
     <ul>
-      <li>Al click del tasto la searchbar deve essere mostrata nella navbar per agevolarne la visione su dispositivi mobile</li>
+      <li>Al click del tasto la searchbar deve essere mostrata al posto della navbar per agevolarne la visione su dispositivi mobile</li>
     </ul>
   </li>
   <li>Aggiungere funzionalità pulsanti mobile nella sezione profile.html</li>
