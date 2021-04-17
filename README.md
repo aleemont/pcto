@@ -15,12 +15,13 @@ Si vuole realizzare il _front-end_ di un social-network utilizzando HTML, CSS (c
 TODO:
 
 <ol>
-  <li>Aggiungere funzionalità pulsante "Search"
+  <li>Fixare visualizzazione su Safari e Mi Browser
     <ul>
-      <li>Al click del tasto la searchbar deve essere mostrata al posto della navbar per agevolarne la visione su dispositivi mobile</li>
+      <li>La sezione "Piace a ... persone" viene visualizzata in maniera errata in Safari e in Mi Browser</li>
     </ul>
   </li>
   <li>Aggiungere funzionalità pulsanti mobile nella sezione profile.html</li>
+  <li>Fixare visualizzazione notifiche</li>
 </ol>
 
 Changelog: <br><br>
