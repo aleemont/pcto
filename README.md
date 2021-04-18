@@ -22,6 +22,12 @@ TODO:
   </li>
   <li>Aggiungere funzionalità pulsanti mobile nella sezione profile.html</li>
   <li>Fixare visualizzazione notifiche</li>
+  <li>Fixare funzionamento pulsante "search"
+    <ul>
+      <li>La sezione chat o dashboard non devono sparire quando si preme su "search" (?)<br>
+            Oppure deve sparire anche la searchbar quando si preme su una delle due</li>
+    </ul>
+  </li> 
 </ol>
 
 Changelog: <br><br>
