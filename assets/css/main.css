@@ -27,6 +27,10 @@ body {
     #dash-close {
         display: none;
     }
+    #chat-close{
+        display:none;
+    }
+
 }
 
 .social-page .profile-header {
@@ -399,48 +403,96 @@ textarea {
         display: none;
     }
     .searchbar{
-        margin-bottom: auto;
-        margin-top: auto;
-        height: 40px;
-        background-color: #fff;
-        border-radius: 20px;
-        padding: 5px;
-        }
+      opacity: 0.8;
+      margin-bottom: auto;
+      margin-top: auto;
+      height: 40px;
+      background-color: #fff;
+      border-radius: 20px;
+      padding: 5px;
+    }
 
     .search_input{
-        color: black;
-        border: 0;
-        outline: 0;
-        background: none;
-        width: 0;
-        caret-color:transparent;
-        line-height: 30px;
-        transition: width 0.4s linear;
-        }
+      color: black;
+      border: 0;
+      outline: 0;
+      background: none;
+      width: 0;
+      caret-color:transparent;
+      line-height: 30px;
+      transition: width 0.4s linear;
+    }
 
     .searchbar:hover > .search_input{
-        padding: 0 5px;
-        width: 450px;
-        caret-color:#0d6dfd;
-        transition: width 0.4s linear;
-        }
+      padding: 0 5px;
+      width: 450px;
+      caret-color:#0d6dfd;
+      transition: width 0.4s linear;
+    }
 
     .searchbar:hover > .search_icon{
-        background: #383c44;
-        color: white;
-        text-decoration: none;
-        }
+      background: #383c44;
+      color: white;
+      text-decoration: none;
+    }
 
     .search_icon{
-        height: 30px;
-        width: 30px;
-        float: right;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        border-radius: 50%;
-        color:#383c44;
-        text-decoration:none;
-        margin-left:-4;
-        }
+      height: 30px;
+      width: 30px;
+      float: right;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 50%;
+      color:#383c44;
+      text-decoration:none;
+      margin-left:-4;
+    }
+
+}
+
+#sb-mobile{
+  width:100%;
+}
+.searchbar-mobile{
+  margin-bottom: auto;
+  margin-top: auto;
+  height: 40px;
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 5px;
+}
+
+.search_input-mobile{
+    color: black;
+    border: 0;
+    outline: 0;
+    background: none;
+    line-height: 30px;
+    padding: 0 5px;
+    width: 100%;
+    caret-color:#0d6dfd;
+}
+
+.search_icon-mobile{
+    height: 30px;
+    width: 30px;
+    float: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    text-decoration:none;
+    margin-left:-4;
+    background: #383c44;
+    color: white;
+    margin-top: -30px;
+}
+
+#ddmenuspace {
+    width: 400px !important;
+}
+
+button:focus{
+  box-shadow: none!important;
 }

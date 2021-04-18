@@ -22,15 +22,15 @@
     <body>
         <!-- NAVBAR START -->
         <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-            <a class="navbar-brand" href="./">
+            <a class="navbar-brand" href="index.html">
                 <img class="social-logo" src="./assets/img/favicon.png" />
             </a>
-            
+
 
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            
+
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item active">
@@ -46,11 +46,57 @@
                         </button>
                     </li>
                     <li class="nav-item">
-                        <button class="btn p-0">
-                            <span class="nav-link material-icons" style="display: inline-block;">notifications</span>
-                            <span class="active nav-collapse" style="position: relative; bottom:4px">Notifiche</span>
-                        </button>
-                    </li>
+                      <li class="nav-item dropdown">
+                          <button class="btn p-0" type="button" id="ddmenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              <span class="nav-link material-icons" style="display: inline-block;">notifications</span>
+                              <span class="active nav-collapse" style="position: relative; bottom:4px">Notifiche</span>
+                          </button>
+                          <div class="dropdown-menu" aria-labelledby="ddmenu" id="ddmenuspace">
+                            <button class="btn w-100 m-0 ml-2 d-flex justify-content-between pb-2">
+                                <div class="d-flex align-items-center hover-pointer">
+
+                                    <img class="img-xs rounded-circle" src="https://i0.wp.com/www.arancianatura.it/wp-content/uploads/2019/01/Arancia-Tarocco.jpg?fit=750%2C750&ssl=1" alt="">
+                                    <div class="ml-2 mt-3" style="text-align:left">
+                                        <span class="overflow pt-1">Lama Rangia</span>
+                                        <p class="tx-11 text-muted mt-0 ">Ha messo mi piace al tuo post</p>
+                                    </div>
+
+                                </div>
+                                <div class="d-flex align-items-center justify-content-end hover-pointer mr-3  mt-3">
+                                    <img class="img-xs" src="https://www.ansa.it/webimages/img_620x438/2019/12/14/3bf1952ee54a57e57be37ec5cb5f75ee.jpg" alt="">
+                                </div>
+                            </button>
+                            <div class="dropdown-divider m-0"></div>
+                            <button class="btn w-100 m-0 ml-2 d-flex justify-content-between pb-2">
+                                <div class="d-flex align-items-center hover-pointer">
+
+                                    <img class="img-xs rounded-circle" src="https://tuttofaremilano.com/wp-content/uploads/2017/02/saracinesca-garage@2x.jpg" alt="">
+                                    <div class="ml-2 mt-3" style="text-align:left">
+                                        <span class="overflow pt-1">Sara Cinesca</span>
+                                        <p class="tx-11 text-muted mt-0 ">Ha messo mi piace al tuo post</p>
+                                    </div>
+
+                                </div>
+                                <div class="d-flex align-items-center justify-content-end hover-pointer mr-3  mt-3">
+                                    <img class="img-xs" src="https://www.ansa.it/webimages/img_620x438/2019/12/14/3bf1952ee54a57e57be37ec5cb5f75ee.jpg" alt="">
+                                </div>
+                            </button>
+                            <div class="dropdown-divider m-0"></div>
+                            <button class="btn w-100 m-0 ml-2 d-flex justify-content-between mb-2 pb-0">
+                                <div class="d-flex align-items-center hover-pointer">
+
+                                    <img class="img-xs rounded-circle" src="https://yt3.ggpht.com/ytc/AAUvwnjOLKJVRDVoC4Hu8oChpb9idQokoC_dEX13BFmd-g=s900-c-k-c0x00ffffff-no-rj" alt="">
+                                    <div class="ml-2 mt-3" style="text-align:left">
+                                        <span class="overflow pt-1">Nello Taver</span>
+                                        <p class="tx-11 text-muted mt-0 ">Ha messo mi piace al tuo post</p>
+                                    </div>
+
+                                </div>
+                                <div class="d-flex align-items-center justify-content-end hover-pointer mr-3  mt-3">
+                                    <img class="img-xs" src="https://www.ansa.it/webimages/img_620x438/2019/12/14/3bf1952ee54a57e57be37ec5cb5f75ee.jpg" alt="">
+                                </div>
+                            </button>
+                      </li>
                 </ul>
                 <!--search bar-->
                 <div class="d-flex justify-content-end container h-100">
@@ -82,17 +128,17 @@
             <div class="jumbotron jumbotron-fluid">
                 <button class="btn btn-light float-right m-2 modify">
                     <svg height="20px" viewBox="0 -1 401.52289 401" width="20px" xmlns="http://www.w3.org/2000/svg" fill="#000">
-                        <path d="m370.589844 250.972656c-5.523438 0-10 4.476563-10 10v88.789063c-.019532 16.5625-13.4375 
-                        29.984375-30 30h-280.589844c-16.5625-.015625-29.980469-13.4375-30-30v-260.589844c.019531-16.558594 
-                        13.4375-29.980469 30-30h88.789062c5.523438 0 10-4.476563 10-10 0-5.519531-4.476562-10-10-10h-88.789062c-27.601562.03125-49.96875 
-                        22.398437-50 50v260.59375c.03125 27.601563 22.398438 49.96875 50 50h280.589844c27.601562-.03125 49.96875-22.398437 
+                        <path d="m370.589844 250.972656c-5.523438 0-10 4.476563-10 10v88.789063c-.019532 16.5625-13.4375
+                        29.984375-30 30h-280.589844c-16.5625-.015625-29.980469-13.4375-30-30v-260.589844c.019531-16.558594
+                        13.4375-29.980469 30-30h88.789062c5.523438 0 10-4.476563 10-10 0-5.519531-4.476562-10-10-10h-88.789062c-27.601562.03125-49.96875
+                        22.398437-50 50v260.59375c.03125 27.601563 22.398438 49.96875 50 50h280.589844c27.601562-.03125 49.96875-22.398437
                         50-50v-88.792969c0-5.523437-4.476563-10-10-10zm0 0"></path>
-                        <path d="m376.628906 13.441406c-17.574218-17.574218-46.066406-17.574218-63.640625 0l-178.40625 178.40625c-1.222656 
-                        1.222656-2.105469 2.738282-2.566406 4.402344l-23.460937 84.699219c-.964844 3.472656.015624 7.191406 2.5625 9.742187 
-                        2.550781 2.546875 6.269531 3.527344 9.742187 2.566406l84.699219-23.464843c1.664062-.460938 3.179687-1.34375 
-                        4.402344-2.566407l178.402343-178.410156c17.546875-17.585937 17.546875-46.054687 0-63.640625zm-220.257812 184.90625 
-                        146.011718-146.015625 47.089844 47.089844-146.015625 146.015625zm-9.40625 18.875 37.621094 37.625-52.039063 
-                        14.417969zm227.257812-142.546875-10.605468 10.605469-47.09375-47.09375 10.609374-10.605469c9.761719-9.761719 
+                        <path d="m376.628906 13.441406c-17.574218-17.574218-46.066406-17.574218-63.640625 0l-178.40625 178.40625c-1.222656
+                        1.222656-2.105469 2.738282-2.566406 4.402344l-23.460937 84.699219c-.964844 3.472656.015624 7.191406 2.5625 9.742187
+                        2.550781 2.546875 6.269531 3.527344 9.742187 2.566406l84.699219-23.464843c1.664062-.460938 3.179687-1.34375
+                        4.402344-2.566407l178.402343-178.410156c17.546875-17.585937 17.546875-46.054687 0-63.640625zm-220.257812 184.90625
+                        146.011718-146.015625 47.089844 47.089844-146.015625 146.015625zm-9.40625 18.875 37.621094 37.625-52.039063
+                        14.417969zm227.257812-142.546875-10.605468 10.605469-47.09375-47.09375 10.609374-10.605469c9.761719-9.761719
                         25.589844-9.761719 35.351563 0l11.738281 11.734375c9.746094 9.773438 9.746094 25.589844 0 35.359375zm0 0"></path>
                     </svg>
                 </button></div>
@@ -105,25 +151,25 @@
                                     <div class="col-xl-4 col-md-4 d-flex justify-content-lg-start justify-content-md-start justify-content-center">
                                         <ul class="m-0">
                                             <li>
-                                                <div class="counter">246</div>
+                                                <div class="counter">51.399.246</div>
                                                 <div class="heading">Amici</div>
                                             </li>
                                         </ul>
                                     </div>
                                     <div class="col-xl-4 col-md-4 d-flex justify-content-center">
                                         <div class="image-default">
-                                            <img class="rounded-circle" src="https://image.flaticon.com/icons/png/512/147/147144.png" alt="">
+                                            <img class="rounded-circle" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0LxMyCnA3cdFxz6cX0FMoSgQyB62UdyUSeeHyMV2xXWp0nMNbgy-Ow3eqakVDoqYIizA&usqp=CAU" alt="">
                                         </div>
                                         <div class="infos">
-                                            <h2>Luca Rellu</h2>
-                                            <div class="location">Misciagni, Brindsi, BR</div>
+                                            <h2>Elon Musk</h2>
+                                            <div class="location">Bel Air, California, Mmeru San Pietro</div>
                                         </div>
                                     </div>
                                     <div class="d-flex justify-content-center disappear">
                                         <ul class="friends p-0">
                                             <li class="">
                                                 <div class="counter">&nbsp;&nbsp;&nbsp;246 <span class="heading" style="font-weight: normal; font-size:21px;">Amici</span></div>
-                                                
+
                                             </li>
                                         </ul>
                                     </div>
@@ -157,7 +203,7 @@
                                     s15.171,6.806,15.171,15.171C34.342,27.533,27.536,34.341,19.171,34.341z M30.855,19.171c0,1.656-1.344,3-3,3h-5.685v5.685
                                     c0,1.655-1.345,3-3,3c-1.657,0-3-1.345-3-3v-5.685h-5.684c-1.657,0-3-1.344-3-3c0-1.657,1.343-3,3-3h5.684v-5.683
                                     c0-1.657,1.343-3,3-3c1.655,0,3,1.343,3,3v5.683h5.685C29.512,16.171,30.855,17.514,30.855,19.171z" class="newpost"></path>
-                                    </svg>  
+                                    </svg>
                                     <div class="ml-2">
                                           <p>Pubblica un nuovo Post</p>
                                       </div>
@@ -167,9 +213,9 @@
                           <form class="m-0">
                             <div class="card-body mb-0">
                                 <textarea class="form-control" placeholder="Scrivi il tuo post..." rows=3></textarea>
-                
+
                             </div>
-                
+
                             <div class="card-footer mt-0 pt-2 pb-2" >
                                 <div class="d-flex post-actions mt-0 mb-0">
                                     <a href="javascript:;" class="d-flex align-items-center text-muted mr-4">
@@ -180,7 +226,7 @@
                                         <i style="height: 24px; width: 24px; background-image: url(&quot;https://static.xx.fbcdn.net/rsrc.php/v3/yU/r/vuxzbjiVZ68.png&quot;); background-position: 0px -50px; background-size: auto; background-repeat: no-repeat; display: inline-block;"></i>
                                         <p class="d-none d-md-block ml-2">Tagga</p>
                                     </a>
-                
+
                                     <button class="btn btn-outline-info d-flex align-items-center share small-button" type="reset">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="13" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-share icon-md">
                                             <path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8"></path>
@@ -199,13 +245,13 @@
                             <div class="card-header pt-0 pb-0">
                                 <div class="d-flex align-items-center justify-content-between">
                                     <div class="d-flex align-items-center">
-                                        <img class="img-xs rounded-circle" src="https://image.flaticon.com/icons/png/512/147/147144.png" alt="">
+                                        <img class="img-xs rounded-circle" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0LxMyCnA3cdFxz6cX0FMoSgQyB62UdyUSeeHyMV2xXWp0nMNbgy-Ow3eqakVDoqYIizA&usqp=CAU" alt="">
                                         <div class="ml-2">
-                                            <p>Luca Rellu</p>
-                                            <p class="tx-11 text-muted">1 ora fa</p>
+                                            <p>Elon Musk</p>
+                                            <p class="tx-11 text-muted">1 ora e 30 minuti fa</p>
                                         </div>
                                     </div>
-            
+
                                     <div class="dropdown">
                                         <button class="btn p-0" type="button" id="dropdownMenuButton1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-more-horizontal icon-lg pb-3px">
@@ -213,27 +259,27 @@
                                                 <circle cx="19" cy="12" r="1"></circle>
                                                 <circle cx="5" cy="12" r="1"></circle>
                                             </svg>
-            
+
                                         </button>
                                     </div>
                                 </div>
                             </div>
                             <div class="card-body mb-0">
-                                <p class="mb-3 tx-14">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus minima delectus nemo unde quae recusandae assumenda.</p>
-                                <img class="img-fluid" src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fnisifilters.it%2Fwp-content%2Fuploads%2F2016%2F12%2FMessa-a-Fuoco-Paesaggio.jpg&f=1&nofb=1" alt="">
+                                <p class="mb-3 tx-14">Look at TESLA MODEL X.</p>
+                                <img class="img-fluid" src="https://www.ansa.it/webimages/img_620x438/2019/12/14/3bf1952ee54a57e57be37ec5cb5f75ee.jpg" alt="">
                             </div>
-            
+
                             <div class="card-footer mt-0">
                                 <a href="javascript:;" class="d-flex align-items-center text-muted mr-4">
                                   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-heart icon-md">
                                       <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" class="heart"></path>
                                   </svg>
-                                  <p class="d-block overflow-like">A <span style="font-weight: bold;">100 persone</span> piace questa foto</p>
+                                  <p class="d-block overflow-like">A <span style="font-weight: bold;">569 persone</span> piace questa foto</p>
 
                                 </a>
                                 <hr class="hr1">
                                 <div class="d-flex post-actions mt-2">
-            
+
                                     <button class="d-flex align-items-center p-0 text-muted mr-4 btn" id="like-click">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-heart icon-md" id="like">
                                             <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
@@ -263,53 +309,28 @@
                             <div class="card-header pb-0 pt-0">
                                 <div class="d-flex align-items-center justify-content-between">
                                     <div class="d-flex align-items-center">
-                                        <img class="img-xs rounded-circle" src="https://image.flaticon.com/icons/png/512/147/147144.png" alt="">
+                                        <img class="img-xs rounded-circle" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0LxMyCnA3cdFxz6cX0FMoSgQyB62UdyUSeeHyMV2xXWp0nMNbgy-Ow3eqakVDoqYIizA&usqp=CAU" alt="">
                                         <div class="ml-2">
-                                            <p>Luca Rellu</p>
-                                            <p class="tx-11 text-muted">2 ore fa</p>
+                                            <p>Elon Musk</p>
+                                            <p class="tx-11 text-muted">3 ore fa</p>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="card-body">
-                                <p class="mt-0 mb-0 tx-14">Ogni mio momento
-                                                        io l’ho vissuto
-                                                        un’altra volta
-                                                        in un’epoca fonda
-                                                        fuori di me
-                                                        Sono lontano colla mia memoria
-                                                        dietro a quelle vite perse
-                                                        Mi desto in un bagno
-                                                        di care cose consuete
-                                                        sorpreso
-                                                        e raddolcito
-                                                        Rincorro le nuvole
-                                                        che si sciolgono dolcemente
-                                                        cogli occhi attenti
-                                                        e mi rammento
-                                                        di qualche amico
-                                                        morto
-                                                        Ma Dio cos’è?
-                                                        E la creatura
-                                                        atterrita
-                                                        sbarra gli occhi
-                                                        e accoglie
-                                                        gocciole di stelle
-                                                        e la pianura muta
-                                                        E si sente
-                                                        riavere</p>
+                                <p class="mt-0 mb-0 tx-14">Later versions will be able to shunt signals from Neuralinks in brain to Neuralinks in body motor/sensory neuron clusters, thus enabling, for example, paraplegics to walk again</p>
                             </div>
                             <div class="card-footer">
                                 <a href="javascript:;" class="d-flex align-items-center text-muted mr-4">
                                   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-heart icon-md">
                                       <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" class="heart"></path>
                                   </svg>
-                                  <p class="d-block overflow-like">A <span style="font-weight: bold;">65 persone</span> piace questo post</p>
-            
+                                  <p class="d-block overflow-like">A <span style="font-weight: bold;">872 persone</span> piace questo post</p>
+
                                 </a>
                                 <hr class="hr1">
                                 <div class="d-flex post-actions mt-2">
-            
+
                                     <button class="d-flex align-items-center p-0 text-muted mr-4 btn" id="like-click2">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-heart icon-md" id="like2">
                                             <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
@@ -443,7 +464,7 @@
                                     </button>
                                 </div>
                             </div>
-                            <div class="d-flex justify-content-between mb-2 pb-2 border-bottom">
+                            <div class="d-flex justify-content-between mb-0 pb-2">
                                 <div class="d-flex align-items-center hover-pointer">
                                     <img class="img-xs rounded-circle" src="https://image.flaticon.com/icons/png/512/147/147144.png" alt="">
                                         <div class="ml-2">
@@ -476,7 +497,7 @@
                                     </button>
                                 </div>
                             </div>
-                            
+
                             </div>
                         </div>
                     </div>
@@ -496,18 +517,18 @@
                                 <div class="d-flex align-items-center">
                                     <button class="btn btn-icon p-0 mr-2 align-self-center" style="height: 18px; width: 25px; fill:#0d6efd">
                                         <svg x="0px" y="0px"width="20px" height="16px" viewBox="0 0 469.184 469.185" style="enable-background:new 0 0 469.184 469.185;" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="m400.601562 241.5c-61.425781 0-111.398437 49.972656-111.398437 111.398438 0 61.425781 49.972656 
-                                            111.402343 111.398437 111.402343 61.425782 0 111.398438-49.972656 111.398438-111.402343 
-                                            0-61.425782-49.976562-111.398438-111.398438-111.398438zm32.132813 126.398438h-17.132813v17.132812c0 
-                                            8.285156-6.714843 15-15 15-8.285156 0-15-6.714844-15-15v-17.132812h-17.132812c-8.285156 0-15-6.714844-15-15 0-8.28125 
-                                            6.714844-15 15-15h17.132812v-17.132813c0-8.28125 6.714844-15 15-15 8.285157 0 15 6.71875 15 15v17.132813h17.132813c8.285156 
+                                            <path d="m400.601562 241.5c-61.425781 0-111.398437 49.972656-111.398437 111.398438 0 61.425781 49.972656
+                                            111.402343 111.398437 111.402343 61.425782 0 111.398438-49.972656 111.398438-111.402343
+                                            0-61.425782-49.976562-111.398438-111.398438-111.398438zm32.132813 126.398438h-17.132813v17.132812c0
+                                            8.285156-6.714843 15-15 15-8.285156 0-15-6.714844-15-15v-17.132812h-17.132812c-8.285156 0-15-6.714844-15-15 0-8.28125
+                                            6.714844-15 15-15h17.132812v-17.132813c0-8.28125 6.714844-15 15-15 8.285157 0 15 6.71875 15 15v17.132813h17.132813c8.285156
                                             0 15 6.71875 15 15 0 8.285156-6.714844 15-15 15zm0 0"></path>
-                                            <path d="m159.601562 223.300781c61.425782 0 111.398438-49.976562 111.398438-111.402343 
-                                            0-61.425782-49.976562-111.398438-111.398438-111.398438-61.425781 0-111.402343 49.972656-111.402343 
+                                            <path d="m159.601562 223.300781c61.425782 0 111.398438-49.976562 111.398438-111.402343
+                                            0-61.425782-49.976562-111.398438-111.398438-111.398438-61.425781 0-111.402343 49.972656-111.402343
                                             111.398438 0 61.429687 49.976562 111.402343 111.402343 111.402343zm0 0"></path>
-                                            <path d="m291.453125 263.101562c-11.269531-16.496093-25.546875-30.792968-42.042969-42.066406-24.4375 20.148438-55.734375 
-                                            32.265625-89.808594 32.265625-34.074218 0-65.371093-12.117187-89.8125-32.265625-42.097656 28.765625-69.789062 77.140625-69.789062 
-                                            131.863282v56.234374c0 30.421876 24.746094 55.167969 55.164062 55.167969h208.867188c13.421875 0 25.734375-4.820312 
+                                            <path d="m291.453125 263.101562c-11.269531-16.496093-25.546875-30.792968-42.042969-42.066406-24.4375 20.148438-55.734375
+                                            32.265625-89.808594 32.265625-34.074218 0-65.371093-12.117187-89.8125-32.265625-42.097656 28.765625-69.789062 77.140625-69.789062
+                                            131.863282v56.234374c0 30.421876 24.746094 55.167969 55.164062 55.167969h208.867188c13.421875 0 25.734375-4.820312
                                             35.308594-12.816406-24.820313-25.492187-40.140625-60.28125-40.140625-98.585937 0-34.066407 12.113281-65.359376 32.253906-89.796876zm0 0"></path>
                                         </svg>
                                     </button>
@@ -524,18 +545,18 @@
                                 <div class="d-flex align-items-center">
                                     <button class="btn btn-icon p-0 mr-2 align-self-center" style="height: 18px; width: 25px; fill:#0d6efd">
                                         <svg x="0px" y="0px"width="20px" height="16px" viewBox="0 0 469.184 469.185" style="enable-background:new 0 0 469.184 469.185;" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="m400.601562 241.5c-61.425781 0-111.398437 49.972656-111.398437 111.398438 0 61.425781 49.972656 
-                                            111.402343 111.398437 111.402343 61.425782 0 111.398438-49.972656 111.398438-111.402343 
-                                            0-61.425782-49.976562-111.398438-111.398438-111.398438zm32.132813 126.398438h-17.132813v17.132812c0 
-                                            8.285156-6.714843 15-15 15-8.285156 0-15-6.714844-15-15v-17.132812h-17.132812c-8.285156 0-15-6.714844-15-15 0-8.28125 
-                                            6.714844-15 15-15h17.132812v-17.132813c0-8.28125 6.714844-15 15-15 8.285157 0 15 6.71875 15 15v17.132813h17.132813c8.285156 
+                                            <path d="m400.601562 241.5c-61.425781 0-111.398437 49.972656-111.398437 111.398438 0 61.425781 49.972656
+                                            111.402343 111.398437 111.402343 61.425782 0 111.398438-49.972656 111.398438-111.402343
+                                            0-61.425782-49.976562-111.398438-111.398438-111.398438zm32.132813 126.398438h-17.132813v17.132812c0
+                                            8.285156-6.714843 15-15 15-8.285156 0-15-6.714844-15-15v-17.132812h-17.132812c-8.285156 0-15-6.714844-15-15 0-8.28125
+                                            6.714844-15 15-15h17.132812v-17.132813c0-8.28125 6.714844-15 15-15 8.285157 0 15 6.71875 15 15v17.132813h17.132813c8.285156
                                             0 15 6.71875 15 15 0 8.285156-6.714844 15-15 15zm0 0"></path>
-                                            <path d="m159.601562 223.300781c61.425782 0 111.398438-49.976562 111.398438-111.402343 
-                                            0-61.425782-49.976562-111.398438-111.398438-111.398438-61.425781 0-111.402343 49.972656-111.402343 
+                                            <path d="m159.601562 223.300781c61.425782 0 111.398438-49.976562 111.398438-111.402343
+                                            0-61.425782-49.976562-111.398438-111.398438-111.398438-61.425781 0-111.402343 49.972656-111.402343
                                             111.398438 0 61.429687 49.976562 111.402343 111.402343 111.402343zm0 0"></path>
-                                            <path d="m291.453125 263.101562c-11.269531-16.496093-25.546875-30.792968-42.042969-42.066406-24.4375 20.148438-55.734375 
-                                            32.265625-89.808594 32.265625-34.074218 0-65.371093-12.117187-89.8125-32.265625-42.097656 28.765625-69.789062 77.140625-69.789062 
-                                            131.863282v56.234374c0 30.421876 24.746094 55.167969 55.164062 55.167969h208.867188c13.421875 0 25.734375-4.820312 
+                                            <path d="m291.453125 263.101562c-11.269531-16.496093-25.546875-30.792968-42.042969-42.066406-24.4375 20.148438-55.734375
+                                            32.265625-89.808594 32.265625-34.074218 0-65.371093-12.117187-89.8125-32.265625-42.097656 28.765625-69.789062 77.140625-69.789062
+                                            131.863282v56.234374c0 30.421876 24.746094 55.167969 55.164062 55.167969h208.867188c13.421875 0 25.734375-4.820312
                                             35.308594-12.816406-24.820313-25.492187-40.140625-60.28125-40.140625-98.585937 0-34.066407 12.113281-65.359376 32.253906-89.796876zm0 0"></path>
                                         </svg>
                                     </button>
@@ -552,24 +573,24 @@
                                 <div class="d-flex align-items-center">
                                     <button class="btn btn-icon p-0 mr-2 align-self-center" style="height: 18px; width: 25px; fill:#0d6efd">
                                         <svg x="0px" y="0px"width="20px" height="16px" viewBox="0 0 469.184 469.185" style="enable-background:new 0 0 469.184 469.185;" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="m400.601562 241.5c-61.425781 0-111.398437 49.972656-111.398437 111.398438 0 61.425781 49.972656 
-                                            111.402343 111.398437 111.402343 61.425782 0 111.398438-49.972656 111.398438-111.402343 
-                                            0-61.425782-49.976562-111.398438-111.398438-111.398438zm32.132813 126.398438h-17.132813v17.132812c0 
-                                            8.285156-6.714843 15-15 15-8.285156 0-15-6.714844-15-15v-17.132812h-17.132812c-8.285156 0-15-6.714844-15-15 0-8.28125 
-                                            6.714844-15 15-15h17.132812v-17.132813c0-8.28125 6.714844-15 15-15 8.285157 0 15 6.71875 15 15v17.132813h17.132813c8.285156 
+                                            <path d="m400.601562 241.5c-61.425781 0-111.398437 49.972656-111.398437 111.398438 0 61.425781 49.972656
+                                            111.402343 111.398437 111.402343 61.425782 0 111.398438-49.972656 111.398438-111.402343
+                                            0-61.425782-49.976562-111.398438-111.398438-111.398438zm32.132813 126.398438h-17.132813v17.132812c0
+                                            8.285156-6.714843 15-15 15-8.285156 0-15-6.714844-15-15v-17.132812h-17.132812c-8.285156 0-15-6.714844-15-15 0-8.28125
+                                            6.714844-15 15-15h17.132812v-17.132813c0-8.28125 6.714844-15 15-15 8.285157 0 15 6.71875 15 15v17.132813h17.132813c8.285156
                                             0 15 6.71875 15 15 0 8.285156-6.714844 15-15 15zm0 0"></path>
-                                            <path d="m159.601562 223.300781c61.425782 0 111.398438-49.976562 111.398438-111.402343 
-                                            0-61.425782-49.976562-111.398438-111.398438-111.398438-61.425781 0-111.402343 49.972656-111.402343 
+                                            <path d="m159.601562 223.300781c61.425782 0 111.398438-49.976562 111.398438-111.402343
+                                            0-61.425782-49.976562-111.398438-111.398438-111.398438-61.425781 0-111.402343 49.972656-111.402343
                                             111.398438 0 61.429687 49.976562 111.402343 111.402343 111.402343zm0 0"></path>
-                                            <path d="m291.453125 263.101562c-11.269531-16.496093-25.546875-30.792968-42.042969-42.066406-24.4375 20.148438-55.734375 
-                                            32.265625-89.808594 32.265625-34.074218 0-65.371093-12.117187-89.8125-32.265625-42.097656 28.765625-69.789062 77.140625-69.789062 
-                                            131.863282v56.234374c0 30.421876 24.746094 55.167969 55.164062 55.167969h208.867188c13.421875 0 25.734375-4.820312 
+                                            <path d="m291.453125 263.101562c-11.269531-16.496093-25.546875-30.792968-42.042969-42.066406-24.4375 20.148438-55.734375
+                                            32.265625-89.808594 32.265625-34.074218 0-65.371093-12.117187-89.8125-32.265625-42.097656 28.765625-69.789062 77.140625-69.789062
+                                            131.863282v56.234374c0 30.421876 24.746094 55.167969 55.164062 55.167969h208.867188c13.421875 0 25.734375-4.820312
                                             35.308594-12.816406-24.820313-25.492187-40.140625-60.28125-40.140625-98.585937 0-34.066407 12.113281-65.359376 32.253906-89.796876zm0 0"></path>
                                         </svg>
                                     </button>
                                 </div>
                             </div>
-                            <div class="d-flex justify-content-between mb-2 pb-2 border-bottom">
+                            <div class="d-flex justify-content-between mb-0 pb-2">
                                 <div class="d-flex align-items-center hover-pointer">
                                     <img class="img-xs rounded-circle" src="https://image.flaticon.com/icons/png/512/147/147144.png" alt="">
                                         <div class="ml-2">
@@ -580,18 +601,18 @@
                                 <div class="d-flex align-items-center">
                                     <button class="btn btn-icon p-0 mr-2 align-self-center" style="height: 18px; width: 25px; fill:#0d6efd">
                                         <svg x="0px" y="0px"width="20px" height="16px" viewBox="0 0 469.184 469.185" style="enable-background:new 0 0 469.184 469.185;" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="m400.601562 241.5c-61.425781 0-111.398437 49.972656-111.398437 111.398438 0 61.425781 49.972656 
-                                            111.402343 111.398437 111.402343 61.425782 0 111.398438-49.972656 111.398438-111.402343 
-                                            0-61.425782-49.976562-111.398438-111.398438-111.398438zm32.132813 126.398438h-17.132813v17.132812c0 
-                                            8.285156-6.714843 15-15 15-8.285156 0-15-6.714844-15-15v-17.132812h-17.132812c-8.285156 0-15-6.714844-15-15 0-8.28125 
-                                            6.714844-15 15-15h17.132812v-17.132813c0-8.28125 6.714844-15 15-15 8.285157 0 15 6.71875 15 15v17.132813h17.132813c8.285156 
+                                            <path d="m400.601562 241.5c-61.425781 0-111.398437 49.972656-111.398437 111.398438 0 61.425781 49.972656
+                                            111.402343 111.398437 111.402343 61.425782 0 111.398438-49.972656 111.398438-111.402343
+                                            0-61.425782-49.976562-111.398438-111.398438-111.398438zm32.132813 126.398438h-17.132813v17.132812c0
+                                            8.285156-6.714843 15-15 15-8.285156 0-15-6.714844-15-15v-17.132812h-17.132812c-8.285156 0-15-6.714844-15-15 0-8.28125
+                                            6.714844-15 15-15h17.132812v-17.132813c0-8.28125 6.714844-15 15-15 8.285157 0 15 6.71875 15 15v17.132813h17.132813c8.285156
                                             0 15 6.71875 15 15 0 8.285156-6.714844 15-15 15zm0 0"></path>
-                                            <path d="m159.601562 223.300781c61.425782 0 111.398438-49.976562 111.398438-111.402343 
-                                            0-61.425782-49.976562-111.398438-111.398438-111.398438-61.425781 0-111.402343 49.972656-111.402343 
+                                            <path d="m159.601562 223.300781c61.425782 0 111.398438-49.976562 111.398438-111.402343
+                                            0-61.425782-49.976562-111.398438-111.398438-111.398438-61.425781 0-111.402343 49.972656-111.402343
                                             111.398438 0 61.429687 49.976562 111.402343 111.402343 111.402343zm0 0"></path>
-                                            <path d="m291.453125 263.101562c-11.269531-16.496093-25.546875-30.792968-42.042969-42.066406-24.4375 20.148438-55.734375 
-                                            32.265625-89.808594 32.265625-34.074218 0-65.371093-12.117187-89.8125-32.265625-42.097656 28.765625-69.789062 77.140625-69.789062 
-                                            131.863282v56.234374c0 30.421876 24.746094 55.167969 55.164062 55.167969h208.867188c13.421875 0 25.734375-4.820312 
+                                            <path d="m291.453125 263.101562c-11.269531-16.496093-25.546875-30.792968-42.042969-42.066406-24.4375 20.148438-55.734375
+                                            32.265625-89.808594 32.265625-34.074218 0-65.371093-12.117187-89.8125-32.265625-42.097656 28.765625-69.789062 77.140625-69.789062
+                                            131.863282v56.234374c0 30.421876 24.746094 55.167969 55.164062 55.167969h208.867188c13.421875 0 25.734375-4.820312
                                             35.308594-12.816406-24.820313-25.492187-40.140625-60.28125-40.140625-98.585937 0-34.066407 12.113281-65.359376 32.253906-89.796876zm0 0"></path>
                                         </svg>
                                     </button>
@@ -619,7 +640,7 @@
                                             <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
                                         </svg>
                                 </div>
-                                    
+
                                 <div class="d-flex justify-content-between mb-2 pb-2 border-bottom">
                                     <div class="d-flex align-items-center hover-pointer">
                                         <img class="img-xs rounded-circle" src="https://image.flaticon.com/icons/png/512/147/147144.png" alt="">
@@ -634,7 +655,7 @@
                                         </svg>
                                     </button>
                                 </div>
-            
+
                                 <div class="d-flex justify-content-between mb-2 pb-2 border-bottom">
                                     <div class="d-flex align-items-center hover-pointer">
                                         <img class="img-xs rounded-circle" src="https://image.flaticon.com/icons/png/512/147/147144.png" alt="">
@@ -649,7 +670,7 @@
                                         </svg>
                                     </button>
                                 </div>
-            
+
                                 <div class="d-flex justify-content-between mb-2 pb-2 border-bottom">
                                     <div class="d-flex align-items-center hover-pointer">
                                         <img class="img-xs rounded-circle" src="https://image.flaticon.com/icons/png/512/147/147144.png" alt="">
@@ -664,7 +685,7 @@
                                         </svg>
                                     </button>
                                 </div>
-            
+
                                 <div class="d-flex justify-content-between mb-2 pb-2 border-bottom">
                                     <div class="d-flex align-items-center hover-pointer">
                                         <img class="img-xs rounded-circle" src="https://image.flaticon.com/icons/png/512/147/147144.png" alt="">
@@ -679,7 +700,7 @@
                                         </svg>
                                     </button>
                                 </div>
-            
+
                                 <div class="d-flex justify-content-between mb-2 pb-2 border-bottom">
                                     <div class="d-flex align-items-center hover-pointer">
                                         <img class="img-xs rounded-circle" src="https://image.flaticon.com/icons/png/512/147/147144.png" alt="">
@@ -694,7 +715,7 @@
                                         </svg>
                                     </button>
                                 </div>
-            
+
                                 <div class="d-flex justify-content-between mb-2 pb-2 border-bottom">
                                     <div class="d-flex align-items-center hover-pointer">
                                         <img class="img-xs rounded-circle" src="https://image.flaticon.com/icons/png/512/147/147144.png" alt="">
@@ -709,7 +730,7 @@
                                         </svg>
                                     </button>
                                 </div>
-            
+
                                 <div class="d-flex justify-content-between mb-2 pb-2 border-bottom">
                                     <div class="d-flex align-items-center hover-pointer">
                                         <img class="img-xs rounded-circle" src="https://image.flaticon.com/icons/png/512/147/147144.png" alt="">
@@ -724,7 +745,7 @@
                                         </svg>
                                     </button>
                                 </div>
-            
+
                                 <div class="d-flex justify-content-between mb-2 pb-2 border-bottom">
                                     <div class="d-flex align-items-center hover-pointer">
                                         <img class="img-xs rounded-circle" src="https://image.flaticon.com/icons/png/512/147/147144.png" alt="">
@@ -739,7 +760,7 @@
                                         </svg>
                                     </button>
                                 </div>
-            
+
                                 <div class="d-flex justify-content-between mb-2 pb-2 border-bottom">
                                     <div class="d-flex align-items-center hover-pointer">
                                         <img class="img-xs rounded-circle" src="https://image.flaticon.com/icons/png/512/147/147144.png" alt="">
@@ -754,7 +775,7 @@
                                         </svg>
                                     </button>
                                 </div>
-            
+
                                 <div class="d-flex justify-content-between mb-2 pb-2 border-bottom">
                                     <div class="d-flex align-items-center hover-pointer">
                                         <img class="img-xs rounded-circle" src="https://image.flaticon.com/icons/png/512/147/147144.png" alt="">
@@ -769,7 +790,7 @@
                                         </svg>
                                     </button>
                                 </div>
-            
+
                                 <div class="d-flex justify-content-between mb-2 pb-2 border-bottom">
                                     <div class="d-flex align-items-center hover-pointer">
                                         <img class="img-xs rounded-circle" src="https://image.flaticon.com/icons/png/512/147/147144.png" alt="">
@@ -784,9 +805,9 @@
                                         </svg>
                                     </button>
                                 </div>
-            
+
                                 <!--last element -->
-            
+
                                 <div class="d-flex justify-content-between mb-2 pb-2">
                                     <div class="d-flex align-items-center hover-pointer">
                                         <img class="img-xs rounded-circle" src="https://image.flaticon.com/icons/png/512/147/147144.png" alt="">
@@ -801,8 +822,8 @@
                                         </svg>
                                     </button>
                                 </div>
-            
-            
+
+
                             </div>
                         </div>
                     </div>
@@ -815,7 +836,7 @@
                 <button href="#" class="col-md-5 btn btn-light"><span class="material-icons">reorder</span></button>
                 <button href="#" class="col-md-2 btn btn-light"><i class="fas fa-search"></i></button>
                 <button href="#" class="col-md-5 btn btn-light" id="chat"><span class="material-icons">question_answer</span></button>
-            </div> 
+            </div>
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
         <script>
@@ -830,7 +851,7 @@
                     document.getElementById("like").style.stroke = 'rgb(0, 0, 0, 0.6)';
                 }
             }
-            
+
             document.getElementById("like-click2").onclick = function(){
                 if(document.getElementById("like2").style.fill != 'rgba(255, 0, 0, 0.7)')
                 {
