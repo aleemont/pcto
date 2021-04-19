@@ -18,6 +18,8 @@
         <link rel="stylesheet" href="assets/css/profile.css">
 
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" crossorigin="anonymous"></script>
+
     </head>
     <body>
         <!-- NAVBAR START -->
@@ -263,19 +265,29 @@
 
                                     <div class="dropdown">
                                         <button class="btn p-0" type="button" id="dropdownMenuButton1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-more-horizontal icon-lg pb-3px">
-                                                <circle cx="12" cy="12" r="1"></circle>
-                                                <circle cx="19" cy="12" r="1"></circle>
-                                                <circle cx="5" cy="12" r="1"></circle>
-                                            </svg>
-
-                                        </button>
-                                    </div>
+                                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-more-horizontal icon-lg pb-3px">
+                                                 <circle cx="12" cy="12" r="1"></circle>
+                                                 <circle cx="19" cy="12" r="1"></circle>
+                                                 <circle cx="5" cy="12" r="1"></circle>
+                                             </svg>
+                                         </button>
+                                         
+                                         <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton1">
+                                            <a class="dropdown-item" href="#">Modifica</a>
+                                            <a class="dropdown-item" href="#">Copia Link</a>
+                                            <a class="dropdown-item" href="#">Nascondi</a>
+                                            <a class="dropdown-item" href="#">Salva</a>
+                                            <a class="dropdown-item" href="#">Preferiti</a>
+                                            <div class="dropdown-divider"></div>
+                                            <a class="dropdown-item" href="#">Elimina</a>
+                                        </div>
+                                          
+                                     </div>
                                 </div>
                             </div>
                             <div class="card-body mb-0">
                                 <p class="mb-3 tx-14">Look at TESLA MODEL X.</p>
-                                <img class="img-fluid" src="https://www.ansa.it/webimages/img_620x438/2019/12/14/3bf1952ee54a57e57be37ec5cb5f75ee.jpg" alt="">
+                                <img class="img-fluid" src="https://www.ansa.it/webimages/img_620x438/2019/12/14/3bf1952ee54a57e57be37ec5cb5f75ee.jpg" alt="" style="width: 100%;">
                             </div>
 
                             <div class="card-footer mt-0">
@@ -324,10 +336,30 @@
                                             <p class="tx-11 text-muted">3 ore fa</p>
                                         </div>
                                     </div>
+                                    <div class="dropdown">
+                                        <button class="btn p-0" type="button" id="dropdownMenuButton1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-more-horizontal icon-lg pb-3px">
+                                                 <circle cx="12" cy="12" r="1"></circle>
+                                                 <circle cx="19" cy="12" r="1"></circle>
+                                                 <circle cx="5" cy="12" r="1"></circle>
+                                             </svg>
+                                         </button>
+                                         
+                                         <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton1">
+                                            <a class="dropdown-item" href="#">Modifica</a>
+                                            <a class="dropdown-item" href="#">Copia Link</a>
+                                            <a class="dropdown-item" href="#">Nascondi</a>
+                                            <a class="dropdown-item" href="#">Salva</a>
+                                            <a class="dropdown-item" href="#">Preferiti</a>
+                                            <div class="dropdown-divider"></div>
+                                            <a class="dropdown-item" href="#">Elimina</a>
+                                        </div>
+                                          
+                                     </div>
                                 </div>
                             </div>
                             <div class="card-body">
-                                <p class="mt-0 mb-0 tx-14">Later versions will be able to shunt signals from Neuralinks in brain to Neuralinks in body motor/sensory neuron clusters, thus enabling, for example, paraplegics to walk again</p>
+                                <p class="mt-0 mb-0 tx-14" style="width: 100%;">Later versions will be able to shunt signals from Neuralinks in brain to Neuralinks in body motor/sensory neuron clusters, thus enabling, for example, paraplegics to walk again</p>
                             </div>
                             <div class="card-footer">
                                 <a href="javascript:;" class="d-flex align-items-center text-muted mr-4">
@@ -890,13 +922,23 @@
             }
 
             document.getElementById("request-click").onclick = function(){
+                    if(document.getElementById("sb-mobile").classList.contains("d-block")){
+                        document.getElementById("sb-mobile").classList.remove("d-block");
+                        document.getElementById("sb-mobile").classList.add("d-none");
+                        document.getElementById("navbar-button").classList.remove("d-none");
+                        document.getElementById("logo").classList.remove("d-none");
+                        document.getElementById("middle-wrapper").classList.remove("d-none");
+                        document.getElementById("right-wrapper").classList.remove("d-none");
+                        document.getElementById("header").classList.remove("d-none");
+                    }
                     if(document.getElementById("middle-wrapper").classList.contains("d-none"))
                     {
                       document.getElementById("middle-wrapper").classList.remove("d-none");
                       document.getElementById("right-wrapper").classList.add("d-none");
                       document.getElementById("header").classList.remove("d-none");
                       document.getElementById("friends-col").classList.remove("d-none");
-                    }else{
+                    }
+                    else{
                       if(document.getElementById("requests-col").classList.contains("d-none"))
                       {
                         document.getElementById("requests-col").classList.remove("d-none");
@@ -911,6 +953,15 @@
             }
 
             document.getElementById("chat").onclick = function(){
+                    if(document.getElementById("sb-mobile").classList.contains("d-block")){
+                        document.getElementById("sb-mobile").classList.remove("d-block");
+                        document.getElementById("sb-mobile").classList.add("d-none");
+                        document.getElementById("navbar-button").classList.remove("d-none");
+                        document.getElementById("logo").classList.remove("d-none");
+                        document.getElementById("middle-wrapper").classList.remove("d-none");
+                        document.getElementById("right-wrapper").classList.remove("d-none");
+                        document.getElementById("header").classList.remove("d-none");
+                    }
                     if(document.getElementById("middle-wrapper").classList.contains("d-none"))
                     {
                       document.getElementById("middle-wrapper").classList.remove("d-none");

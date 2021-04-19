@@ -12,10 +12,10 @@
         <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
         <!-- Bootstrap CDN -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-
         <!-- Page CSS -->
         <link rel="stylesheet" href="./assets/css/main.css">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" crossorigin="anonymous"></script>
     </head>
     <body>
         <!-- NAVBAR START -->
@@ -56,8 +56,8 @@
                     </li>
                     <li class="nav-item dropdown">
                       <button class="btn p-0" type="button" id="ddmenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                          <span class="nav-link material-icons" style="display: inline-block;">notifications</span>
-                          <span class="active nav-collapse" style="position: relative; bottom:4px">Notifiche</span>
+                          <span class="nav-link material-icons notifche" style="display: inline-block;">notifications</span>
+                          <span class="active nav-collapse notifche" style="position: relative; bottom:4px">Notifiche</span>
                       </button>
                       <div class="dropdown-menu" aria-labelledby="ddmenu" id="ddmenuspace">
                         <button class="btn w-100 m-0 ml-2 d-flex justify-content-between pb-2">
@@ -232,14 +232,24 @@
                                             </div>
 
                                             <div class="dropdown">
-                                                <button class="btn p-0" type="button" id="dropdownMenuButton1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                               <button class="btn p-0" type="button" id="dropdownMenuButton1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-more-horizontal icon-lg pb-3px">
                                                         <circle cx="12" cy="12" r="1"></circle>
                                                         <circle cx="19" cy="12" r="1"></circle>
                                                         <circle cx="5" cy="12" r="1"></circle>
                                                     </svg>
-
                                                 </button>
+                                                
+                                                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton1">
+                                                    <a class="dropdown-item" href="profile.html">Segnala</a>
+                                                    <a class="dropdown-item" href="#">Copia Link</a>
+                                                    <a class="dropdown-item" href="#">Nascondi</a>
+                                                    <a class="dropdown-item" href="#">Salva</a>
+                                                    <a class="dropdown-item" href="#">Preferiti</a>
+                                                    <div class="dropdown-divider"></div>
+                                                    <a class="dropdown-item" href="#">Non seguire più</a>
+                                                  </div>
+                                                 
                                             </div>
                                         </div>
                                     </div>
@@ -297,14 +307,24 @@
 
                                             <div class="dropdown">
                                                 <button class="btn p-0" type="button" id="dropdownMenuButton1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-more-horizontal icon-lg pb-3px">
-                                                        <circle cx="12" cy="12" r="1"></circle>
-                                                        <circle cx="19" cy="12" r="1"></circle>
-                                                        <circle cx="5" cy="12" r="1"></circle>
-                                                    </svg>
-
-                                                </button>
-                                            </div>
+                                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-more-horizontal icon-lg pb-3px">
+                                                         <circle cx="12" cy="12" r="1"></circle>
+                                                         <circle cx="19" cy="12" r="1"></circle>
+                                                         <circle cx="5" cy="12" r="1"></circle>
+                                                     </svg>
+                                                 </button>
+                                                 
+                                                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton1">
+                                                    <a class="dropdown-item" href="#">Modifica</a>
+                                                    <a class="dropdown-item" href="#">Copia Link</a>
+                                                    <a class="dropdown-item" href="#">Nascondi</a>
+                                                    <a class="dropdown-item" href="#">Salva</a>
+                                                    <a class="dropdown-item" href="#">Preferiti</a>
+                                                    <div class="dropdown-divider"></div>
+                                                    <a class="dropdown-item" href="#">Elimina</a>
+                                                </div>
+                                                  
+                                             </div>
                                         </div>
                                     </div>
                                     <div class="card-body mb-0">
@@ -357,6 +377,26 @@
                                                     <p>Ciccio Marra</p>
                                                     <p class="tx-11 text-muted">2 ore fa</p>
                                                 </div>
+                                            </div>
+                                            <div class="dropdown">
+                                               <button class="btn p-0" type="button" id="dropdownMenuButton1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-more-horizontal icon-lg pb-3px">
+                                                        <circle cx="12" cy="12" r="1"></circle>
+                                                        <circle cx="19" cy="12" r="1"></circle>
+                                                        <circle cx="5" cy="12" r="1"></circle>
+                                                    </svg>
+                                                </button>
+                                                
+                                                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton1">
+                                                    <a class="dropdown-item" href="profile.html">Segnala</a>
+                                                    <a class="dropdown-item" href="#">Copia Link</a>
+                                                    <a class="dropdown-item" href="#">Nascondi</a>
+                                                    <a class="dropdown-item" href="#">Salva</a>
+                                                    <a class="dropdown-item" href="#">Preferiti</a>
+                                                    <div class="dropdown-divider"></div>
+                                                    <a class="dropdown-item" href="#">Non seguire più</a>
+                                                  </div>
+                                                 
                                             </div>
                                         </div>
                                     </div>
@@ -434,6 +474,26 @@
                                                   <p class="tx-11 text-muted">3 ore fa</p>
                                               </div>
                                           </div>
+                                          <div class="dropdown">
+                                            <button class="btn p-0" type="button" id="dropdownMenuButton1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-more-horizontal icon-lg pb-3px">
+                                                     <circle cx="12" cy="12" r="1"></circle>
+                                                     <circle cx="19" cy="12" r="1"></circle>
+                                                     <circle cx="5" cy="12" r="1"></circle>
+                                                 </svg>
+                                             </button>
+                                             
+                                             <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton1">
+                                                <a class="dropdown-item" href="#">Modifica</a>
+                                                <a class="dropdown-item" href="#">Copia Link</a>
+                                                <a class="dropdown-item" href="#">Nascondi</a>
+                                                <a class="dropdown-item" href="#">Salva</a>
+                                                <a class="dropdown-item" href="#">Preferiti</a>
+                                                <div class="dropdown-divider"></div>
+                                                <a class="dropdown-item" href="#">Elimina</a>
+                                            </div>
+                                              
+                                         </div>
                                       </div>
                                   </div>
                                   <div class="card-body">
@@ -471,6 +531,7 @@
                                               <p class="d-none d-md-block ml-2">Condividi</p>
                                           </button>
                                       </div>
+                                      
                                   </div>
                               </div>
                           </div>
@@ -703,6 +764,7 @@
         </div>
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
         <script>
             document.getElementById("like-click").onclick = function(){
                 if(document.getElementById("like").style.fill != 'rgba(255, 0, 0, 0.7)')
@@ -753,6 +815,14 @@
             }
 
             document.getElementById("dash").onclick = function(){
+                if(document.getElementById("sb-mobile").classList.contains("d-block")){
+                    document.getElementById("sb-mobile").classList.remove("d-block");
+                    document.getElementById("sb-mobile").classList.add("d-none");
+                    document.getElementById("navbar-button").classList.remove("d-none");
+                    document.getElementById("logo").classList.remove("d-none");
+                    document.getElementById("row-mid-col").classList.remove("d-none");
+                }
+
                 if(document.getElementById("right-col").classList.contains("d-sm-block,col-sm-12")){
                     document.getElementById("mid-col").classList.remove("d-none");
                     document.getElementById("right-col").classList.remove("d-sm-block,col-sm-12");
@@ -789,6 +859,13 @@
             }
 
             document.getElementById("chat").onclick = function(){
+                if(document.getElementById("sb-mobile").classList.contains("d-block")){
+                    document.getElementById("sb-mobile").classList.remove("d-block");
+                    document.getElementById("sb-mobile").classList.add("d-none");
+                    document.getElementById("navbar-button").classList.remove("d-none");
+                    document.getElementById("logo").classList.remove("d-none");
+                    document.getElementById("row-mid-col").classList.remove("d-none");
+                }
                 if(document.getElementById("left-col").classList.contains("d-sm-block,col-sm-12")){
                     document.getElementById("mid-col").classList.remove("d-none");
                     document.getElementById("left-col").classList.remove("d-sm-block,col-sm-12");
@@ -804,7 +881,6 @@
                     document.getElementById("chat-col").style.removeProperty("height");
 
                 }
-
                 else {
                     document.getElementById("mid-col").classList.add("d-none");
                     document.getElementById("right-col").classList.add("d-sm-block,col-sm-12");
