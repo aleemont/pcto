@@ -101,6 +101,9 @@ body {
         caret-color:#0d6dfd;
     }
 
+    .notifiche {
+        display: none;
+    }
 }
 
 @media (min-width: 2400px) {
