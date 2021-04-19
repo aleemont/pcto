@@ -2,7 +2,7 @@
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, user-scalable=no">
 
         <title>MyProfile - MyHub</title>
 
@@ -22,15 +22,25 @@
     <body>
         <!-- NAVBAR START -->
         <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-            <a class="navbar-brand" href="index.html">
+            <a class="navbar-brand" href="index.html" id="logo">
                 <img class="social-logo" src="./assets/img/favicon.png" />
             </a>
 
 
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" id="navbar-button" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
+            <div id="sb-mobile" class="d-none">
+              <div class="d-flex justify-content-center container h-100" style="width:100%">
+                  <div class="d-flex justify-content-center h-100" style="width:100%">
+                    <div class="searchbar-mobile" style="width:100%">
+                        <input class="search_input-mobile" type="text" name="" placeholder="Ricerca...">
+                        <button class="btn search_icon-mobile"><i class="fas fa-search"></i></button>
 
+                    </div>
+                  </div>
+              </div>
+            </div>
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item active">
@@ -45,8 +55,7 @@
                             <span class="active nav-collapse" style="position: relative; bottom:4px">Chat</span>
                         </button>
                     </li>
-                    <li class="nav-item">
-                      <li class="nav-item dropdown">
+                        <li class="nav-item dropdown">
                           <button class="btn p-0" type="button" id="ddmenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                               <span class="nav-link material-icons" style="display: inline-block;">notifications</span>
                               <span class="active nav-collapse" style="position: relative; bottom:4px">Notifiche</span>
@@ -111,10 +120,10 @@
                 <hr class="separator hr1 bg-light">
                 <li class="navbar-nav nav-item dropdown mt-2 mt-md-0">
                     <a class="nav-link dropdown-toggle" href="#" id="impostazioniUtente" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      <img class="img-xs propic rounded-circle" src="https://image.flaticon.com/icons/png/512/147/147144.png" alt=""> Luca Rellu
+                      <img class="img-xs propic rounded-circle" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0LxMyCnA3cdFxz6cX0FMoSgQyB62UdyUSeeHyMV2xXWp0nMNbgy-Ow3eqakVDoqYIizA&usqp=CAU" alt=""> Elon Musk
                     </a>
                     <div class="dropdown-menu" aria-labelledby="impostazioniUtente">
-                      <a class="dropdown-item" href="profile.html">Il Mio Profilo</a>
+                      <a class="dropdown-item disabled" href="profile.html">Il Mio Profilo</a>
                       <a class="dropdown-item" href="#">Impostazioni</a>
                       <a class="dropdown-item" href="#">Assistenza</a>
                       <div class="dropdown-divider"></div>
@@ -124,7 +133,7 @@
             </div>
         </nav>
         <!--HEADER CONTENT start-->
-        <div class="container db-social">
+        <div class="container db-social" id="header">
             <div class="jumbotron jumbotron-fluid">
                 <button class="btn btn-light float-right m-2 modify">
                     <svg height="20px" viewBox="0 -1 401.52289 401" width="20px" xmlns="http://www.w3.org/2000/svg" fill="#000">
@@ -150,7 +159,7 @@
                                 <div class="row d-flex align-items-center">
                                     <div class="col-xl-4 col-md-4 d-flex justify-content-lg-start justify-content-md-start justify-content-center">
                                         <ul class="m-0">
-                                            <li>
+                                            <li id="amici-mobile">
                                                 <div class="counter">51.399.246</div>
                                                 <div class="heading">Amici</div>
                                             </li>
@@ -168,7 +177,7 @@
                                     <div class="d-flex justify-content-center disappear">
                                         <ul class="friends p-0">
                                             <li class="">
-                                                <div class="counter">&nbsp;&nbsp;&nbsp;246 <span class="heading" style="font-weight: normal; font-size:21px;">Amici</span></div>
+                                                <div class="counter">&nbsp;&nbsp;&nbsp;51.399.246 <span class="heading" style="font-weight: normal; font-size:21px;">Amici</span></div>
 
                                             </li>
                                         </ul>
@@ -188,7 +197,7 @@
         <!--HEADER CONTENT end-->
         <div class="container social-page">
         <div class="row">
-            <div class="col-lg-8 col-md-12 middle-wrapper">
+            <div class="col-lg-8 col-md-12 middle-wrapper" id="middle-wrapper">
                 <div class="row">
                   <div class="col-md-12 grid-margin">
                       <div class="card rounded">
@@ -359,9 +368,9 @@
             </div>
             <!-- middle wrapper end -->
             <!-- right wrapper start -->
-            <div class="d-none d-xl-block d-lg-block col-lg-4 right-wrapper">
+            <div class="d-none d-xl-block d-lg-block col-lg-4 right-wrapper" id="right-wrapper">
                 <div class="row">
-                    <div class="col-md-12 grid-margin">
+                    <div class="col-md-12 grid-margin" id="requests-col">
                         <div class="card rounded container-richieste">
                             <div class="card-body body-amici">
                             <h6 class="card-title">Richieste di amicizia</h6>
@@ -502,7 +511,7 @@
                         </div>
                     </div>
                     <!--Potresti conoscere-->
-                    <div class="col-md-12 grid-margin">
+                    <div class="col-md-12 grid-margin" id="pc-col">
                         <div class="card rounded container-richieste">
                             <div class="card-body body-amici">
                             <h6 class="card-title">Potresti conoscere</h6>
@@ -621,7 +630,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-12 grid-margin">
+                    <div class="col-md-12 grid-margin" id="friends-col">
                         <div class="card rounded container-amici">
                             <div class="card-body body-amici">
                                 <h6 class="card-title">I tuoi amici</h6>
@@ -833,8 +842,24 @@
             </div>
             </div>
             <div class="mobile-bar btn-group fixed-bottom" style="width: 100%; height: 7%;">
-                <button href="#" class="col-md-5 btn btn-light"><span class="material-icons">reorder</span></button>
-                <button href="#" class="col-md-2 btn btn-light"><i class="fas fa-search"></i></button>
+              <button class="col-md-5 btn btn-light" id="request-click">
+                  <svg x="0px" y="0px" width="24px" height="19px" viewBox="0 0 469.184 469.185" style="enable-background:new 0 0 469.184 469.185;" xmlns="http://www.w3.org/2000/svg">
+                      <path d="m400.601562 241.5c-61.425781 0-111.398437 49.972656-111.398437 111.398438 0 61.425781 49.972656
+                      111.402343 111.398437 111.402343 61.425782 0 111.398438-49.972656 111.398438-111.402343
+                      0-61.425782-49.976562-111.398438-111.398438-111.398438zm32.132813 126.398438h-17.132813v17.132812c0
+                      8.285156-6.714843 15-15 15-8.285156 0-15-6.714844-15-15v-17.132812h-17.132812c-8.285156 0-15-6.714844-15-15 0-8.28125
+                      6.714844-15 15-15h17.132812v-17.132813c0-8.28125 6.714844-15 15-15 8.285157 0 15 6.71875 15 15v17.132813h17.132813c8.285156
+                      0 15 6.71875 15 15 0 8.285156-6.714844 15-15 15zm0 0"></path>
+                      <path d="m159.601562 223.300781c61.425782 0 111.398438-49.976562 111.398438-111.402343
+                      0-61.425782-49.976562-111.398438-111.398438-111.398438-61.425781 0-111.402343 49.972656-111.402343
+                      111.398438 0 61.429687 49.976562 111.402343 111.402343 111.402343zm0 0"></path>
+                      <path d="m291.453125 263.101562c-11.269531-16.496093-25.546875-30.792968-42.042969-42.066406-24.4375 20.148438-55.734375
+                      32.265625-89.808594 32.265625-34.074218 0-65.371093-12.117187-89.8125-32.265625-42.097656 28.765625-69.789062 77.140625-69.789062
+                      131.863282v56.234374c0 30.421876 24.746094 55.167969 55.164062 55.167969h208.867188c13.421875 0 25.734375-4.820312
+                      35.308594-12.816406-24.820313-25.492187-40.140625-60.28125-40.140625-98.585937 0-34.066407 12.113281-65.359376 32.253906-89.796876zm0 0"></path>
+                  </svg>
+              </button>
+                <button href="#" class="col-md-2 btn btn-light" id="search"><i class="fas fa-search"></i></button>
                 <button href="#" class="col-md-5 btn btn-light" id="chat"><span class="material-icons">question_answer</span></button>
             </div>
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
@@ -863,6 +888,84 @@
                     document.getElementById("like2").style.stroke = 'rgb(0, 0, 0, 0.6)';
                 }
             }
+
+            document.getElementById("request-click").onclick = function(){
+                    if(document.getElementById("middle-wrapper").classList.contains("d-none"))
+                    {
+                      document.getElementById("middle-wrapper").classList.remove("d-none");
+                      document.getElementById("right-wrapper").classList.add("d-none");
+                      document.getElementById("header").classList.remove("d-none");
+                      document.getElementById("friends-col").classList.remove("d-none");
+                    }else{
+                      if(document.getElementById("requests-col").classList.contains("d-none"))
+                      {
+                        document.getElementById("requests-col").classList.remove("d-none");
+                        document.getElementById("pc-col").classList.remove("d-none");
+                      }
+                      document.getElementById("middle-wrapper").classList.add("d-none");
+                      document.getElementById("right-wrapper").classList.remove("d-none");
+                      document.getElementById("header").classList.add("d-none");
+                      document.getElementById("friends-col").classList.add("d-none");
+                    }
+
+            }
+
+            document.getElementById("chat").onclick = function(){
+                    if(document.getElementById("middle-wrapper").classList.contains("d-none"))
+                    {
+                      document.getElementById("middle-wrapper").classList.remove("d-none");
+                      document.getElementById("right-wrapper").classList.add("d-none");
+                      document.getElementById("header").classList.remove("d-none");
+                      document.getElementById("requests-col").classList.remove("d-none");
+                      document.getElementById("pc-col").classList.remove("d-none");
+                    }else{
+                      if(document.getElementById("friends-col").classList.contains("d-none"))
+                      {
+                        document.getElementById("friends-col").classList.remove("d-none");
+                      }
+
+                      if(document.getElementById("sb-mobile").classList.contains("d-block"))
+                      {
+                        document.getElementById("sb-mobile").classList.remove("d-block");
+                        document.getElementById("sb-mobile").classList.add("d-none");
+
+                        document.getElementById("navbar-button").classList.remove("d-none");
+                        document.getElementById("logo").classList.remove("d-none");
+                        document.getElementById("middle-wrapper").classList.remove("d-none");
+                        document.getElementById("right-wrapper").classList.remove("d-none");
+                        document.getElementById("header").classList.remove("d-none");
+                      }
+                      document.getElementById("middle-wrapper").classList.add("d-none");
+                      document.getElementById("right-wrapper").classList.remove("d-none");
+                      document.getElementById("header").classList.add("d-none");
+                      document.getElementById("requests-col").classList.add("d-none");
+                      document.getElementById("pc-col").classList.add("d-none");
+                    }
+
+            }
+
+              document.getElementById("search").onclick = function(){
+                    document.getElementById("navbar-button").classList.add("d-none");
+                    document.getElementById("logo").classList.add("d-none");
+                    if(document.getElementById("sb-mobile").classList.contains("d-none"))
+                    {
+                        document.getElementById("sb-mobile").classList.remove("d-none");
+                        document.getElementById("sb-mobile").classList.add("d-block");
+                        document.getElementById("middle-wrapper").classList.add("d-none");
+                        document.getElementById("right-wrapper").classList.add("d-none");
+                        document.getElementById("header").classList.add("d-none");
+                    }else {
+                        document.getElementById("sb-mobile").classList.remove("d-block");
+                        document.getElementById("sb-mobile").classList.add("d-none");
+                        document.getElementById("navbar-button").classList.remove("d-none");
+                        document.getElementById("logo").classList.remove("d-none");
+                        document.getElementById("middle-wrapper").classList.remove("d-none");
+                        document.getElementById("right-wrapper").classList.remove("d-none");
+                        document.getElementById("header").classList.remove("d-none");
+                    }
+              }
+
+
         </script>
     </body>
 </html>
