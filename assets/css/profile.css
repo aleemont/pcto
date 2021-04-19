@@ -2,7 +2,7 @@
     .profileButton {
         margin-bottom: 10px;
     }
-    
+
     .disappear {
         width: 100%;
     }
@@ -10,6 +10,9 @@
     .small-button {
         height:35px;
         margin-bottom:-3px;
+    }
+    #amici-mobile{
+      display: none;
     }
 }
 
@@ -62,9 +65,9 @@
     margin: 0;
     background: url(https://www.nanopress.it/wp-content/uploads/2018/02/Copertine-Facebook-gratis.jpg);
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-attachment: absolute;
     background-size: cover;
-    background-position: bottom center;
+    background-position: center;
     color: #fff!important;
     height: 300px;
     position: relative;
