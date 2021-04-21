@@ -364,10 +364,21 @@ img {
 .overflow {
     white-space: nowrap;
     text-overflow: ellipsis;
-    width: 150px;
+    max-width: 150px;
     height: 25px;
     display: block;
     overflow: hidden;
+}
+
+.overflow-notifiche {
+    white-space: nowrap;
+    text-overflow:ellipsis;
+    max-width: 130px;
+    height: 30px;
+    display: block;
+    overflow: hidden;
+    padding-top:5px;
+    margin: 0;
 }
 
 .newpost{
