@@ -891,52 +891,22 @@
                       35.308594-12.816406-24.820313-25.492187-40.140625-60.28125-40.140625-98.585937 0-34.066407 12.113281-65.359376 32.253906-89.796876zm0 0"></path>
                   </svg>
               </button>
-                <button href="#" class="col-md-2 btn btn-light" id="search"><i class="fas fa-search"></i></button>
+                <button class="col-md-3 btn btn-light" id="not"><span class="material-icons">notifications</span></button>
+                <button class="col-md-3 btn btn-light" id="search"><span class="material-icons">search</span></button>
                 <button href="#" class="col-md-5 btn btn-light" id="chat"><span class="material-icons">question_answer</span></button>
             </div>
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+        <script src="assets/js/profile.js" async></script>
         <script>
-            document.getElementById("like-click").onclick = function(){
-                if(document.getElementById("like").style.fill != 'rgba(255, 0, 0, 0.7)')
-                {
-                    document.getElementById("like").style.fill = 'rgba(255, 0, 0, 0.7)';
-                    document.getElementById("like").style.stroke = 'rgba(255, 0, 0, 0.6)';
-                }
-                else {
-                    document.getElementById("like").style.fill = 'rgb(255, 255, 255)';
-                    document.getElementById("like").style.stroke = 'rgb(0, 0, 0, 0.6)';
-                }
-            }
-
-            document.getElementById("like-click2").onclick = function(){
-                if(document.getElementById("like2").style.fill != 'rgba(255, 0, 0, 0.7)')
-                {
-                    document.getElementById("like2").style.fill = 'rgba(255, 0, 0, 0.7)';
-                    document.getElementById("like2").style.stroke = 'rgba(255, 0, 0, 0.6)';
-                }
-                else {
-                    document.getElementById("like2").style.fill = 'rgb(255, 255, 255)';
-                    document.getElementById("like2").style.stroke = 'rgb(0, 0, 0, 0.6)';
-                }
-            }
-
+            
             document.getElementById("request-click").onclick = function(){
                     if(document.getElementById("sb-mobile").classList.contains("d-block")){
-                        document.getElementById("sb-mobile").classList.remove("d-block");
-                        document.getElementById("sb-mobile").classList.add("d-none");
-                        document.getElementById("navbar-button").classList.remove("d-none");
-                        document.getElementById("logo").classList.remove("d-none");
-                        document.getElementById("middle-wrapper").classList.remove("d-none");
-                        document.getElementById("right-wrapper").classList.remove("d-none");
-                        document.getElementById("header").classList.remove("d-none");
+                        chiudiSearch();
                     }
                     if(document.getElementById("middle-wrapper").classList.contains("d-none"))
                     {
-                      document.getElementById("middle-wrapper").classList.remove("d-none");
-                      document.getElementById("right-wrapper").classList.add("d-none");
-                      document.getElementById("header").classList.remove("d-none");
-                      document.getElementById("friends-col").classList.remove("d-none");
+                        chiudiColD();
                     }
                     else{
                       if(document.getElementById("requests-col").classList.contains("d-none"))
@@ -949,18 +919,11 @@
                       document.getElementById("header").classList.add("d-none");
                       document.getElementById("friends-col").classList.add("d-none");
                     }
-
             }
 
             document.getElementById("chat").onclick = function(){
                     if(document.getElementById("sb-mobile").classList.contains("d-block")){
-                        document.getElementById("sb-mobile").classList.remove("d-block");
-                        document.getElementById("sb-mobile").classList.add("d-none");
-                        document.getElementById("navbar-button").classList.remove("d-none");
-                        document.getElementById("logo").classList.remove("d-none");
-                        document.getElementById("middle-wrapper").classList.remove("d-none");
-                        document.getElementById("right-wrapper").classList.remove("d-none");
-                        document.getElementById("header").classList.remove("d-none");
+                        chiudiSearch();
                     }
                     if(document.getElementById("middle-wrapper").classList.contains("d-none"))
                     {
@@ -1000,19 +963,9 @@
                     document.getElementById("logo").classList.add("d-none");
                     if(document.getElementById("sb-mobile").classList.contains("d-none"))
                     {
-                        document.getElementById("sb-mobile").classList.remove("d-none");
-                        document.getElementById("sb-mobile").classList.add("d-block");
-                        document.getElementById("middle-wrapper").classList.add("d-none");
-                        document.getElementById("right-wrapper").classList.add("d-none");
-                        document.getElementById("header").classList.add("d-none");
+                        apriSearch();
                     }else {
-                        document.getElementById("sb-mobile").classList.remove("d-block");
-                        document.getElementById("sb-mobile").classList.add("d-none");
-                        document.getElementById("navbar-button").classList.remove("d-none");
-                        document.getElementById("logo").classList.remove("d-none");
-                        document.getElementById("middle-wrapper").classList.remove("d-none");
-                        document.getElementById("right-wrapper").classList.remove("d-none");
-                        document.getElementById("header").classList.remove("d-none");
+                        chiudiSearch();
                     }
               }
 
