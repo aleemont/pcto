@@ -311,7 +311,7 @@ img {
 }
 
 .container-amici {
-    width: 300px;
+    width: 25%;
     position: fixed;
 }
 
@@ -373,7 +373,7 @@ img {
 .overflow-notifiche {
     white-space: nowrap;
     text-overflow:ellipsis;
-    max-width: 130px;
+    width: 200px;
     height: 30px;
     display: block;
     overflow: hidden;
