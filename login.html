@@ -1,0 +1,64 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, user-scalable=no">
+
+        <title>Home - MyHub</title>
+
+        <meta name="description" content="">
+
+        <link rel="icon" type="image/png" href="assets/img/chat.png"/>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <!-- Bootstrap CDN -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <!-- Page CSS -->
+        <link rel="stylesheet" href="./assets/css/login.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" crossorigin="anonymous"></script>
+    </head>
+    <style>
+        html,
+        body {
+            height: 100%;
+        }
+    </style>
+    <body>
+        <div class="container d-flex h-100 align-items-center justify-content-center">
+            <div class="general-container row">
+                <div class="login-container col-6 d-flex align-items-center justify-content-center divisore">
+                    <form class="form-group" onsubmit="return valida()" name="login-form">
+                        <h1 class=" mb-4"><strong>Login</strong></h1>
+                        
+                        <input type="text" class="d-block form-control" placeholder="Enter Username" name="uname" required>
+                        <input type="password" class="d-block form-control mt-2" placeholder="Enter Password" name="psw" required>
+
+                        <button type="submit" class="d-block mt-4 w-100 btn btn-light">Login</button>
+                        <label>
+                        <input type="checkbox" class="mt-3" checked="checked" name="remember"> Resta Collegato
+                        </label>
+                    </form>
+                </div>
+                <div class="login-container col-6 d-flex align-items-center justify-content-center">
+                    <img  class="d-block" src="assets/img/favicon.png" style="width:50%">
+                    <p class="descrizione m-0">Vivi esperienze, prova emozioni, condividi sensazioni.<br>MyHub ti aiuta a connetterti e rimanere in contatto con le persone della tua vita.</p>
+                        
+                </div>
+            </div>
+        </div>
+    </body>
+    <script>
+    function valida() {
+        var nome = document.forms["login-form"]["uname"].value;
+        var psw = document.forms["login-form"]["psw"].value;
+
+        if (nome == "admin" && psw == "admin") {
+            window.location.href = "index.html";
+            return false;
+        }else{
+            alert("Errore");
+            return false;
+        }
+    }
+    </script>
+</html>
