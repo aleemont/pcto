@@ -1,0 +1,961 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, user-scalable=no">
+
+        <title>Home - MyHub</title>
+
+        <meta name="description" content="">
+
+        <link rel="icon" type="image/png" href="assets/img/chat.png"/>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <!-- Bootstrap CDN -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <!-- Page CSS -->
+        <link rel="stylesheet" href="./assets/css/main.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <!-- NAVBAR START -->
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+            <a class="navbar-brand" id="logo" href="index.html">
+                <img class="social-logo" src="./assets/img/favicon.png" />
+            </a>
+            <button id="navbar-button" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div id="sb-mobile" class="d-none">
+              <div class="d-flex justify-content-center container h-100" style="width:100%">
+                  <div class="d-flex justify-content-center h-100" style="width:100%">
+                    <div class="searchbar-mobile" style="width:100%">
+                        <input class="search_input-mobile" type="text" name="" placeholder="Ricerca...">
+                        <button class="btn search_icon-mobile"><i class="fas fa-search"></i></button>
+
+                    </div>
+                  </div>
+              </div>
+            </div>
+
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <button class="btn p-0" onclick="location.href = 'index.html';">
+                            <span class="nav-link active material-icons" style="display: inline-block;">home</span>
+                            <span class="nav-collapse" style="position: relative; bottom:4px">Home</span>
+                        </button>
+                    </li>
+                    <li class="nav-item">
+                        <button class="btn p-0">
+                            <span class="nav-link material-icons" style="display: inline-block;">question_answer</span>
+                            <span class="active nav-collapse" style="position: relative; bottom:4px">Chat</span>
+
+                        </button>
+
+                    </li>
+                    <li class="nav-item dropdown notifiche">
+                      <button class="btn p-0" type="button" id="ddmenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          <span class="nav-link material-icons " style="display: inline-block;">notifications</span>
+                          <span class="active nav-collapse" style="position: relative; bottom:4px">Notifiche</span>
+                      </button>
+                      <div class="dropdown-menu" aria-labelledby="ddmenu" id="ddmenuspace">
+                        <button class="btn w-100 m-0 ml-2 d-flex justify-content-between pb-2">
+                            <div class="d-flex align-items-center hover-pointer">
+
+                                <img class="img-xs rounded-circle" src="https://i0.wp.com/www.arancianatura.it/wp-content/uploads/2019/01/Arancia-Tarocco.jpg?fit=750%2C750&ssl=1" alt="">
+                                <div class="ml-2 mt-3" style="text-align:left">
+                                    <span class="overflow pt-1">Lama Rangia</span>
+                                    <p class="tx-11 text-muted mt-0 ">Ha messo mi piace al tuo post</p>
+                                </div>
+
+                            </div>
+                            <div class="d-flex align-items-center justify-content-end hover-pointer mr-3  mt-3">
+                                <img class="img-xs" src="https://www.ansa.it/webimages/img_620x438/2019/12/14/3bf1952ee54a57e57be37ec5cb5f75ee.jpg" alt="">
+                            </div>
+                        </button>
+                        <div class="dropdown-divider m-0"></div>
+                        <button class="btn w-100 m-0 ml-2 d-flex justify-content-between pb-2">
+                            <div class="d-flex align-items-center hover-pointer">
+
+                                <img class="img-xs rounded-circle" src="https://tuttofaremilano.com/wp-content/uploads/2017/02/saracinesca-garage@2x.jpg" alt="">
+                                <div class="ml-2 mt-3" style="text-align:left">
+                                    <span class="overflow pt-1">Sara Cinesca</span>
+                                    <p class="tx-11 text-muted mt-0 ">Ha messo mi piace al tuo post</p>
+                                </div>
+
+                            </div>
+                            <div class="d-flex align-items-center justify-content-end hover-pointer mr-3  mt-3">
+                                <img class="img-xs" src="https://www.ansa.it/webimages/img_620x438/2019/12/14/3bf1952ee54a57e57be37ec5cb5f75ee.jpg" alt="">
+                            </div>
+                        </button>
+                        <div class="dropdown-divider m-0"></div>
+                        <button class="btn w-100 m-0 ml-2 d-flex justify-content-between mb-2 pb-0">
+                            <div class="d-flex align-items-center hover-pointer">
+
+                                <img class="img-xs rounded-circle" src="https://yt3.ggpht.com/ytc/AAUvwnjOLKJVRDVoC4Hu8oChpb9idQokoC_dEX13BFmd-g=s900-c-k-c0x00ffffff-no-rj" alt="">
+                                <div class="ml-2 mt-3" style="text-align:left">
+                                    <span class="overflow pt-1">Nello Taver</span>
+                                    <p class="tx-11 text-muted mt-0 ">Ha messo mi piace al tuo post</p>
+                                </div>
+
+                            </div>
+                            <div class="d-flex align-items-center justify-content-end hover-pointer mr-3  mt-3">
+                                <img class="img-xs" src="https://www.ansa.it/webimages/img_620x438/2019/12/14/3bf1952ee54a57e57be37ec5cb5f75ee.jpg" alt="">
+                            </div>
+                        </button>
+                  </li>
+
+                </ul>
+
+                <!--search bar-->
+                <div class="d-flex justify-content-end container h-100 mr-0">
+                    <div class="d-flex justify-content-center h-100">
+                    <div class="searchbar" id="searchbar-collapse">
+                        <input class="search_input" type="text" name="" placeholder="Search...">
+                        <a href="#" class="search_icon"><i class="fas fa-search"></i></a>
+                    </div>
+                    </div>
+                </div>
+                <!--end search bar-->
+                <hr class="separator hr1 bg-light">
+                <li class="navbar-nav nav-item dropdown mt-2 mt-md-0">
+                    <a class="nav-link dropdown-toggle" href="#" id="impostazioniUtente" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <img class="img-xs propic rounded-circle" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0LxMyCnA3cdFxz6cX0FMoSgQyB62UdyUSeeHyMV2xXWp0nMNbgy-Ow3eqakVDoqYIizA&usqp=CAU" alt=""> Elon Musk
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="impostazioniUtente">
+                      <a class="dropdown-item" href="profile.html">Il Mio Profilo</a>
+                      <a class="dropdown-item" href="#">Impostazioni</a>
+                      <a class="dropdown-item" href="#">Assistenza</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="./index.html">Esci</a>
+                    </div>
+                  </li>
+            </div>
+
+        </nav>
+        <!-- MAIN CONTENT START -->
+        <div class="container mb-4">
+            <div class="social-page tx-13">
+
+                <div class="row profile-body">
+                    <!-- left wrapper start -->
+                    <div class="d-none d-md-block col-md-4 col-xl-3 left-wrapper" id="left-col">
+                        <div class="card rounded dashboard" id="dash-col">
+                            <div class="card-body">
+                              <div class="d-flex justify-content-between mb-2 pb-2 border-bottom">
+                                  <div class="d-flex align-items-center hover-pointer">
+                                      <a href="profile.html"><img class="img-xs rounded-circle" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0LxMyCnA3cdFxz6cX0FMoSgQyB62UdyUSeeHyMV2xXWp0nMNbgy-Ow3eqakVDoqYIizA&usqp=CAU" alt=""></a>
+                                      <div class="ml-2 mt-2">
+                                          <span class="overflow pt-2">Elon Musk</span>
+                                          <p class="tx-11 mt-0 text-success">Online</p>
+                                      </div>
+
+                                  </div>
+                                  <button class="btn" id="dash-close"><i class="align-self-start material-icons">close</i></button>
+                              </div>
+
+                                <div class="groups-list">
+                                  <button class="btn m-0 p-1 groups-item"><img src="https://static.xx.fbcdn.net/rsrc.php/v3/yH/r/kyCAf2jbZvF.png"/> Pagine</button>
+                                  <button class="btn m-0 p-1 groups-item"><img src="https://static.xx.fbcdn.net/rsrc.php/v3/ye/r/w-vdKCGzCy1.png"/> Recenti</button>
+                                  <button class="btn m-0 p-1 groups-item"><img src="https://static.xx.fbcdn.net/rsrc.php/v3/yK/r/mAnT0r8GSOm.png"/> Preferiti</button>
+                                  <button class="btn m-0 p-1 groups-item"><img src="https://static.xx.fbcdn.net/rsrc.php/v3/y5/r/PrjLkDYpYbH.png" /> Gruppi</button>
+                                  <button class="btn m-0 p-1 groups-item"><img src="https://static.xx.fbcdn.net/rsrc.php/v3/ys/r/8wTx0Eu2vRq.png"/> Eventi</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- left wrapper end -->
+                    <!-- middle wrapper start -->
+                    <div class="col-md-8 col-xl-6 middle-wrapper" id="mid-col">
+                        <div class="row" id="row-mid-col">
+                            <div class="col-md-12 grid-margin" id="col-dash">
+                                <div class="card rounded">
+                                    <div class="card-header pt-0 pb-0">
+                                        <div class="d-flex align-items-center justify-content-between">
+                                            <div class="d-flex align-items-center mt-2 mb-2">
+                                              <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                                  width="19.342px" height="19.342px" viewBox="0 0 38.342 38.342" style="enable-background:new 0 0 19.342 19.342;"
+                                                  xml:space="preserve">
+                                              <path d="M19.171,0C8.6,0,0,8.6,0,19.171C0,29.74,8.6,38.342,19.171,38.342c10.569,0,19.171-8.602,19.171-19.171
+                                              C38.342,8.6,29.74,0,19.171,0z M19.171,34.341C10.806,34.341,4,27.533,4,19.17c0-8.365,6.806-15.171,15.171-15.171
+                                              s15.171,6.806,15.171,15.171C34.342,27.533,27.536,34.341,19.171,34.341z M30.855,19.171c0,1.656-1.344,3-3,3h-5.685v5.685
+                                              c0,1.655-1.345,3-3,3c-1.657,0-3-1.345-3-3v-5.685h-5.684c-1.657,0-3-1.344-3-3c0-1.657,1.343-3,3-3h5.684v-5.683
+                                              c0-1.657,1.343-3,3-3c1.655,0,3,1.343,3,3v5.683h5.685C29.512,16.171,30.855,17.514,30.855,19.171z" class="newpost"></path>
+                                              </svg>
+                                              <div class="ml-2">
+                                                    <p>Pubblica un nuovo Post</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <form class="m-0">
+                                      <div class="card-body mb-0">
+                                          <textarea class="form-control" placeholder="Scrivi il tuo post..." rows=3></textarea>
+
+                                      </div>
+
+                                      <div class="card-footer mt-0 pt-2 pb-2" >
+                                          <div class="d-flex post-actions mt-0 mb-0">
+                                              <a href="javascript:;" class="d-flex align-items-center text-muted mr-4">
+                                                  <i role="img" style="background-image: url(&quot;https://static.xx.fbcdn.net/rsrc.php/v3/yU/r/vuxzbjiVZ68.png&quot;); background-position: 0px -100px; background-size: auto; width: 24px; height: 24px; background-repeat: no-repeat; display: inline-block;"></i>
+                                                  <p class="d-none d-md-block ml-2">Foto/Video</p>
+                                              </a>
+                                              <a href="javascript:;" class="d-flex align-items-center text-muted mr-4">
+                                                  <i style="height: 24px; width: 24px; background-image: url(&quot;https://static.xx.fbcdn.net/rsrc.php/v3/yU/r/vuxzbjiVZ68.png&quot;); background-position: 0px -50px; background-size: auto; background-repeat: no-repeat; display: inline-block;"></i>
+                                                  <p class="d-none d-md-block ml-2">Tagga</p>
+                                              </a>
+
+                                              <button class="btn btn-outline-info d-flex align-items-center share small-button" type="reset">
+                                                  <svg xmlns="http://www.w3.org/2000/svg" width="13" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-share icon-md">
+                                                      <path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8"></path>
+                                                      <polyline points="16 6 12 2 8 6"></polyline>
+                                                      <line x1="12" y1="2" x2="12" y2="15"></line>
+                                                  </svg>
+                                                  <p class="d-none d-md-block ml-2">Pubblica</p>
+                                              </button>
+                                          </div>
+                                      </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12 grid-margin">
+                                <div class="card rounded">
+                                    <div class="card-header pt-0 pb-0">
+                                        <div class="d-flex align-items-center justify-content-between">
+                                            <div class="d-flex align-items-center">
+                                                <img class="img-xs rounded-circle" src="https://fotocomefare.com/wp-content/uploads/2020/03/2069235008_d7b77b242f.jpg" alt="">
+                                                <div class="ml-2">
+                                                    <p>Marco Belgrado</p>
+                                                    <p class="tx-11 text-muted">1 ora fa</p>
+                                                </div>
+                                            </div>
+
+                                            <div class="dropdown">
+                                               <button class="btn p-0" type="button" id="dropdownMenuButton1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-more-horizontal icon-lg pb-3px">
+                                                        <circle cx="12" cy="12" r="1"></circle>
+                                                        <circle cx="19" cy="12" r="1"></circle>
+                                                        <circle cx="5" cy="12" r="1"></circle>
+                                                    </svg>
+                                                </button>
+                                                
+                                                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton1">
+                                                    <a class="dropdown-item" href="profile.html">Segnala</a>
+                                                    <a class="dropdown-item" href="#">Copia Link</a>
+                                                    <a class="dropdown-item" href="#">Nascondi</a>
+                                                    <a class="dropdown-item" href="#">Salva</a>
+                                                    <a class="dropdown-item" href="#">Preferiti</a>
+                                                    <div class="dropdown-divider"></div>
+                                                    <a class="dropdown-item" href="#">Non seguire più</a>
+                                                  </div>
+                                                 
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-body mb-0">
+                                        <p class="mb-3 tx-14">Un'estate ricca di emozioni, esperienza indimenticabile.</p>
+                                        <img class="img-fluid" src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fnisifilters.it%2Fwp-content%2Fuploads%2F2016%2F12%2FMessa-a-Fuoco-Paesaggio.jpg&f=1&nofb=1" alt="">
+                                    </div>
+
+                                    <div class="card-footer mt-0">
+                                        <a href="javascript:;" class="d-flex align-items-center text-muted mr-4">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-heart icon-md">
+                                                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" class="heart"></path>
+                                            </svg>
+                                            <p class="d-block overflow-like">A <span style="font-weight: bold;">100 persone</span> piace questa foto</p>
+
+                                          </a>
+                                        <hr class="hr1">
+                                        <div class="d-flex post-actions mt-2">
+
+                                    <button class="d-flex align-items-center p-0 text-muted mr-4 btn" id="like-click">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-heart icon-md" id="like">
+                                            <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                                        </svg>
+                                        <p class="d-none d-md-block ml-2">Like</p>
+                                    </button>
+                                    <button class="d-flex align-items-center p-0 text-muted mr-4 btn">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-message-square icon-md">
+                                            <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                                        </svg>
+                                        <p class="d-none d-md-block ml-2">Commenta</p>
+                                    </button>
+                                    <button class="d-flex align-items-center p-0 text-muted btn">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-share icon-md">
+                                            <path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8"></path>
+                                            <polyline points="16 6 12 2 8 6"></polyline>
+                                            <line x1="12" y1="2" x2="12" y2="15"></line>
+                                        </svg>
+                                        <p class="d-none d-md-block ml-2">Condividi</p>
+                                    </button>
+                                </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12 grid-margin ">
+                                <div class="card rounded ">
+                                    <div class="card-header pt-0 pb-0">
+                                        <div class="d-flex align-items-center justify-content-between">
+                                            <div class="d-flex align-items-center">
+                                                <img class="img-xs rounded-circle" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0LxMyCnA3cdFxz6cX0FMoSgQyB62UdyUSeeHyMV2xXWp0nMNbgy-Ow3eqakVDoqYIizA&usqp=CAU" alt="">
+                                                <div class="ml-2">
+                                                    <p>Elon Musk</p>
+                                                    <p class="tx-11 text-muted">1 ora e 30 minuti fa</p>
+                                                </div>
+                                            </div>
+
+                                            <div class="dropdown">
+                                                <button class="btn p-0" type="button" id="dropdownMenuButton1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-more-horizontal icon-lg pb-3px">
+                                                         <circle cx="12" cy="12" r="1"></circle>
+                                                         <circle cx="19" cy="12" r="1"></circle>
+                                                         <circle cx="5" cy="12" r="1"></circle>
+                                                     </svg>
+                                                 </button>
+                                                 
+                                                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton1">
+                                                    <a class="dropdown-item" href="#">Modifica</a>
+                                                    <a class="dropdown-item" href="#">Copia Link</a>
+                                                    <a class="dropdown-item" href="#">Nascondi</a>
+                                                    <a class="dropdown-item" href="#">Salva</a>
+                                                    <a class="dropdown-item" href="#">Preferiti</a>
+                                                    <div class="dropdown-divider"></div>
+                                                    <a class="dropdown-item" href="#">Elimina</a>
+                                                </div>
+                                                  
+                                             </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-body mb-0">
+                                        <p class="mb-3 tx-14">Look at TESLA MODEL X.</p>
+                                        <img class="img-fluid" src="https://www.ansa.it/webimages/img_620x438/2019/12/14/3bf1952ee54a57e57be37ec5cb5f75ee.jpg" alt="">
+                                    </div>
+
+                                    <div class="card-footer mt-0">
+                                        <a href="javascript:;" class="d-flex align-items-center text-muted mr-4">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-heart icon-md">
+                                                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" class="heart"></path>
+                                            </svg>
+                                            <p class="d-block overflow-like">A <span style="font-weight: bold;">569 persone</span> piace questa foto</p>
+
+                                          </a>
+                                        <hr class="hr1">
+                                        <div class="d-flex post-actions mt-2">
+
+                                    <button class="d-flex align-items-center p-0 text-muted mr-4 btn" id="like-click3">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-heart icon-md" id="like3">
+                                            <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                                        </svg>
+                                        <p class="d-none d-md-block ml-2">Like</p>
+                                    </button>
+                                    <button class="d-flex align-items-center p-0 text-muted mr-4 btn">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-message-square icon-md">
+                                            <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                                        </svg>
+                                        <p class="d-none d-md-block ml-2">Commenta</p>
+                                    </button>
+                                    <button class="d-flex align-items-center p-0 text-muted btn">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-share icon-md">
+                                            <path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8"></path>
+                                            <polyline points="16 6 12 2 8 6"></polyline>
+                                            <line x1="12" y1="2" x2="12" y2="15"></line>
+                                        </svg>
+                                        <p class="d-none d-md-block ml-2">Condividi</p>
+                                    </button>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="card rounded mb-3">
+                                    <div class="card-header pb-0 pt-0">
+                                        <div class="d-flex align-items-center justify-content-between">
+                                            <div class="d-flex align-items-center">
+                                                <img class="img-xs rounded-circle" src="http://www.boccanera.net/wp-content/uploads/Foto_profilo_Facebook_Lorenzo_Boccanera.jpg" alt="">
+                                                <div class="ml-2">
+                                                    <p>Ciccio Marra</p>
+                                                    <p class="tx-11 text-muted">2 ore fa</p>
+                                                </div>
+                                            </div>
+                                            <div class="dropdown">
+                                               <button class="btn p-0" type="button" id="dropdownMenuButton1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-more-horizontal icon-lg pb-3px">
+                                                        <circle cx="12" cy="12" r="1"></circle>
+                                                        <circle cx="19" cy="12" r="1"></circle>
+                                                        <circle cx="5" cy="12" r="1"></circle>
+                                                    </svg>
+                                                </button>
+                                                
+                                                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton1">
+                                                    <a class="dropdown-item" href="profile.html">Segnala</a>
+                                                    <a class="dropdown-item" href="#">Copia Link</a>
+                                                    <a class="dropdown-item" href="#">Nascondi</a>
+                                                    <a class="dropdown-item" href="#">Salva</a>
+                                                    <a class="dropdown-item" href="#">Preferiti</a>
+                                                    <div class="dropdown-divider"></div>
+                                                    <a class="dropdown-item" href="#">Non seguire più</a>
+                                                  </div>
+                                                 
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+                                        <p class="mt-0 mb-0 tx-14">Ogni mio momento
+                                                                io l’ho vissuto
+                                                                un’altra volta
+                                                                in un’epoca fonda
+                                                                fuori di me
+                                                                Sono lontano colla mia memoria
+                                                                dietro a quelle vite perse
+                                                                Mi desto in un bagno
+                                                                di care cose consuete
+                                                                sorpreso
+                                                                e raddolcito
+                                                                Rincorro le nuvole
+                                                                che si sciolgono dolcemente
+                                                                cogli occhi attenti
+                                                                e mi rammento
+                                                                di qualche amico
+                                                                morto
+                                                                Ma Dio cos’è?
+                                                                E la creatura
+                                                                atterrita
+                                                                sbarra gli occhi
+                                                                e accoglie
+                                                                gocciole di stelle
+                                                                e la pianura muta
+                                                                E si sente
+                                                                riavere</p>
+                                    </div>
+                                    <div class="card-footer">
+                                        <a href="javascript:;" class="d-flex align-items-center text-muted mr-4">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-heart icon-md">
+                                                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" class="heart"></path>
+                                            </svg>
+                                            <p class="d-block overflow-like">A <span style="font-weight: bold;">65 persone</span> piace questo post</p>
+
+                                          </a>
+                                        <hr class="hr1">
+                                        <div class="d-flex post-actions mt-2">
+
+                                    <button class="d-flex align-items-center p-0 text-muted mr-4 btn" id="like-click2">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-heart icon-md" id="like2">
+                                            <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                                        </svg>
+                                        <p class="d-none d-md-block ml-2">Like</p>
+                                    </button>
+                                    <button class="d-flex align-items-center p-0 text-muted mr-4 btn">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-message-square icon-md">
+                                            <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                                        </svg>
+                                        <p class="d-none d-md-block ml-2">Commenta</p>
+                                    </button>
+                                    <button class="d-flex align-items-center p-0 text-muted btn">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-share icon-md">
+                                            <path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8"></path>
+                                            <polyline points="16 6 12 2 8 6"></polyline>
+                                            <line x1="12" y1="2" x2="12" y2="15"></line>
+                                        </svg>
+                                        <p class="d-none d-md-block ml-2">Condividi</p>
+                                    </button>
+                                  </div>
+                                </div>
+                              </div>
+                          </div>
+                          <div class="col-md-12">
+                              <div class="card rounded">
+                                  <div class="card-header pb-0 pt-0">
+                                      <div class="d-flex align-items-center justify-content-between">
+                                          <div class="d-flex align-items-center">
+                                              <img class="img-xs rounded-circle" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0LxMyCnA3cdFxz6cX0FMoSgQyB62UdyUSeeHyMV2xXWp0nMNbgy-Ow3eqakVDoqYIizA&usqp=CAU" alt="">
+                                              <div class="ml-2">
+                                                  <p>Elon Musk</p>
+                                                  <p class="tx-11 text-muted">3 ore fa</p>
+                                              </div>
+                                          </div>
+                                          <div class="dropdown">
+                                            <button class="btn p-0" type="button" id="dropdownMenuButton1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-more-horizontal icon-lg pb-3px">
+                                                     <circle cx="12" cy="12" r="1"></circle>
+                                                     <circle cx="19" cy="12" r="1"></circle>
+                                                     <circle cx="5" cy="12" r="1"></circle>
+                                                 </svg>
+                                             </button>
+                                             
+                                             <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton1">
+                                                <a class="dropdown-item" href="#">Modifica</a>
+                                                <a class="dropdown-item" href="#">Copia Link</a>
+                                                <a class="dropdown-item" href="#">Nascondi</a>
+                                                <a class="dropdown-item" href="#">Salva</a>
+                                                <a class="dropdown-item" href="#">Preferiti</a>
+                                                <div class="dropdown-divider"></div>
+                                                <a class="dropdown-item" href="#">Elimina</a>
+                                            </div>
+                                              
+                                         </div>
+                                      </div>
+                                  </div>
+                                  <div class="card-body">
+                                      <p class="mt-0 mb-0 tx-14">Later versions will be able to shunt signals from Neuralinks in brain to Neuralinks in body motor/sensory neuron clusters, thus enabling, for example, paraplegics to walk again</p>
+                                  </div>
+                                  <div class="card-footer">
+                                      <a href="javascript:;" class="d-flex align-items-center text-muted mr-4">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-heart icon-md">
+                                            <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" class="heart"></path>
+                                        </svg>
+                                        <p class="d-block overflow-like">A <span style="font-weight: bold;">872 persone</span> piace questo post</p>
+
+                                      </a>
+                                      <hr class="hr1">
+                                      <div class="d-flex post-actions mt-2">
+
+                                          <button class="d-flex align-items-center p-0 text-muted mr-4 btn" id="like-click4">
+                                              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-heart icon-md" id="like4">
+                                                  <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                                              </svg>
+                                              <p class="d-none d-md-block ml-2">Like</p>
+                                          </button>
+                                          <button class="d-flex align-items-center p-0 text-muted mr-4 btn">
+                                              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-message-square icon-md">
+                                                  <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                                              </svg>
+                                              <p class="d-none d-md-block ml-2">Commenta</p>
+                                          </button>
+                                          <button class="d-flex align-items-center p-0 text-muted btn">
+                                              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-share icon-md">
+                                                  <path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8"></path>
+                                                  <polyline points="16 6 12 2 8 6"></polyline>
+                                                  <line x1="12" y1="2" x2="12" y2="15"></line>
+                                              </svg>
+                                              <p class="d-none d-md-block ml-2">Condividi</p>
+                                          </button>
+                                      </div>
+                                      
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                    </div>
+                    <!-- middle wrapper end -->
+                    <!-- right wrapper start -->
+                    <div class="d-none d-xl-block col-xl-3 right-wrapper" id="right-col">
+                        <div class="row">
+                            <div class="col-md-12 grid-margin">
+                                <div class="card rounded container-amici" id="chat-col">
+                                    <div class="card-body body-amici">
+                                        <div class="card-title d-flex" style="width: 100%;">
+                                            <h6 class="mt-2"> I tuoi amici</h6>
+                                            <button class="btn pt-1 pb-3" id="chat-close" style="position:sticky ;left: 200%;"><i class="align-self-start material-icons">close</i></button>
+                                        </div>
+                                        <div class="d-flex justify-content-between mb-2 pb-2 border-bottom">
+                                            <div class="d-flex align-items-center hover-pointer">
+
+                                                <img class="img-xs rounded-circle" src="https://image.flaticon.com/icons/png/512/147/147144.png" alt="">
+                                                <div class="ml-2">
+                                                    <span class="overflow pt-2">Nome Cognome Lorem Ipsum</span>
+                                                    <p class="tx-11 text-muted mt-0 ">Qualcosa</p>
+                                                </div>
+
+                                            </div>
+                                            <button class="btn btn-icon">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-message-square icon-md">
+                                                    <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                                                </svg>
+                                            </button>
+                                        </div>
+
+                                        <div class="d-flex justify-content-between mb-2 pb-2 border-bottom">
+                                            <div class="d-flex align-items-center hover-pointer">
+                                                <img class="img-xs rounded-circle" src="https://image.flaticon.com/icons/png/512/147/147144.png" alt="">
+                                                <div class="ml-2 mt-2">
+                                                    <span class="overflow pt-2">Nome Cognome Lorem Ipsum</span>
+                                                    <p class="tx-11 text-muted mt-0 ">Qualcosa</p>
+                                                </div>
+                                            </div>
+                                            <button class="btn btn-icon">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-message-square icon-md">
+                                                    <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                                                </svg>
+                                            </button>
+                                        </div>
+
+                                        <div class="d-flex justify-content-between mb-2 pb-2 border-bottom">
+                                            <div class="d-flex align-items-center hover-pointer">
+                                                <img class="img-xs rounded-circle" src="https://image.flaticon.com/icons/png/512/147/147144.png" alt="">
+                                                <div class="ml-2 mt-2">
+                                                    <span class="overflow pt-2">Nome Cognome Lorem Ipsum</span>
+                                                    <p class="tx-11 text-muted mt-0 ">Qualcosa</p>
+                                                </div>
+                                            </div>
+                                            <button class="btn btn-icon">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-message-square icon-md">
+                                                    <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                                                </svg>
+                                            </button>
+                                        </div>
+
+                                        <div class="d-flex justify-content-between mb-2 pb-2 border-bottom">
+                                            <div class="d-flex align-items-center hover-pointer">
+                                                <img class="img-xs rounded-circle" src="https://image.flaticon.com/icons/png/512/147/147144.png" alt="">
+                                                <div class="ml-2 mt-2">
+                                                    <span class="overflow pt-2">Nome Cognome Lorem Ipsum</span>
+                                                    <p class="tx-11 text-muted mt-0 ">Qualcosa</p>
+                                                </div>
+                                            </div>
+                                            <button class="btn btn-icon">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-message-square icon-md">
+                                                    <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                                                </svg>
+                                            </button>
+                                        </div>
+
+                                        <div class="d-flex justify-content-between mb-2 pb-2 border-bottom">
+                                            <div class="d-flex align-items-center hover-pointer">
+                                                <img class="img-xs rounded-circle" src="https://image.flaticon.com/icons/png/512/147/147144.png" alt="">
+                                                <div class="ml-2 mt-2">
+                                                    <span class="overflow pt-2">Nome Cognome Lorem Ipsum</span>
+                                                    <p class="tx-11 text-muted mt-0 ">Qualcosa</p>
+                                                </div>
+                                            </div>
+                                            <button class="btn btn-icon">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-message-square icon-md">
+                                                    <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                                                </svg>
+                                            </button>
+                                        </div>
+
+                                        <div class="d-flex justify-content-between mb-2 pb-2 border-bottom">
+                                            <div class="d-flex align-items-center hover-pointer">
+                                                <img class="img-xs rounded-circle" src="https://image.flaticon.com/icons/png/512/147/147144.png" alt="">
+                                                <div class="ml-2 mt-2">
+                                                    <span class="overflow pt-2">Nome Cognome Lorem Ipsum</span>
+                                                    <p class="tx-11 text-muted mt-0 ">Qualcosa</p>
+                                                </div>
+                                            </div>
+                                            <button class="btn btn-icon">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-message-square icon-md">
+                                                    <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                                                </svg>
+                                            </button>
+                                        </div>
+
+                                        <div class="d-flex justify-content-between mb-2 pb-2 border-bottom">
+                                            <div class="d-flex align-items-center hover-pointer">
+                                                <img class="img-xs rounded-circle" src="https://image.flaticon.com/icons/png/512/147/147144.png" alt="">
+                                                <div class="ml-2 mt-2">
+                                                    <span class="overflow pt-2">Nome Cognome Lorem Ipsum</span>
+                                                    <p class="tx-11 text-muted mt-0 ">Qualcosa</p>
+                                                </div>
+                                            </div>
+                                            <button class="btn btn-icon">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-message-square icon-md">
+                                                    <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                                                </svg>
+                                            </button>
+                                        </div>
+
+                                        <div class="d-flex justify-content-between mb-2 pb-2 border-bottom">
+                                            <div class="d-flex align-items-center hover-pointer">
+                                                <img class="img-xs rounded-circle" src="https://image.flaticon.com/icons/png/512/147/147144.png" alt="">
+                                                <div class="ml-2 mt-2">
+                                                    <span class="overflow pt-2">Nome Cognome Lorem Ipsum</span>
+                                                    <p class="tx-11 text-muted mt-0 ">Qualcosa</p>
+                                                </div>
+                                            </div>
+                                            <button class="btn btn-icon">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-message-square icon-md">
+                                                    <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                                                </svg>
+                                            </button>
+                                        </div>
+
+                                        <div class="d-flex justify-content-between mb-2 pb-2 border-bottom">
+                                            <div class="d-flex align-items-center hover-pointer">
+                                                <img class="img-xs rounded-circle" src="https://image.flaticon.com/icons/png/512/147/147144.png" alt="">
+                                                <div class="ml-2 mt-2">
+                                                    <span class="overflow pt-2">Nome Cognome Lorem Ipsum</span>
+                                                    <p class="tx-11 text-muted mt-0 ">Qualcosa</p>
+                                                </div>
+                                            </div>
+                                            <button class="btn btn-icon">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-message-square icon-md">
+                                                    <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                                                </svg>
+                                            </button>
+                                        </div>
+
+                                        <div class="d-flex justify-content-between mb-2 pb-2 border-bottom">
+                                            <div class="d-flex align-items-center hover-pointer">
+                                                <img class="img-xs rounded-circle" src="https://image.flaticon.com/icons/png/512/147/147144.png" alt="">
+                                                <div class="ml-2 mt-2">
+                                                    <span class="overflow pt-2">Nome Cognome Lorem Ipsum</span>
+                                                    <p class="tx-11 text-muted mt-0 ">Qualcosa</p>
+                                                </div>
+                                            </div>
+                                            <button class="btn btn-icon">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-message-square icon-md">
+                                                    <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                                                </svg>
+                                            </button>
+                                        </div>
+
+                                        <div class="d-flex justify-content-between mb-2 pb-2 border-bottom">
+                                            <div class="d-flex align-items-center hover-pointer">
+                                                <img class="img-xs rounded-circle" src="https://image.flaticon.com/icons/png/512/147/147144.png" alt="">
+                                                <div class="ml-2 mt-2">
+                                                    <span class="overflow pt-2">Nome Cognome Lorem Ipsum</span>
+                                                    <p class="tx-11 text-muted mt-0 ">Qualcosa</p>
+                                                </div>
+                                            </div>
+                                            <button class="btn btn-icon">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-message-square icon-md">
+                                                    <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                                                </svg>
+                                            </button>
+                                        </div>
+
+                                        <div class="d-flex justify-content-between mb-2 pb-2 border-bottom">
+                                            <div class="d-flex align-items-center hover-pointer">
+                                                <img class="img-xs rounded-circle" src="https://image.flaticon.com/icons/png/512/147/147144.png" alt="">
+                                                <div class="ml-2 mt-2">
+                                                    <span class="overflow pt-2">Nome Cognome Lorem Ipsum</span>
+                                                    <p class="tx-11 text-muted mt-0 ">Qualcosa</p>
+                                                </div>
+                                            </div>
+                                            <button class="btn btn-icon">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-message-square icon-md">
+                                                    <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                        <!--last element -->
+                                        <div class="d-flex justify-content-between mb-2 pb-2">
+                                            <div class="d-flex align-items-center hover-pointer">
+                                                <img class="img-xs rounded-circle" src="https://image.flaticon.com/icons/png/512/147/147144.png" alt="">
+                                                <div class="ml-2 mt-2">
+                                                    <span class="overflow pt-2">Nome Cognome Lorem Ipsum</span>
+                                                    <p class="tx-11 text-muted mt-0 ">Qualcosa</p>
+                                                </div>
+                                            </div>
+                                            <button class="btn btn-icon">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-message-square icon-md">
+                                                    <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- right wrapper end -->
+                    <!--Notifiche start-->
+                    <div class="d-none" id="not-col">
+                        <div class="row">
+                            <div class="col-md-12 grid-margin">
+                                <div class="card rounded container-amici" id="notifiche">
+                                    <div class="card-body body-amici">
+                                        <div class="card-title d-flex" style="width: 100%;">
+                                            <h6 class="mt-2">Notifiche</h6>
+                                            <button class="btn pt-1 pb-3" id="not-close" style="position:sticky ;left: 200%;"><i class="align-self-start material-icons">close</i></button>
+                                        </div>
+                                        <button class="btn w-100 m-0 ml-0 d-flex justify-content-between pb-2">
+                                            <div class="d-flex align-items-center hover-pointer text-truncate">
+
+                                                <img class="img-xs rounded-circle" src="https://i0.wp.com/www.arancianatura.it/wp-content/uploads/2019/01/Arancia-Tarocco.jpg?fit=750%2C750&ssl=1" alt="">
+                                                <div class="ml-2 mt-3" style="text-align:left">
+                                                    <span class="overflow pt-1">Lama Rangia</span>
+                                                    <p class="text-muted">Ha messo mi piace al tuo post</p>
+                                                </div>
+
+                                            </div>
+                                            <div class="d-flex align-items-center justify-content-end hover-pointer ml-3 mr-3  mt-3">
+                                                <img class="img-xs" src="https://www.ansa.it/webimages/img_620x438/2019/12/14/3bf1952ee54a57e57be37ec5cb5f75ee.jpg" alt="">
+                                            </div>
+                                        </button>
+                                        <div class="dropdown-divider m-0"></div>
+                                        <button class="btn w-100 m-0 ml-0 d-flex justify-content-between pb-2">
+                                            <div class="d-flex align-items-center hover-pointer">
+                
+                                                <img class="img-xs rounded-circle" src="https://tuttofaremilano.com/wp-content/uploads/2017/02/saracinesca-garage@2x.jpg" alt="">
+                                                <div class="ml-2 mt-3" style="text-align:left">
+                                                    <span class="overflow pt-1">Sara Cinesca</span>
+                                                    <p class="tx-11 text-muted mt-0 overflow-notifiche">Ha messo mi piace al tuo post</p>
+                                                </div>
+                
+                                            </div>
+                                            <div class="d-flex align-items-center justify-content-end hover-pointer mr-3  mt-3">
+                                                <img class="img-xs" src="https://www.ansa.it/webimages/img_620x438/2019/12/14/3bf1952ee54a57e57be37ec5cb5f75ee.jpg" alt="">
+                                            </div>
+                                        </button>
+                                        <div class="dropdown-divider m-0"></div>
+                                        <button class="btn w-100 m-0 ml-0 d-flex justify-content-between mb-2 pb-0">
+                                            <div class="d-flex align-items-center hover-pointer">
+                
+                                                <img class="img-xs rounded-circle" src="https://yt3.ggpht.com/ytc/AAUvwnjOLKJVRDVoC4Hu8oChpb9idQokoC_dEX13BFmd-g=s900-c-k-c0x00ffffff-no-rj" alt="">
+                                                <div class="ml-2 mt-3" style="text-align:left">
+                                                    <span class="overflow pt-1">Nello Taver</span>
+                                                    <p class="tx-11 text-muted mt-0 overflow-notifiche">Ha messo mi piace al tuo post</p>
+                                                </div>
+                
+                                            </div>
+                                            <div class="d-flex align-items-center justify-content-end hover-pointer mr-3  mt-3">
+                                                <img class="img-xs" src="https://www.ansa.it/webimages/img_620x438/2019/12/14/3bf1952ee54a57e57be37ec5cb5f75ee.jpg" alt="">
+                                            </div>
+                                        </button>
+                                        <div class="dropdown-divider m-0"></div>
+                                        <button class="btn w-100 m-0 ml-0 d-flex justify-content-between pb-2">
+                                            <div class="d-flex align-items-center hover-pointer">
+                
+                                                <img class="img-xs rounded-circle" src="https://i0.wp.com/www.arancianatura.it/wp-content/uploads/2019/01/Arancia-Tarocco.jpg?fit=750%2C750&ssl=1" alt="">
+                                                <div class="ml-2 mt-3" style="text-align:left">
+                                                    <span class="overflow pt-1">Lama Rangia</span>
+                                                    <p class="tx-11 text-muted mt-0 overflow-notifiche">Ha messo mi piace al tuo post</p>
+                                                </div>
+                
+                                            </div>
+                                            <div class="d-flex align-items-center justify-content-end hover-pointer mr-3  mt-3">
+                                                <img class="img-xs" src="https://www.ansa.it/webimages/img_620x438/2019/12/14/3bf1952ee54a57e57be37ec5cb5f75ee.jpg" alt="">
+                                            </div>
+                                        </button>
+                                        <div class="dropdown-divider m-0"></div>
+                                        <button class="btn w-100 m-0 ml-0 d-flex justify-content-between pb-2">
+                                            <div class="d-flex align-items-center hover-pointer">
+                
+                                                <img class="img-xs rounded-circle" src="https://tuttofaremilano.com/wp-content/uploads/2017/02/saracinesca-garage@2x.jpg" alt="">
+                                                <div class="ml-2 mt-3" style="text-align:left">
+                                                    <span class="overflow pt-1">Sara Cinesca</span>
+                                                    <p class="tx-11 text-muted mt-0 overflow-notifiche">Ha messo mi piace al tuo post</p>
+                                                </div>
+                
+                                            </div>
+                                            <div class="d-flex align-items-center justify-content-end hover-pointer mr-3  mt-3">
+                                                <img class="img-xs" src="https://www.ansa.it/webimages/img_620x438/2019/12/14/3bf1952ee54a57e57be37ec5cb5f75ee.jpg" alt="">
+                                            </div>
+                                        </button>
+                                        <div class="dropdown-divider m-0"></div>
+                                        <button class="btn w-100 m-0 ml-0 d-flex justify-content-between mb-2 pb-0">
+                                            <div class="d-flex align-items-center hover-pointer">
+                
+                                                <img class="img-xs rounded-circle" src="https://yt3.ggpht.com/ytc/AAUvwnjOLKJVRDVoC4Hu8oChpb9idQokoC_dEX13BFmd-g=s900-c-k-c0x00ffffff-no-rj" alt="">
+                                                <div class="ml-2 mt-3" style="text-align:left">
+                                                    <span class="overflow pt-1">Nello Taver</span>
+                                                    <p class="tx-11 text-muted mt-0 overflow-notifiche">Ha messo mi piace al tuo post</p>
+                                                </div>
+                
+                                            </div>
+                                            <div class="d-flex align-items-center justify-content-end hover-pointer mr-3  mt-3">
+                                                <img class="img-xs" src="https://www.ansa.it/webimages/img_620x438/2019/12/14/3bf1952ee54a57e57be37ec5cb5f75ee.jpg" alt="">
+                                            </div>
+                                        </button>
+                                        <div class="dropdown-divider m-0"></div>
+                                        <button class="btn w-100 m-0 ml-0 d-flex justify-content-between pb-2">
+                                            <div class="d-flex align-items-center hover-pointer">
+                
+                                                <img class="img-xs rounded-circle" src="https://i0.wp.com/www.arancianatura.it/wp-content/uploads/2019/01/Arancia-Tarocco.jpg?fit=750%2C750&ssl=1" alt="">
+                                                <div class="ml-2 mt-3" style="text-align:left">
+                                                    <span class="overflow pt-1">Lama Rangia</span>
+                                                    <p class="tx-11 text-muted mt-0 overflow-notifiche">Ha messo mi piace al tuo post</p>
+                                                </div>
+                
+                                            </div>
+                                            <div class="d-flex align-items-center justify-content-end hover-pointer mr-3  mt-3">
+                                                <img class="img-xs" src="https://www.ansa.it/webimages/img_620x438/2019/12/14/3bf1952ee54a57e57be37ec5cb5f75ee.jpg" alt="">
+                                            </div>
+                                        </button>
+                                        <div class="dropdown-divider m-0"></div>
+                                        <button class="btn w-100 m-0 ml-0 d-flex justify-content-between pb-2">
+                                            <div class="d-flex align-items-center hover-pointer">
+                
+                                                <img class="img-xs rounded-circle" src="https://tuttofaremilano.com/wp-content/uploads/2017/02/saracinesca-garage@2x.jpg" alt="">
+                                                <div class="ml-2 mt-3" style="text-align:left">
+                                                    <span class="overflow pt-1">Sara Cinesca</span>
+                                                    <p class="tx-11 text-muted mt-0 overflow-notifiche">Ha messo mi piace al tuo post</p>
+                                                </div>
+                
+                                            </div>
+                                            <div class="d-flex align-items-center justify-content-end hover-pointer mr-3  mt-3">
+                                                <img class="img-xs" src="https://www.ansa.it/webimages/img_620x438/2019/12/14/3bf1952ee54a57e57be37ec5cb5f75ee.jpg" alt="">
+                                            </div>
+                                        </button>
+                                        <div class="dropdown-divider m-0"></div>
+                                        <button class="btn w-100 m-0 ml-0 d-flex justify-content-between mb-2 pb-0">
+                                            <div class="d-flex align-items-center hover-pointer">
+                
+                                                <img class="img-xs rounded-circle" src="https://yt3.ggpht.com/ytc/AAUvwnjOLKJVRDVoC4Hu8oChpb9idQokoC_dEX13BFmd-g=s900-c-k-c0x00ffffff-no-rj" alt="">
+                                                <div class="ml-2 mt-3" style="text-align:left">
+                                                    <span class="overflow pt-1">Nello Taver</span>
+                                                    <p class="tx-11 text-muted mt-0 overflow-notifiche">Ha messo mi piace al tuo post</p>
+                                                </div>
+                
+                                            </div>
+                                            <div class="d-flex align-items-center justify-content-end hover-pointer mr-3  mt-3">
+                                                <img class="img-xs" src="https://www.ansa.it/webimages/img_620x438/2019/12/14/3bf1952ee54a57e57be37ec5cb5f75ee.jpg" alt="">
+                                            </div>
+                                        </button>
+                                        <div class="dropdown-divider m-0"></div>
+                                        <button class="btn w-100 m-0 ml-0 d-flex justify-content-between pb-2">
+                                            <div class="d-flex align-items-center hover-pointer">
+                
+                                                <img class="img-xs rounded-circle" src="https://i0.wp.com/www.arancianatura.it/wp-content/uploads/2019/01/Arancia-Tarocco.jpg?fit=750%2C750&ssl=1" alt="">
+                                                <div class="ml-2 mt-3" style="text-align:left">
+                                                    <span class="overflow pt-1">Lama Rangia</span>
+                                                    <p class="tx-11 text-muted mt-0 overflow-notifiche">Ha messo mi piace al tuo post</p>
+                                                </div>
+                
+                                            </div>
+                                            <div class="d-flex align-items-center justify-content-end hover-pointer mr-3  mt-3">
+                                                <img class="img-xs" src="https://www.ansa.it/webimages/img_620x438/2019/12/14/3bf1952ee54a57e57be37ec5cb5f75ee.jpg" alt="">
+                                            </div>
+                                        </button>
+                                        <div class="dropdown-divider m-0"></div>
+                                        <button class="btn w-100 m-0 ml-0 d-flex justify-content-between pb-2">
+                                            <div class="d-flex align-items-center hover-pointer">
+                
+                                                <img class="img-xs rounded-circle" src="https://tuttofaremilano.com/wp-content/uploads/2017/02/saracinesca-garage@2x.jpg" alt="">
+                                                <div class="ml-2 mt-3" style="text-align:left">
+                                                    <span class="overflow pt-1">Sara Cinesca</span>
+                                                    <p class="tx-11 text-muted mt-0 overflow-notifiche">Ha messo mi piace al tuo post</p>
+                                                </div>
+                
+                                            </div>
+                                            <div class="d-flex align-items-center justify-content-end hover-pointer mr-3  mt-3">
+                                                <img class="img-xs" src="https://www.ansa.it/webimages/img_620x438/2019/12/14/3bf1952ee54a57e57be37ec5cb5f75ee.jpg" alt="">
+                                            </div>
+                                        </button>
+                                        <div class="dropdown-divider m-0"></div>
+                                        <button class="btn w-100 m-0 ml-0 d-flex justify-content-between mb-2 pb-0">
+                                            <div class="d-flex align-items-center hover-pointer">
+                
+                                                <img class="img-xs rounded-circle" src="https://yt3.ggpht.com/ytc/AAUvwnjOLKJVRDVoC4Hu8oChpb9idQokoC_dEX13BFmd-g=s900-c-k-c0x00ffffff-no-rj" alt="">
+                                                <div class="ml-2 mt-3" style="text-align:left">
+                                                    <span class="overflow pt-1">Nello Taver</span>
+                                                    <p class="tx-11 text-muted mt-0 overflow-notifiche">Ha messo mi piace al tuo post</p>
+                                                </div>
+                
+                                            </div>
+                                            <div class="d-flex align-items-center justify-content-end hover-pointer mr-3  mt-3">
+                                                <img class="img-xs" src="https://www.ansa.it/webimages/img_620x438/2019/12/14/3bf1952ee54a57e57be37ec5cb5f75ee.jpg" alt="">
+                                            </div>
+                                        </button>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>  
+                    </div>
+                <!--Notifiche end-->
+            </div>
+        </div>
+        <div class="mobile-bar btn-group fixed-bottom" style="width: 100%; height: 7%;">
+            <button class="col-md-3 btn btn-light" id="dash"><span class="material-icons">reorder</span></button>
+            <button class="col-md-3 btn btn-light" id="not"><span class="material-icons">notifications</span></button>
+            <button class="col-md-3 btn btn-light" id="search"><span class="material-icons">search</span></button>
+            <button class="col-md-3 btn btn-light" id="chat"><span class="material-icons">question_answer</span></button>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+        <script src="assets/js/main.js" async></script>
+    </body>
+</html>
