@@ -1,35 +1,53 @@
-html,
-body {
-    height: 100%;
+@media screen and (max-width: 768px) {
+  .divisore {
+    border-right-width: 0;
+  }
 }
 
-.general-container{
-    height: 80%;
-    width: 90%;
-    border-radius: 10px;
-    background-color: rgba(9,9,121,100);
-    background-image: linear-gradient(to bottom right, #0d6ef6, lightblue);
-    opacity: 0.7;
-    padding: 10px;
-    box-shadow: 5px 10px 8px #888888;
-}
-
-.descrizione{
-    color:white;
-}
-
-.form-group{
-    color:white;
-}
-
-.logo{
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.divisore {
+@media screen and (min-width: 768px) {
+  .divisore {
     border-right-width: 2px;
     border-right-style: solid;
-    border-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.7), rgba(0, 0, 0, 0)) 1 100%;
+    border-image: linear-gradient(
+        to bottom,
+        rgba(255, 255, 255, 0),
+        rgba(255, 255, 255, 0.7),
+        rgba(0, 0, 0, 0)
+      )
+      1;
+  }
 
+  .login-btn {
+    border-radius: 2;
+  }
+
+  .form {
+    max-width: 70%;
+  }
+}
+
+.general-container {
+  height: 75vh;
+  border-radius: 10px;
+  background-color: rgba(9, 9, 121, 100);
+  background-image: linear-gradient(to bottom right, #0d6ef6, lightblue);
+  opacity: 0.7;
+  padding: 10px;
+  box-shadow: 5px 10px 8px #888888;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.descrizione {
+  color: white;
+}
+
+.form-group {
+  color: white;
+}
+
+.logo {
+  margin-left: auto;
+  margin-right: auto;
 }
