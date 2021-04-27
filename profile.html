@@ -57,7 +57,7 @@
                             <span class="active nav-collapse" style="position: relative; bottom:4px">Chat</span>
                         </button>
                     </li>
-                        <li class="nav-item dropdown">
+                        <li class="d-none d-md-block nav-item dropdown">
                           <button class="btn p-0" type="button" id="ddmenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                               <span class="nav-link material-icons" style="display: inline-block;">notifications</span>
                               <span class="active nav-collapse" style="position: relative; bottom:4px">Notifiche</span>
@@ -110,7 +110,7 @@
                       </li>
                 </ul>
                 <!--search bar-->
-                <div class="d-flex justify-content-end container h-100 mr-0">
+                <div class="d-flex justify-content-end container h-100">
                     <div class="d-flex justify-content-center h-100">
                     <div class="searchbar">
                         <input class="search_input" type="text" name="" placeholder="Search...">
@@ -871,7 +871,202 @@
                 </div>
             </div>
             <!-- right wrapper end -->
+            <!--Notifiche start-->
+            <div class="d-none" id="not-col">
+                <div class="row">
+                    <div class="col-md-12 grid-margin">
+                        <div class="card rounded container-amici" id="notifiche">
+                            <div class="card-body body-amici">
+                                <div class="card-title d-flex" style="width: 100%;">
+                                    <h6 class="mt-2">Notifiche</h6>
+                                    <button class="btn pt-1 pb-3" id="not-close" style="position:sticky; left: 200%;"><i class="align-self-start material-icons">close</i></button>
+                                </div>
+                                <button class="btn w-100 m-0 ml-0 d-flex justify-content-between pb-2">
+                                    <div class="d-flex align-items-center hover-pointer text-truncate">
+        
+                                        <img class="img-xs rounded-circle" src="https://i0.wp.com/www.arancianatura.it/wp-content/uploads/2019/01/Arancia-Tarocco.jpg?fit=750%2C750&ssl=1" alt="">
+                                        <div class="ml-2 mt-3" style="text-align:left">
+                                            <span class="overflow pt-1">Lama Rangia</span>
+                                            <p class="text-muted">Ha messo mi piace al tuo post</p>
+                                        </div>
+        
+                                    </div>
+                                    <div class="d-flex align-items-center justify-content-end hover-pointer ml-3 mr-3  mt-3">
+                                        <img class="img-xs" src="https://www.ansa.it/webimages/img_620x438/2019/12/14/3bf1952ee54a57e57be37ec5cb5f75ee.jpg" alt="">
+                                    </div>
+                                </button>
+                                <div class="dropdown-divider m-0"></div>
+                                <button class="btn w-100 m-0 ml-0 d-flex justify-content-between pb-2">
+                                    <div class="d-flex align-items-center hover-pointer">
+        
+                                        <img class="img-xs rounded-circle" src="https://tuttofaremilano.com/wp-content/uploads/2017/02/saracinesca-garage@2x.jpg" alt="">
+                                        <div class="ml-2 mt-3" style="text-align:left">
+                                            <span class="overflow pt-1">Sara Cinesca</span>
+                                            <p class="tx-11 text-muted mt-0 overflow-notifiche">Ha messo mi piace al tuo post</p>
+                                        </div>
+        
+                                    </div>
+                                    <div class="d-flex align-items-center justify-content-end hover-pointer mr-3  mt-3">
+                                        <img class="img-xs" src="https://www.ansa.it/webimages/img_620x438/2019/12/14/3bf1952ee54a57e57be37ec5cb5f75ee.jpg" alt="">
+                                    </div>
+                                </button>
+                                <div class="dropdown-divider m-0"></div>
+                                <button class="btn w-100 m-0 ml-0 d-flex justify-content-between mb-2 pb-0">
+                                    <div class="d-flex align-items-center hover-pointer">
+        
+                                        <img class="img-xs rounded-circle" src="https://yt3.ggpht.com/ytc/AAUvwnjOLKJVRDVoC4Hu8oChpb9idQokoC_dEX13BFmd-g=s900-c-k-c0x00ffffff-no-rj" alt="">
+                                        <div class="ml-2 mt-3" style="text-align:left">
+                                            <span class="overflow pt-1">Nello Taver</span>
+                                            <p class="tx-11 text-muted mt-0 overflow-notifiche">Ha messo mi piace al tuo post</p>
+                                        </div>
+        
+                                    </div>
+                                    <div class="d-flex align-items-center justify-content-end hover-pointer mr-3  mt-3">
+                                        <img class="img-xs" src="https://www.ansa.it/webimages/img_620x438/2019/12/14/3bf1952ee54a57e57be37ec5cb5f75ee.jpg" alt="">
+                                    </div>
+                                </button>
+                                <div class="dropdown-divider m-0"></div>
+                                <button class="btn w-100 m-0 ml-0 d-flex justify-content-between pb-2">
+                                    <div class="d-flex align-items-center hover-pointer">
+        
+                                        <img class="img-xs rounded-circle" src="https://i0.wp.com/www.arancianatura.it/wp-content/uploads/2019/01/Arancia-Tarocco.jpg?fit=750%2C750&ssl=1" alt="">
+                                        <div class="ml-2 mt-3" style="text-align:left">
+                                            <span class="overflow pt-1">Lama Rangia</span>
+                                            <p class="tx-11 text-muted mt-0 overflow-notifiche">Ha messo mi piace al tuo post</p>
+                                        </div>
+        
+                                    </div>
+                                    <div class="d-flex align-items-center justify-content-end hover-pointer mr-3  mt-3">
+                                        <img class="img-xs" src="https://www.ansa.it/webimages/img_620x438/2019/12/14/3bf1952ee54a57e57be37ec5cb5f75ee.jpg" alt="">
+                                    </div>
+                                </button>
+                                <div class="dropdown-divider m-0"></div>
+                                <button class="btn w-100 m-0 ml-0 d-flex justify-content-between pb-2">
+                                    <div class="d-flex align-items-center hover-pointer">
+        
+                                        <img class="img-xs rounded-circle" src="https://tuttofaremilano.com/wp-content/uploads/2017/02/saracinesca-garage@2x.jpg" alt="">
+                                        <div class="ml-2 mt-3" style="text-align:left">
+                                            <span class="overflow pt-1">Sara Cinesca</span>
+                                            <p class="tx-11 text-muted mt-0 overflow-notifiche">Ha messo mi piace al tuo post</p>
+                                        </div>
+        
+                                    </div>
+                                    <div class="d-flex align-items-center justify-content-end hover-pointer mr-3  mt-3">
+                                        <img class="img-xs" src="https://www.ansa.it/webimages/img_620x438/2019/12/14/3bf1952ee54a57e57be37ec5cb5f75ee.jpg" alt="">
+                                    </div>
+                                </button>
+                                <div class="dropdown-divider m-0"></div>
+                                <button class="btn w-100 m-0 ml-0 d-flex justify-content-between mb-2 pb-0">
+                                    <div class="d-flex align-items-center hover-pointer">
+        
+                                        <img class="img-xs rounded-circle" src="https://yt3.ggpht.com/ytc/AAUvwnjOLKJVRDVoC4Hu8oChpb9idQokoC_dEX13BFmd-g=s900-c-k-c0x00ffffff-no-rj" alt="">
+                                        <div class="ml-2 mt-3" style="text-align:left">
+                                            <span class="overflow pt-1">Nello Taver</span>
+                                            <p class="tx-11 text-muted mt-0 overflow-notifiche">Ha messo mi piace al tuo post</p>
+                                        </div>
+        
+                                    </div>
+                                    <div class="d-flex align-items-center justify-content-end hover-pointer mr-3  mt-3">
+                                        <img class="img-xs" src="https://www.ansa.it/webimages/img_620x438/2019/12/14/3bf1952ee54a57e57be37ec5cb5f75ee.jpg" alt="">
+                                    </div>
+                                </button>
+                                <div class="dropdown-divider m-0"></div>
+                                <button class="btn w-100 m-0 ml-0 d-flex justify-content-between pb-2">
+                                    <div class="d-flex align-items-center hover-pointer">
+        
+                                        <img class="img-xs rounded-circle" src="https://i0.wp.com/www.arancianatura.it/wp-content/uploads/2019/01/Arancia-Tarocco.jpg?fit=750%2C750&ssl=1" alt="">
+                                        <div class="ml-2 mt-3" style="text-align:left">
+                                            <span class="overflow pt-1">Lama Rangia</span>
+                                            <p class="tx-11 text-muted mt-0 overflow-notifiche">Ha messo mi piace al tuo post</p>
+                                        </div>
+        
+                                    </div>
+                                    <div class="d-flex align-items-center justify-content-end hover-pointer mr-3  mt-3">
+                                        <img class="img-xs" src="https://www.ansa.it/webimages/img_620x438/2019/12/14/3bf1952ee54a57e57be37ec5cb5f75ee.jpg" alt="">
+                                    </div>
+                                </button>
+                                <div class="dropdown-divider m-0"></div>
+                                <button class="btn w-100 m-0 ml-0 d-flex justify-content-between pb-2">
+                                    <div class="d-flex align-items-center hover-pointer">
+        
+                                        <img class="img-xs rounded-circle" src="https://tuttofaremilano.com/wp-content/uploads/2017/02/saracinesca-garage@2x.jpg" alt="">
+                                        <div class="ml-2 mt-3" style="text-align:left">
+                                            <span class="overflow pt-1">Sara Cinesca</span>
+                                            <p class="tx-11 text-muted mt-0 overflow-notifiche">Ha messo mi piace al tuo post</p>
+                                        </div>
+        
+                                    </div>
+                                    <div class="d-flex align-items-center justify-content-end hover-pointer mr-3  mt-3">
+                                        <img class="img-xs" src="https://www.ansa.it/webimages/img_620x438/2019/12/14/3bf1952ee54a57e57be37ec5cb5f75ee.jpg" alt="">
+                                    </div>
+                                </button>
+                                <div class="dropdown-divider m-0"></div>
+                                <button class="btn w-100 m-0 ml-0 d-flex justify-content-between mb-2 pb-0">
+                                    <div class="d-flex align-items-center hover-pointer">
+        
+                                        <img class="img-xs rounded-circle" src="https://yt3.ggpht.com/ytc/AAUvwnjOLKJVRDVoC4Hu8oChpb9idQokoC_dEX13BFmd-g=s900-c-k-c0x00ffffff-no-rj" alt="">
+                                        <div class="ml-2 mt-3" style="text-align:left">
+                                            <span class="overflow pt-1">Nello Taver</span>
+                                            <p class="tx-11 text-muted mt-0 overflow-notifiche">Ha messo mi piace al tuo post</p>
+                                        </div>
+        
+                                    </div>
+                                    <div class="d-flex align-items-center justify-content-end hover-pointer mr-3  mt-3">
+                                        <img class="img-xs" src="https://www.ansa.it/webimages/img_620x438/2019/12/14/3bf1952ee54a57e57be37ec5cb5f75ee.jpg" alt="">
+                                    </div>
+                                </button>
+                                <div class="dropdown-divider m-0"></div>
+                                <button class="btn w-100 m-0 ml-0 d-flex justify-content-between pb-2">
+                                    <div class="d-flex align-items-center hover-pointer">
+        
+                                        <img class="img-xs rounded-circle" src="https://i0.wp.com/www.arancianatura.it/wp-content/uploads/2019/01/Arancia-Tarocco.jpg?fit=750%2C750&ssl=1" alt="">
+                                        <div class="ml-2 mt-3" style="text-align:left">
+                                            <span class="overflow pt-1">Lama Rangia</span>
+                                            <p class="tx-11 text-muted mt-0 overflow-notifiche">Ha messo mi piace al tuo post</p>
+                                        </div>
+        
+                                    </div>
+                                    <div class="d-flex align-items-center justify-content-end hover-pointer mr-3  mt-3">
+                                        <img class="img-xs" src="https://www.ansa.it/webimages/img_620x438/2019/12/14/3bf1952ee54a57e57be37ec5cb5f75ee.jpg" alt="">
+                                    </div>
+                                </button>
+                                <div class="dropdown-divider m-0"></div>
+                                <button class="btn w-100 m-0 ml-0 d-flex justify-content-between pb-2">
+                                    <div class="d-flex align-items-center hover-pointer">
+        
+                                        <img class="img-xs rounded-circle" src="https://tuttofaremilano.com/wp-content/uploads/2017/02/saracinesca-garage@2x.jpg" alt="">
+                                        <div class="ml-2 mt-3" style="text-align:left">
+                                            <span class="overflow pt-1">Sara Cinesca</span>
+                                            <p class="tx-11 text-muted mt-0 overflow-notifiche">Ha messo mi piace al tuo post</p>
+                                        </div>
+        
+                                    </div>
+                                    <div class="d-flex align-items-center justify-content-end hover-pointer mr-3  mt-3">
+                                        <img class="img-xs" src="https://www.ansa.it/webimages/img_620x438/2019/12/14/3bf1952ee54a57e57be37ec5cb5f75ee.jpg" alt="">
+                                    </div>
+                                </button>
+                                <div class="dropdown-divider m-0"></div>
+                                <button class="btn w-100 m-0 ml-0 d-flex justify-content-between mb-2 pb-0">
+                                    <div class="d-flex align-items-center hover-pointer">
+        
+                                        <img class="img-xs rounded-circle" src="https://yt3.ggpht.com/ytc/AAUvwnjOLKJVRDVoC4Hu8oChpb9idQokoC_dEX13BFmd-g=s900-c-k-c0x00ffffff-no-rj" alt="">
+                                        <div class="ml-2 mt-3" style="text-align:left">
+                                            <span class="overflow pt-1">Nello Taver</span>
+                                            <p class="tx-11 text-muted mt-0 overflow-notifiche">Ha messo mi piace al tuo post</p>
+                                        </div>
+        
+                                    </div>
+                                    <div class="d-flex align-items-center justify-content-end hover-pointer mr-3  mt-3">
+                                        <img class="img-xs" src="https://www.ansa.it/webimages/img_620x438/2019/12/14/3bf1952ee54a57e57be37ec5cb5f75ee.jpg" alt="">
+                                    </div>
+                                </button>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>  
             </div>
+            <!--Notifiche end-->
             </div>
             <div class="mobile-bar btn-group fixed-bottom" style="width: 100%; height: 7%;">
               <button class="col-md-5 btn btn-light" id="request-click">
@@ -898,78 +1093,5 @@
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
         <script src="assets/js/profile.js" async></script>
-        <script>
-            
-            document.getElementById("request-click").onclick = function(){
-                    if(document.getElementById("sb-mobile").classList.contains("d-block")){
-                        chiudiSearch();
-                    }
-                    if(document.getElementById("middle-wrapper").classList.contains("d-none"))
-                    {
-                        chiudiColD();
-                    }
-                    else{
-                      if(document.getElementById("requests-col").classList.contains("d-none"))
-                      {
-                        document.getElementById("requests-col").classList.remove("d-none");
-                        document.getElementById("pc-col").classList.remove("d-none");
-                      }
-                      document.getElementById("middle-wrapper").classList.add("d-none");
-                      document.getElementById("right-wrapper").classList.remove("d-none");
-                      document.getElementById("header").classList.add("d-none");
-                      document.getElementById("friends-col").classList.add("d-none");
-                    }
-            }
-
-            document.getElementById("chat").onclick = function(){
-                    if(document.getElementById("sb-mobile").classList.contains("d-block")){
-                        chiudiSearch();
-                    }
-                    if(document.getElementById("middle-wrapper").classList.contains("d-none"))
-                    {
-                      document.getElementById("middle-wrapper").classList.remove("d-none");
-                      document.getElementById("right-wrapper").classList.add("d-none");
-                      document.getElementById("header").classList.remove("d-none");
-                      document.getElementById("requests-col").classList.remove("d-none");
-                      document.getElementById("pc-col").classList.remove("d-none");
-                    }else{
-                      if(document.getElementById("friends-col").classList.contains("d-none"))
-                      {
-                        document.getElementById("friends-col").classList.remove("d-none");
-                      }
-
-                      if(document.getElementById("sb-mobile").classList.contains("d-block"))
-                      {
-                        document.getElementById("sb-mobile").classList.remove("d-block");
-                        document.getElementById("sb-mobile").classList.add("d-none");
-
-                        document.getElementById("navbar-button").classList.remove("d-none");
-                        document.getElementById("logo").classList.remove("d-none");
-                        document.getElementById("middle-wrapper").classList.remove("d-none");
-                        document.getElementById("right-wrapper").classList.remove("d-none");
-                        document.getElementById("header").classList.remove("d-none");
-                      }
-                      document.getElementById("middle-wrapper").classList.add("d-none");
-                      document.getElementById("right-wrapper").classList.remove("d-none");
-                      document.getElementById("header").classList.add("d-none");
-                      document.getElementById("requests-col").classList.add("d-none");
-                      document.getElementById("pc-col").classList.add("d-none");
-                    }
-
-            }
-
-              document.getElementById("search").onclick = function(){
-                    document.getElementById("navbar-button").classList.add("d-none");
-                    document.getElementById("logo").classList.add("d-none");
-                    if(document.getElementById("sb-mobile").classList.contains("d-none"))
-                    {
-                        apriSearch();
-                    }else {
-                        chiudiSearch();
-                    }
-              }
-
-
-        </script>
     </body>
 </html>
